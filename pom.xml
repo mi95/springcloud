@@ -54,5 +54,6 @@
 		<module>service-feign</module>
 		<module>service-zuul</module>
 		<module>cloud-config</module>
+		<module>cloud-provider</module>
 	</modules>
 </project>
