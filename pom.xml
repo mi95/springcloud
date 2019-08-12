@@ -55,5 +55,6 @@
 		<module>service-zuul</module>
 		<module>cloud-config</module>
 		<module>cloud-provider</module>
+		<module>cloud-hystrix-dashboard</module>
 	</modules>
 </project>
