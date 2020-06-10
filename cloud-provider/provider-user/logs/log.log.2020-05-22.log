@@ -1,0 +1,1649 @@
+2020-05-22 11:44:14.257 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4ce7fffa: startup date [Fri May 22 11:44:14 CST 2020]; root of context hierarchy
+2020-05-22 11:44:14.634 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 11:44:14.719 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$60bfe56e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 11:44:16.362 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-22 11:44:16.379 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236ab296: startup date [Fri May 22 11:44:16 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4ce7fffa
+2020-05-22 11:44:17.017 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-22 11:44:17.098 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-22 11:44:17.469 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=e5d5aba1-cfaa-334f-885f-4bfb01807363
+2020-05-22 11:44:17.486 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 11:44:17.534 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b11a09f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 11:44:17.620 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$44a5e271] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 11:44:17.674 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$60bfe56e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 11:44:18.097 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-22 11:44:18.115 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-22 11:44:18.129 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-22 11:44:18.130 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-22 11:44:18.136 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 11:44:18.137 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 11:44:18.137 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 11:44:19.183 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 11:44:19.340 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-22 11:44:19.340 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2961 ms
+2020-05-22 11:44:19.548 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-22 11:44:19.549 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-22 11:44:19.549 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-22 11:44:19.549 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-22 11:44:19.550 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-22 11:44:19.551 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-22 11:44:19.900 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Fri May 22 11:44:19 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236ab296
+2020-05-22 11:44:19.921 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 11:44:20.237 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-22 11:44:20.247 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-22 11:44:20.811 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 11:44:20.812 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 11:44:20.820 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 11:44:20.820 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 11:44:20.923 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 11:44:21.172 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236ab296: startup date [Fri May 22 11:44:16 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4ce7fffa
+2020-05-22 11:44:21.238 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-22 11:44:21.242 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-22 11:44:21.243 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-22 11:44:21.244 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-22 11:44:21.245 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-22 11:44:21.245 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-22 11:44:21.245 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-22 11:44:21.245 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-22 11:44:21.246 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-22 11:44:21.246 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-22 11:44:21.247 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-22 11:44:21.248 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-22 11:44:21.281 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 11:44:21.281 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 11:44:21.300 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-05-22 11:44:22.334 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration -
+                
+
+Using generated security password: b712e22e-73ac-4156-89d3-38c107f96cef
+
+2020-05-22 11:44:22.562 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@760a2b6e, org.springframework.security.web.context.SecurityContextPersistenceFilter@986b619, org.springframework.security.web.header.HeaderWriterFilter@3ea84e01, org.springframework.security.web.authentication.logout.LogoutFilter@3cf8a235, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d126083, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@48af5f38, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c956dda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d132bb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20a9f5fb, org.springframework.security.web.session.SessionManagementFilter@3fd33f48, org.springframework.security.web.access.ExceptionTranslationFilter@7645b7d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d977a20]
+2020-05-22 11:44:23.938 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 11:44:25.249 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 11:44:25.422 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-22 11:44:25.423 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-22 11:44:25.432 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-22 11:44:25.434 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-22 11:44:25.435 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-22 11:44:25.435 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-22 11:44:25.438 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-22 11:44:25.455 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-22 11:44:25.469 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=236ab296,type=ConfigurationPropertiesRebinder]
+2020-05-22 11:44:25.476 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-22 11:44:25.497 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-22 11:44:25.503 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-22 11:44:25.512 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-22 11:44:25.573 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-22 11:44:25.576 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-22 11:44:25.585 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590119065584 with initial instances count: 0
+2020-05-22 11:44:25.594 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-22 11:44:25.597 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-22 11:44:25.603 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-22 11:44:25.614 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-22 11:44:25.639 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-22 11:44:25.640 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-22 11:44:25.643 [main] INFO  com.user.AppUser -
+                Started AppUser in 13.522 seconds (JVM running for 15.166)
+2020-05-22 11:44:25.733 [http-nio-8500-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-22 11:44:25.733 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-22 11:44:25.758 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2020-05-22 11:44:25.815 [http-nio-8500-exec-1] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Fri May 22 11:44:25 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : POST
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-22 11:45:54.774 [http-nio-8500-exec-3] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Fri May 22 11:45:54 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : POST
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-22 11:45:57.367 [http-nio-8500-exec-4] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Fri May 22 11:45:57 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : POST
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-22 11:47:09.648 [http-nio-8500-exec-6] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Fri May 22 11:47:09 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : POST
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-22 13:33:31.341 [Thread-32] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236ab296: startup date [Fri May 22 11:44:16 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4ce7fffa
+2020-05-22 13:33:31.344 [Thread-32] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Unregistering application service-user with eureka with status DOWN
+2020-05-22 13:33:31.348 [Thread-32] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 2147483647
+2020-05-22 13:33:31.349 [Thread-32] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 0
+2020-05-22 13:33:31.356 [Thread-32] INFO  com.netflix.discovery.DiscoveryClient -
+                Shutting down DiscoveryClient ...
+2020-05-22 13:33:31.356 [Thread-32] INFO  com.netflix.discovery.DiscoveryClient -
+                Completed shut down of DiscoveryClient
+2020-05-22 13:33:31.379 [Thread-32] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2020-05-22 13:33:31.380 [Thread-32] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2020-05-22 13:33:31.385 [Thread-32] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2020-05-22 13:33:31.386 [Thread-32] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Closing FeignContext-service-msg: startup date [Fri May 22 11:44:19 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@236ab296
+2020-05-22 13:33:31.390 [Thread-32] WARN  o.s.c.a.AnnotationConfigApplicationContext -
+                Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+2020-05-22 13:33:37.419 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4470f8a6: startup date [Fri May 22 13:33:37 CST 2020]; root of context hierarchy
+2020-05-22 13:33:37.572 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:33:37.599 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9ae286e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:33:39.011 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-22 13:33:39.023 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42b02722: startup date [Fri May 22 13:33:39 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4470f8a6
+2020-05-22 13:33:39.436 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-22 13:33:39.480 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-22 13:33:39.749 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=2950317c-5f03-322c-93e3-d1ae073cc489
+2020-05-22 13:33:39.764 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:33:39.795 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$4534421a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:33:39.851 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7ec883ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:33:39.884 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9ae286e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:33:40.168 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-22 13:33:40.180 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:33:40.190 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-22 13:33:40.190 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-22 13:33:40.195 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 13:33:40.195 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 13:33:40.195 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 13:33:41.227 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 13:33:41.362 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-22 13:33:41.362 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2340 ms
+2020-05-22 13:33:41.595 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-22 13:33:41.596 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-22 13:33:41.596 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-22 13:33:41.596 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-22 13:33:41.597 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-22 13:33:41.597 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-22 13:33:41.597 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-22 13:33:41.847 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Fri May 22 13:33:41 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42b02722
+2020-05-22 13:33:41.862 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:33:42.075 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-22 13:33:42.083 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-22 13:33:42.564 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:33:42.565 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:33:42.569 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:33:42.569 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:33:42.671 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:33:42.847 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42b02722: startup date [Fri May 22 13:33:39 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4470f8a6
+2020-05-22 13:33:42.892 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-22 13:33:42.895 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-22 13:33:42.895 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-22 13:33:42.897 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-22 13:33:42.898 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-22 13:33:42.898 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-22 13:33:42.898 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-22 13:33:42.898 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-22 13:33:42.899 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-22 13:33:42.899 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-22 13:33:42.900 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-22 13:33:42.901 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-22 13:33:42.925 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:33:42.925 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:33:42.938 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-05-22 13:33:43.592 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 13:33:43.592 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 13:33:43.593 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-22 13:33:43.593 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-22 13:33:43.593 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-22 13:33:43.593 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 13:33:43.593 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-22 13:33:43.669 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@644d1b61, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e002356, org.springframework.security.web.header.HeaderWriterFilter@22d8f4ed, org.springframework.security.web.authentication.logout.LogoutFilter@5bf9ea6b, com.user.filter.LoginFilter@57e0ebab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b325930, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c33da7a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2443135, org.springframework.security.web.session.SessionManagementFilter@79afa369, org.springframework.security.web.access.ExceptionTranslationFilter@4b97b3d2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70b2fa10]
+2020-05-22 13:33:44.991 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:33:46.293 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:33:46.405 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-22 13:33:46.406 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-22 13:33:46.413 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-22 13:33:46.414 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-22 13:33:46.415 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-22 13:33:46.415 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-22 13:33:46.418 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-22 13:33:46.427 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-22 13:33:46.438 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=42b02722,type=ConfigurationPropertiesRebinder]
+2020-05-22 13:33:46.442 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-22 13:33:46.455 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-22 13:33:46.460 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-22 13:33:46.466 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-22 13:33:46.492 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-22 13:33:46.493 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-22 13:33:46.499 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590125626498 with initial instances count: 0
+2020-05-22 13:33:46.507 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-22 13:33:46.510 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-22 13:33:46.517 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:33:46.525 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-22 13:33:46.541 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-22 13:33:46.542 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-22 13:33:46.544 [main] INFO  com.user.AppUser -
+                Started AppUser in 10.812 seconds (JVM running for 11.753)
+2020-05-22 13:34:04.824 [http-nio-8500-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-22 13:34:04.825 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-22 13:34:04.843 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2020-05-22 13:35:01.229 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39: startup date [Fri May 22 13:35:01 CST 2020]; root of context hierarchy
+2020-05-22 13:35:01.460 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:35:01.499 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2fae14b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:35:02.935 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-22 13:35:02.948 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b7c473a: startup date [Fri May 22 13:35:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39
+2020-05-22 13:35:03.379 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-22 13:35:03.425 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-22 13:35:03.684 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=2950317c-5f03-322c-93e3-d1ae073cc489
+2020-05-22 13:35:03.698 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:35:03.734 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d9ffcfe4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:35:03.801 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$139411b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:35:03.852 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2fae14b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:35:04.157 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-22 13:35:04.168 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:35:04.178 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-22 13:35:04.179 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-22 13:35:04.183 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 13:35:04.183 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 13:35:04.183 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 13:35:05.231 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 13:35:05.366 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-22 13:35:05.367 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2419 ms
+2020-05-22 13:35:05.634 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-22 13:35:05.636 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-22 13:35:05.636 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-22 13:35:05.636 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-22 13:35:05.636 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-22 13:35:05.636 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-22 13:35:05.636 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-22 13:35:05.784 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Fri May 22 13:35:05 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b7c473a
+2020-05-22 13:35:05.798 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:35:06.007 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-22 13:35:06.013 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-22 13:35:06.480 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:35:06.481 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:35:06.485 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:35:06.485 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:35:06.555 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:35:06.716 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1b7c473a: startup date [Fri May 22 13:35:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@140c9f39
+2020-05-22 13:35:06.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-22 13:35:06.771 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-22 13:35:06.772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-22 13:35:06.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-22 13:35:06.774 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-22 13:35:06.774 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-22 13:35:06.774 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-22 13:35:06.774 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-22 13:35:06.775 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-22 13:35:06.775 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-22 13:35:06.776 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-22 13:35:06.777 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-22 13:35:06.804 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:35:06.804 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:35:06.819 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-05-22 13:35:07.471 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 13:35:07.471 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 13:35:07.471 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-22 13:35:07.471 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-22 13:35:07.471 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-22 13:35:07.472 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 13:35:07.472 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-22 13:35:07.547 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@377949f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@38fb50f8, org.springframework.security.web.header.HeaderWriterFilter@27b337bb, org.springframework.security.web.authentication.logout.LogoutFilter@63f40ca0, com.user.filter.LoginFilter@5c21c442, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@608cd501, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c538eb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9df564f, org.springframework.security.web.session.SessionManagementFilter@5c18d6d4, org.springframework.security.web.access.ExceptionTranslationFilter@3c9ef6e9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7cfb0c4c]
+2020-05-22 13:35:08.892 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:35:10.171 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:35:10.315 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-22 13:35:10.316 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-22 13:35:10.323 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-22 13:35:10.324 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-22 13:35:10.325 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-22 13:35:10.325 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-22 13:35:10.327 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-22 13:35:10.338 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-22 13:35:10.346 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1b7c473a,type=ConfigurationPropertiesRebinder]
+2020-05-22 13:35:10.351 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-22 13:35:10.363 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-22 13:35:10.368 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-22 13:35:10.374 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-22 13:35:10.400 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-22 13:35:10.401 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-22 13:35:10.407 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590125710406 with initial instances count: 0
+2020-05-22 13:35:10.413 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-22 13:35:10.416 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-22 13:35:10.422 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:35:10.431 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-22 13:35:10.448 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-22 13:35:10.450 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-22 13:35:10.452 [main] INFO  com.user.AppUser -
+                Started AppUser in 11.176 seconds (JVM running for 12.164)
+2020-05-22 13:35:16.104 [http-nio-8500-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-22 13:35:16.104 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-22 13:35:16.123 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2020-05-22 13:36:14.322 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68267da0: startup date [Fri May 22 13:36:14 CST 2020]; root of context hierarchy
+2020-05-22 13:36:14.484 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:36:14.512 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2b565919] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:36:15.937 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-22 13:36:15.949 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63fbfaeb: startup date [Fri May 22 13:36:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@68267da0
+2020-05-22 13:36:16.367 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-22 13:36:16.412 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-22 13:36:16.696 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=2950317c-5f03-322c-93e3-d1ae073cc489
+2020-05-22 13:36:16.710 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:36:16.742 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d5a8144a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:36:16.806 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3c561c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:36:16.840 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2b565919] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:36:17.135 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-22 13:36:17.146 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:36:17.155 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-22 13:36:17.155 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-22 13:36:17.160 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 13:36:17.160 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 13:36:17.160 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 13:36:18.213 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 13:36:18.369 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-22 13:36:18.370 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2421 ms
+2020-05-22 13:36:18.699 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-22 13:36:18.700 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-22 13:36:18.700 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-22 13:36:18.700 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-22 13:36:18.701 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-22 13:36:18.701 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-22 13:36:18.701 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-22 13:36:18.853 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Fri May 22 13:36:18 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63fbfaeb
+2020-05-22 13:36:18.867 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:36:19.153 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-22 13:36:19.160 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-22 13:36:19.740 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:36:19.740 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:36:19.746 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:36:19.746 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:36:19.829 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:36:20.017 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63fbfaeb: startup date [Fri May 22 13:36:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@68267da0
+2020-05-22 13:36:20.132 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-22 13:36:20.137 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-22 13:36:20.138 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-22 13:36:20.140 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-22 13:36:20.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-22 13:36:20.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-22 13:36:20.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-22 13:36:20.142 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-22 13:36:20.142 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-22 13:36:20.143 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-22 13:36:20.144 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-22 13:36:20.146 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-22 13:36:20.194 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:36:20.195 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:36:20.219 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-05-22 13:36:21.097 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 13:36:21.098 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 13:36:21.098 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-22 13:36:21.098 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-22 13:36:21.098 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-22 13:36:21.099 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 13:36:21.099 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-22 13:36:21.173 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@467045c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@4315c28c, org.springframework.security.web.header.HeaderWriterFilter@69c532af, org.springframework.security.web.authentication.logout.LogoutFilter@3e1f1046, com.user.filter.LoginFilter@64db00a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52d0f583, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e7abaf7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55736cfe, org.springframework.security.web.session.SessionManagementFilter@51a16adf, org.springframework.security.web.access.ExceptionTranslationFilter@59303963, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4e424582]
+2020-05-22 13:36:22.556 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:36:23.923 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:36:24.028 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-22 13:36:24.029 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-22 13:36:24.036 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-22 13:36:24.037 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-22 13:36:24.038 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-22 13:36:24.038 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-22 13:36:24.041 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-22 13:36:24.051 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-22 13:36:24.060 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=63fbfaeb,type=ConfigurationPropertiesRebinder]
+2020-05-22 13:36:24.065 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-22 13:36:24.077 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-22 13:36:24.082 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-22 13:36:24.088 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-22 13:36:24.114 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-22 13:36:24.115 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-22 13:36:24.121 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590125784120 with initial instances count: 0
+2020-05-22 13:36:24.127 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-22 13:36:24.130 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-22 13:36:24.136 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:36:24.147 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-22 13:36:24.165 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-22 13:36:24.166 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-22 13:36:24.168 [main] INFO  com.user.AppUser -
+                Started AppUser in 11.672 seconds (JVM running for 12.797)
+2020-05-22 13:36:59.359 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e96bacf: startup date [Fri May 22 13:36:59 CST 2020]; root of context hierarchy
+2020-05-22 13:36:59.573 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:36:59.601 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a24e51e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:37:01.006 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-22 13:37:01.020 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64a40280: startup date [Fri May 22 13:37:01 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3e96bacf
+2020-05-22 13:37:01.463 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-22 13:37:01.517 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-22 13:37:01.787 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=2950317c-5f03-322c-93e3-d1ae073cc489
+2020-05-22 13:37:01.800 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:37:01.836 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$4ca00d19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:37:01.903 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$86344eeb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:37:01.941 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a24e51e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:37:02.264 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-22 13:37:02.274 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:37:02.284 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-22 13:37:02.284 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-22 13:37:02.289 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 13:37:02.289 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 13:37:02.289 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 13:37:03.325 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 13:37:03.457 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-22 13:37:03.458 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2438 ms
+2020-05-22 13:37:03.739 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-22 13:37:03.739 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-22 13:37:03.739 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-22 13:37:03.740 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-22 13:37:03.740 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-22 13:37:03.741 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-22 13:37:03.741 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-22 13:37:03.903 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Fri May 22 13:37:03 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64a40280
+2020-05-22 13:37:03.919 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:37:04.159 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-22 13:37:04.169 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-22 13:37:04.655 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:37:04.656 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:37:04.660 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:37:04.660 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:37:04.728 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:37:04.933 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@64a40280: startup date [Fri May 22 13:37:01 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3e96bacf
+2020-05-22 13:37:04.998 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-22 13:37:05.001 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-22 13:37:05.002 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-22 13:37:05.004 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-22 13:37:05.004 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-22 13:37:05.004 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-22 13:37:05.005 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-22 13:37:05.005 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-22 13:37:05.005 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-22 13:37:05.006 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-22 13:37:05.007 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-22 13:37:05.008 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-22 13:37:05.039 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:37:05.039 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:37:05.056 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-05-22 13:37:05.728 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 13:37:05.728 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 13:37:05.728 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-22 13:37:05.729 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-22 13:37:05.729 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-22 13:37:05.729 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 13:37:05.729 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-22 13:37:05.805 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2bb62414, org.springframework.security.web.context.SecurityContextPersistenceFilter@79afa369, org.springframework.security.web.header.HeaderWriterFilter@96897c8, org.springframework.security.web.authentication.logout.LogoutFilter@15986dd5, com.user.filter.LoginFilter@6794c022, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e002356, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4525e9e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@413d2cd1, org.springframework.security.web.session.SessionManagementFilter@22d8f4ed, org.springframework.security.web.access.ExceptionTranslationFilter@67d4c48d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25953be6]
+2020-05-22 13:37:07.125 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:37:08.570 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:37:08.674 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-22 13:37:08.675 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-22 13:37:08.682 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-22 13:37:08.683 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-22 13:37:08.684 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-22 13:37:08.684 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-22 13:37:08.687 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-22 13:37:08.698 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-22 13:37:08.707 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=64a40280,type=ConfigurationPropertiesRebinder]
+2020-05-22 13:37:08.712 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-22 13:37:08.732 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-22 13:37:08.739 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-22 13:37:08.748 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-22 13:37:08.778 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-22 13:37:08.779 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-22 13:37:08.785 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590125828784 with initial instances count: 0
+2020-05-22 13:37:08.792 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-22 13:37:08.794 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-22 13:37:08.801 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:37:08.809 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-22 13:37:08.826 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-22 13:37:08.827 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-22 13:37:08.830 [main] INFO  com.user.AppUser -
+                Started AppUser in 11.399 seconds (JVM running for 12.413)
+2020-05-22 13:37:25.027 [http-nio-8500-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-22 13:37:25.027 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-22 13:37:25.048 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-05-22 13:39:42.933 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c2cc639: startup date [Fri May 22 13:39:42 CST 2020]; root of context hierarchy
+2020-05-22 13:39:43.145 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:39:43.192 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d7d326c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:39:44.594 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-22 13:39:44.607 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f2afe62: startup date [Fri May 22 13:39:44 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c2cc639
+2020-05-22 13:39:45.199 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-22 13:39:45.259 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-22 13:39:45.654 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=2950317c-5f03-322c-93e3-d1ae073cc489
+2020-05-22 13:39:45.682 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:39:45.743 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$8224e1f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:39:45.828 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bbb923c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:39:45.883 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d7d326c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 13:39:46.264 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-22 13:39:46.279 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:39:46.291 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-22 13:39:46.292 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-22 13:39:46.297 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 13:39:46.297 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 13:39:46.297 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 13:39:47.364 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 13:39:47.585 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-22 13:39:47.586 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2979 ms
+2020-05-22 13:39:47.908 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-22 13:39:47.909 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-22 13:39:47.909 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-22 13:39:47.909 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-22 13:39:47.910 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-22 13:39:47.911 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-22 13:39:47.911 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-22 13:39:48.126 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Fri May 22 13:39:48 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f2afe62
+2020-05-22 13:39:48.143 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 13:39:48.406 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-22 13:39:48.416 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-22 13:39:48.938 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:39:48.938 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:39:48.944 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 13:39:48.944 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 13:39:49.038 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:39:49.251 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f2afe62: startup date [Fri May 22 13:39:44 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c2cc639
+2020-05-22 13:39:49.306 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-22 13:39:49.310 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-22 13:39:49.310 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-22 13:39:49.311 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-22 13:39:49.312 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-22 13:39:49.312 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-22 13:39:49.312 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-22 13:39:49.313 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-22 13:39:49.313 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-22 13:39:49.313 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-22 13:39:49.315 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-22 13:39:49.315 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-22 13:39:49.347 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:39:49.347 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 13:39:49.365 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-05-22 13:39:50.233 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 13:39:50.233 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 13:39:50.233 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-22 13:39:50.233 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-22 13:39:50.234 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-22 13:39:50.234 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 13:39:50.234 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-22 13:39:50.333 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1218e12, org.springframework.security.web.context.SecurityContextPersistenceFilter@76ffc17c, org.springframework.security.web.header.HeaderWriterFilter@38667005, org.springframework.security.web.authentication.logout.LogoutFilter@6a2badb1, com.user.filter.LoginFilter@4380a1d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26d73519, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@137a4b54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29c25bbc, org.springframework.security.web.session.SessionManagementFilter@1131aead, org.springframework.security.web.access.ExceptionTranslationFilter@35ab4260, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7079f8f0]
+2020-05-22 13:39:51.696 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:39:53.025 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 13:39:53.188 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-22 13:39:53.189 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-22 13:39:53.197 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-22 13:39:53.198 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-22 13:39:53.199 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-22 13:39:53.200 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-22 13:39:53.202 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-22 13:39:53.214 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-22 13:39:53.226 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5f2afe62,type=ConfigurationPropertiesRebinder]
+2020-05-22 13:39:53.232 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-22 13:39:53.258 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-22 13:39:53.264 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-22 13:39:53.272 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-22 13:39:53.308 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-22 13:39:53.309 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-22 13:39:53.316 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590125993314 with initial instances count: 0
+2020-05-22 13:39:53.324 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-22 13:39:53.327 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-22 13:39:53.334 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-22 13:39:53.346 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-22 13:39:53.367 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-22 13:39:53.368 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-22 13:39:53.371 [main] INFO  com.user.AppUser -
+                Started AppUser in 12.267 seconds (JVM running for 13.587)
+2020-05-22 13:40:07.163 [http-nio-8500-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-22 13:40:07.164 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-22 13:40:07.187 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-05-22 13:57:27.772 [Thread-30] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f2afe62: startup date [Fri May 22 13:39:44 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c2cc639
+2020-05-22 13:57:27.775 [Thread-30] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Unregistering application service-user with eureka with status DOWN
+2020-05-22 13:57:27.778 [Thread-30] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 2147483647
+2020-05-22 13:57:27.778 [Thread-30] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 0
+2020-05-22 13:57:27.782 [Thread-30] INFO  com.netflix.discovery.DiscoveryClient -
+                Shutting down DiscoveryClient ...
+2020-05-22 13:57:27.783 [Thread-30] INFO  com.netflix.discovery.DiscoveryClient -
+                Completed shut down of DiscoveryClient
+2020-05-22 13:57:27.799 [Thread-30] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2020-05-22 13:57:27.799 [Thread-30] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2020-05-22 13:57:27.805 [Thread-30] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2020-05-22 13:57:27.806 [Thread-30] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Closing FeignContext-service-msg: startup date [Fri May 22 13:39:48 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f2afe62
+2020-05-22 13:57:27.823 [Thread-30] WARN  o.s.c.a.AnnotationConfigApplicationContext -
+                Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+2020-05-22 14:19:06.636 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@616fe72b: startup date [Fri May 22 14:19:06 CST 2020]; root of context hierarchy
+2020-05-22 14:19:06.852 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 14:19:06.890 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d1773aff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 14:19:08.341 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-22 14:19:08.355 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d81e101: startup date [Fri May 22 14:19:08 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@616fe72b
+2020-05-22 14:19:08.857 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-22 14:19:08.910 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-22 14:19:09.235 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=cd35eab7-ab77-32c9-8007-acfc8c794c3b
+2020-05-22 14:19:09.252 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 14:19:09.294 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7bc8f630] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 14:19:09.367 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b55d3802] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 14:19:09.411 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d1773aff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 14:19:09.763 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-22 14:19:09.775 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-22 14:19:09.786 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-22 14:19:09.786 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-22 14:19:09.792 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 14:19:09.793 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 14:19:09.793 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 14:19:10.831 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 14:19:11.079 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-22 14:19:11.080 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2725 ms
+2020-05-22 14:19:11.403 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-22 14:19:11.404 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-22 14:19:11.404 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-22 14:19:11.404 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-22 14:19:11.405 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-22 14:19:11.405 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-22 14:19:11.406 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-22 14:19:11.644 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Fri May 22 14:19:11 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d81e101
+2020-05-22 14:19:11.661 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 14:19:11.950 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-22 14:19:11.958 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-22 14:19:12.491 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 14:19:12.492 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 14:19:12.497 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 14:19:12.497 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 14:19:12.588 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 14:19:12.800 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d81e101: startup date [Fri May 22 14:19:08 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@616fe72b
+2020-05-22 14:19:12.859 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-22 14:19:12.862 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-22 14:19:12.862 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-22 14:19:12.864 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-22 14:19:12.865 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-22 14:19:12.865 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-22 14:19:12.865 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-22 14:19:12.865 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-22 14:19:12.866 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-22 14:19:12.866 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-22 14:19:12.867 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-22 14:19:12.868 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-22 14:19:12.899 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 14:19:12.899 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 14:19:12.915 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-05-22 14:19:13.775 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 14:19:13.776 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 14:19:13.776 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-22 14:19:13.776 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-22 14:19:13.776 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-22 14:19:13.776 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 14:19:13.777 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-22 14:19:13.872 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48b2dbc4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d798e76, org.springframework.security.web.header.HeaderWriterFilter@52433946, org.springframework.security.web.authentication.logout.LogoutFilter@4cfc0c48, com.user.filter.LoginFilter@35f0bc44, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@763b0996, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23469199, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a667f44, org.springframework.security.web.session.SessionManagementFilter@ab327c, org.springframework.security.web.access.ExceptionTranslationFilter@347123dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d8056bf]
+2020-05-22 14:19:15.275 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 14:19:16.577 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 14:19:16.720 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-22 14:19:16.721 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-22 14:19:16.730 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-22 14:19:16.732 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-22 14:19:16.733 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-22 14:19:16.733 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-22 14:19:16.736 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-22 14:19:16.749 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-22 14:19:16.761 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1d81e101,type=ConfigurationPropertiesRebinder]
+2020-05-22 14:19:16.767 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-22 14:19:16.785 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-22 14:19:16.791 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-22 14:19:16.800 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-22 14:19:16.840 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-22 14:19:16.842 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-22 14:19:16.849 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590128356848 with initial instances count: 0
+2020-05-22 14:19:16.859 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-22 14:19:16.862 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-22 14:19:16.869 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-22 14:19:16.880 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-22 14:19:16.902 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-22 14:19:16.903 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-22 14:19:16.905 [main] INFO  com.user.AppUser -
+                Started AppUser in 12.137 seconds (JVM running for 13.581)
+2020-05-22 14:19:44.479 [Thread-30] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d81e101: startup date [Fri May 22 14:19:08 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@616fe72b
+2020-05-22 14:19:44.480 [Thread-30] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Unregistering application service-user with eureka with status DOWN
+2020-05-22 14:19:44.482 [Thread-30] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 2147483647
+2020-05-22 14:19:44.482 [Thread-30] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 0
+2020-05-22 14:19:44.485 [Thread-30] INFO  com.netflix.discovery.DiscoveryClient -
+                Shutting down DiscoveryClient ...
+2020-05-22 14:19:44.485 [Thread-30] INFO  com.netflix.discovery.DiscoveryClient -
+                Completed shut down of DiscoveryClient
+2020-05-22 14:19:44.499 [Thread-30] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2020-05-22 14:19:44.500 [Thread-30] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2020-05-22 14:19:44.505 [Thread-30] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2020-05-22 14:19:44.506 [Thread-30] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Closing FeignContext-service-msg: startup date [Fri May 22 14:19:11 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d81e101
+2020-05-22 14:19:44.509 [Thread-30] WARN  o.s.c.a.AnnotationConfigApplicationContext -
+                Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+2020-05-22 14:19:50.335 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61ce23ac: startup date [Fri May 22 14:19:50 CST 2020]; root of context hierarchy
+2020-05-22 14:19:50.631 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 14:19:50.689 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7b0ea6f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 14:19:52.165 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-22 14:19:52.179 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1adb7478: startup date [Fri May 22 14:19:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@61ce23ac
+2020-05-22 14:19:52.677 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-22 14:19:52.730 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-22 14:19:53.072 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=cd35eab7-ab77-32c9-8007-acfc8c794c3b
+2020-05-22 14:19:53.088 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 14:19:53.129 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$25606226] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 14:19:53.201 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5ef4a3f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 14:19:53.245 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7b0ea6f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 14:19:53.581 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-22 14:19:53.593 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-22 14:19:53.604 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-22 14:19:53.604 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-22 14:19:53.610 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-22 14:19:53.611 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-22 14:19:53.611 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-22 14:19:54.659 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-22 14:19:54.815 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-22 14:19:54.816 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2637 ms
+2020-05-22 14:19:55.206 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-22 14:19:55.207 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-22 14:19:55.207 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-22 14:19:55.207 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-22 14:19:55.208 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-22 14:19:55.208 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-22 14:19:55.208 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-22 14:19:55.423 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Fri May 22 14:19:55 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1adb7478
+2020-05-22 14:19:55.438 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 14:19:55.694 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-22 14:19:55.704 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-22 14:19:56.221 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 14:19:56.221 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 14:19:56.226 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-22 14:19:56.226 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-22 14:19:56.316 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 14:19:56.526 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1adb7478: startup date [Fri May 22 14:19:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@61ce23ac
+2020-05-22 14:19:56.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-22 14:19:56.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-22 14:19:56.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-22 14:19:56.587 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-22 14:19:56.587 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-22 14:19:56.588 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-22 14:19:56.588 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-22 14:19:56.588 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-22 14:19:56.588 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-22 14:19:56.589 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-22 14:19:56.590 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-22 14:19:56.590 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-22 14:19:56.622 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 14:19:56.622 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 14:19:56.639 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-05-22 14:19:57.468 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-22 14:19:57.468 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-22 14:19:57.468 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-22 14:19:57.468 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-22 14:19:57.468 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-22 14:19:57.469 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-22 14:19:57.469 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-22 14:19:57.566 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51f34185, org.springframework.security.web.context.SecurityContextPersistenceFilter@6efd0a6e, org.springframework.security.web.header.HeaderWriterFilter@280d5a82, org.springframework.security.web.authentication.logout.LogoutFilter@3bf5911d, com.user.filter.LoginFilter@1e5b6a48, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30228de7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7db162f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b8d20e6, org.springframework.security.web.session.SessionManagementFilter@333a44f2, org.springframework.security.web.access.ExceptionTranslationFilter@6cc8adff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5fbae40]
+2020-05-22 14:19:58.910 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 14:20:00.242 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-22 14:20:00.397 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-22 14:20:00.398 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-22 14:20:00.407 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-22 14:20:00.409 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-22 14:20:00.409 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-22 14:20:00.410 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-22 14:20:00.413 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-22 14:20:00.425 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-22 14:20:00.437 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1adb7478,type=ConfigurationPropertiesRebinder]
+2020-05-22 14:20:00.443 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-22 14:20:00.461 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-22 14:20:00.466 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-22 14:20:00.474 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-22 14:20:00.512 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-22 14:20:00.513 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-22 14:20:00.520 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590128400519 with initial instances count: 0
+2020-05-22 14:20:00.529 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-22 14:20:00.532 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-22 14:20:00.540 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-22 14:20:00.553 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-22 14:20:00.573 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-22 14:20:00.574 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-22 14:20:00.577 [main] INFO  com.user.AppUser -
+                Started AppUser in 12.141 seconds (JVM running for 13.409)
+2020-05-22 14:32:25.014 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-22 18:01:45.656 [Thread-30] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1adb7478: startup date [Fri May 22 14:19:52 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@61ce23ac
+2020-05-22 18:01:45.660 [Thread-30] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Unregistering application service-user with eureka with status DOWN
+2020-05-22 18:01:45.666 [Thread-30] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 2147483647
+2020-05-22 18:01:45.666 [Thread-30] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 0
+2020-05-22 18:01:45.672 [Thread-30] INFO  com.netflix.discovery.DiscoveryClient -
+                Shutting down DiscoveryClient ...
+2020-05-22 18:01:45.672 [Thread-30] INFO  com.netflix.discovery.DiscoveryClient -
+                Completed shut down of DiscoveryClient
+2020-05-22 18:01:45.691 [Thread-30] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2020-05-22 18:01:45.692 [Thread-30] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2020-05-22 18:01:45.696 [Thread-30] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2020-05-22 18:01:45.697 [Thread-30] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Closing FeignContext-service-msg: startup date [Fri May 22 14:19:55 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1adb7478
+2020-05-22 18:01:45.701 [Thread-30] WARN  o.s.c.a.AnnotationConfigApplicationContext -
+                Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)

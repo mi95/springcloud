@@ -1,67 +1,86 @@
 package com.user.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
+import com.common.controller.BaseController;
+import com.common.pojo.RespBean;
+import com.common.utils.CommonException;
+import com.jfinal.kit.StrKit;
+import com.user.annotation.LoginToken;
 import com.user.model.UserInfo;
 import com.user.service.MsgService;
 import com.user.service.UserService;
+import com.user.utils.TokenUtil;
+import com.user.utils.UserUtil;
+import com.user.utils.UsersException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
-@RequestMapping("/user")
-public class UserController extends BaseController{
-	@Autowired
-	UserService userService;
-	
-	@Autowired
-	MsgService msgService;
-	
-	@Value("${server.port}")
-	String port;
-	
-	@GetMapping("/test")
-	public String test() {
-		return "this is:"+port;
-	}
-	
-	@PostMapping("/user")
-	public ModelMap addUser(UserInfo userInfo) {
-		userService.addUser(userInfo);
-		return renderSuccess();
-	}
-	
-	@PatchMapping("/user")
-	public ModelMap editUser(UserInfo userInfo){
-		userService.editUser(userInfo);
-		return renderSuccess();
-	}
-	
-	@DeleteMapping("/user")
-	public ModelMap delUser(Long userId) {
-		userService.delUser(userId);
-		return renderSuccess();
-	}
-	
-	@GetMapping("/user")
-	public ModelMap findUserById(Long userId) {
-		return returnObject(userService.findUserById(userId));
-	}
-	
-	@GetMapping("/userPage")
-	public ModelMap findUserPageList(Integer pageNum,Integer pageSize,UserInfo userInfo){
-		return returnObject(userService.findUserPageList(pageNum, pageSize, userInfo));
-	}
-	
-	@PostMapping("/msg")
-	public ModelMap addMsg(String msg){
-		String port = msgService.addMsg(1,msg);
-		return returnObject(port);
-	}
+@RequestMapping("user")
+public class UserController extends BaseController {
+    @Autowired
+    UserService userService;
+
+    @Autowired
+    MsgService msgService;
+
+    @PostMapping("/user")
+    public RespBean addUser(@RequestBody  UserInfo userInfo) {
+        userService.addUser(userInfo);
+        return RespBean.success();
+    }
+
+    @PatchMapping("/user")
+    public RespBean editUser(UserInfo userInfo) {
+        userService.editUser(userInfo);
+        return RespBean.success();
+    }
+
+    @DeleteMapping("/user")
+    public RespBean delUser(Long userId) {
+        userService.delUser(userId);
+        return RespBean.success();
+    }
+
+    @GetMapping("/user")
+    public RespBean findUser(UserInfo user) {
+        return RespBean.success(userService.findUser(user));
+    }
+
+    @GetMapping("/userPage")
+    public RespBean findUserPageList(Integer pageNum, Integer pageSize, UserInfo userInfo) {
+        return RespBean.success(userService.findUserPageList(pageNum, pageSize, userInfo));
+    }
+
+    @PostMapping("/msg")
+    public RespBean addMsg(String msg) {
+        String port = msgService.addMsg(1, msg);
+        return RespBean.success(port);
+    }
+
+    @PostMapping("login")
+    public RespBean login(UserInfo user) {
+        user.setUserName("a");
+        user.setPwd("a");
+        UserInfo info = userService.findUser(user);
+        if (info == null || StrKit.isBlank(user.getPwd()) || !info.getPwd().equals(user.getPwd())) {
+            throw new CommonException(CommonException.ERROR_USERNAME_OR_PWD);
+        } else if (info.getState() == UserUtil.STATE_DISABLE) {
+            throw new CommonException(UsersException.ERROR_INVALID_ACCOUNT);
+        }
+
+        Map map = new HashMap();
+        String token = TokenUtil.getToken(info);
+        map.put("token", token);
+        map.put("user", info);
+        return RespBean.success(map);
+    }
+
+    @LoginToken
+    @GetMapping("getMessage")
+    public String getMessage() {
+        return "你已通过验证";
+    }
 }

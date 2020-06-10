@@ -1,0 +1,345 @@
+2020-06-09 09:28:43.228 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f5ed04fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-09 09:28:44.724 [main] INFO  com.shop.ShopApp -
+                No active profile set, falling back to default profiles: default
+2020-06-09 09:28:45.981 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:28:45.985 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-09 09:28:46.339 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 347ms. Found 1 Elasticsearch repository interfaces.
+2020-06-09 09:28:46.345 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:28:46.346 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-09 09:28:46.374 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -
+                Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.shop.service.EsService. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-06-09 09:28:46.375 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 28ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-09 09:28:46.391 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:28:46.392 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-09 09:28:46.431 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -
+                Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.shop.service.EsService. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-09 09:28:46.431 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-06-09 09:28:46.639 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrInfosMapper' and 'com.shop.mapper.generate.AttrInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.639 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrValueInfosMapper' and 'com.shop.mapper.generate.AttrValueInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.639 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'brandInfosMapper' and 'com.shop.mapper.generate.BrandInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.639 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderDetailInfosMapper' and 'com.shop.mapper.generate.OrderDetailInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.641 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderInfosMapper' and 'com.shop.mapper.generate.OrderInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.641 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuImgInfosMapper' and 'com.shop.mapper.generate.SkuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.641 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuInfosMapper' and 'com.shop.mapper.generate.SkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.641 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuImgInfosMapper' and 'com.shop.mapper.generate.SpuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.641 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuInfosMapper' and 'com.shop.mapper.generate.SpuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.641 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuSkuInfosMapper' and 'com.shop.mapper.generate.SpuSkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:28:46.697 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'dataSource' defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Cannot register bean definition [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] for bean 'dataSource': There is already [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] bound.
+2020-06-09 09:28:46.704 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-09 09:28:46.707 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'dataSource', defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2020-06-09 09:29:27.485 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d96406c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-09 09:29:28.938 [main] INFO  com.shop.ShopApp -
+                No active profile set, falling back to default profiles: default
+2020-06-09 09:29:29.930 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:29:29.932 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-09 09:29:30.057 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 118ms. Found 1 Elasticsearch repository interfaces.
+2020-06-09 09:29:30.062 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:29:30.063 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-09 09:29:30.091 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -
+                Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.shop.service.EsService. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-06-09 09:29:30.091 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 27ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-09 09:29:30.103 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:29:30.104 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-09 09:29:30.139 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -
+                Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.shop.service.EsService. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-09 09:29:30.139 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-06-09 09:29:30.325 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrInfosMapper' and 'com.shop.mapper.generate.AttrInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.325 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrValueInfosMapper' and 'com.shop.mapper.generate.AttrValueInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.325 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'brandInfosMapper' and 'com.shop.mapper.generate.BrandInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.326 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderDetailInfosMapper' and 'com.shop.mapper.generate.OrderDetailInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.326 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderInfosMapper' and 'com.shop.mapper.generate.OrderInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.326 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuImgInfosMapper' and 'com.shop.mapper.generate.SkuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.326 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuInfosMapper' and 'com.shop.mapper.generate.SkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.326 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuImgInfosMapper' and 'com.shop.mapper.generate.SpuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.326 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuInfosMapper' and 'com.shop.mapper.generate.SpuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.327 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuSkuInfosMapper' and 'com.shop.mapper.generate.SpuSkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:29:30.391 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'dataSource' defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Cannot register bean definition [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] for bean 'dataSource': There is already [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] bound.
+2020-06-09 09:29:30.399 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-09 09:29:30.402 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'dataSource', defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2020-06-09 09:32:26.565 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$348e45cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-09 09:32:28.006 [main] INFO  com.shop.ShopApp -
+                No active profile set, falling back to default profiles: default
+2020-06-09 09:32:28.991 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:32:28.994 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-09 09:32:29.125 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 126ms. Found 1 Elasticsearch repository interfaces.
+2020-06-09 09:32:29.131 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:32:29.132 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-09 09:32:29.160 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -
+                Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.shop.service.EsService. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-06-09 09:32:29.160 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 27ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-09 09:32:29.172 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:32:29.173 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-09 09:32:29.207 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -
+                Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.shop.service.EsService. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-09 09:32:29.207 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-06-09 09:32:29.384 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrInfosMapper' and 'com.shop.mapper.generate.AttrInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.384 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrValueInfosMapper' and 'com.shop.mapper.generate.AttrValueInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.384 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'brandInfosMapper' and 'com.shop.mapper.generate.BrandInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.384 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderDetailInfosMapper' and 'com.shop.mapper.generate.OrderDetailInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.385 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderInfosMapper' and 'com.shop.mapper.generate.OrderInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.385 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuImgInfosMapper' and 'com.shop.mapper.generate.SkuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.385 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuInfosMapper' and 'com.shop.mapper.generate.SkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.385 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuImgInfosMapper' and 'com.shop.mapper.generate.SpuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.385 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuInfosMapper' and 'com.shop.mapper.generate.SpuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.385 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuSkuInfosMapper' and 'com.shop.mapper.generate.SpuSkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:32:29.443 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'dataSource' defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Cannot register bean definition [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] for bean 'dataSource': There is already [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] bound.
+2020-06-09 09:32:29.450 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-09 09:32:29.454 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'dataSource', defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2020-06-09 09:50:48.283 [main] INFO  com.shop.ShopApp -
+                No active profile set, falling back to default profiles: default
+2020-06-09 09:50:49.356 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:50:49.358 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-06-09 09:50:49.480 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 116ms. Found 1 Elasticsearch repository interfaces.
+2020-06-09 09:50:49.485 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:50:49.485 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-06-09 09:50:49.514 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -
+                Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.shop.service.EsService. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-06-09 09:50:49.514 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 28ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-06-09 09:50:49.525 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-09 09:50:49.526 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-06-09 09:50:49.561 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport -
+                Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.shop.service.EsService. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-06-09 09:50:49.562 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-06-09 09:50:49.780 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrInfosMapper' and 'com.shop.mapper.generate.AttrInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.780 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrValueInfosMapper' and 'com.shop.mapper.generate.AttrValueInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.781 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'brandInfosMapper' and 'com.shop.mapper.generate.BrandInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.781 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderDetailInfosMapper' and 'com.shop.mapper.generate.OrderDetailInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.781 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderInfosMapper' and 'com.shop.mapper.generate.OrderInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.781 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuImgInfosMapper' and 'com.shop.mapper.generate.SkuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.781 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuInfosMapper' and 'com.shop.mapper.generate.SkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.781 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuImgInfosMapper' and 'com.shop.mapper.generate.SpuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.781 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuInfosMapper' and 'com.shop.mapper.generate.SpuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.782 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuSkuInfosMapper' and 'com.shop.mapper.generate.SpuSkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-09 09:50:49.875 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=d833a911-0261-36de-af4d-b54cc38cbb65
+2020-06-09 09:50:50.588 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8510 (http)
+2020-06-09 09:50:50.601 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8510"]
+2020-06-09 09:50:50.602 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-06-09 09:50:50.602 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-09 09:50:50.604 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-06-09 09:50:50.605 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-06-09 09:50:50.605 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-09 09:50:50.605 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-09 09:50:51.672 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-06-09 09:50:51.846 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-06-09 09:50:51.847 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 3541 ms
+2020-06-09 09:50:52.672 [main] WARN  org.springframework.data.convert.CustomConversions -
+                Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-09 09:50:52.673 [main] WARN  org.springframework.data.convert.CustomConversions -
+                Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-09 09:50:52.674 [main] WARN  org.springframework.data.convert.CustomConversions -
+                Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-09 09:50:52.674 [main] WARN  org.springframework.data.convert.CustomConversions -
+                Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-06-09 09:50:52.915 [main] INFO  o.s.data.elasticsearch.support.VersionInfo -
+                Version Spring Data Elasticsearch: 4.0.0.RELEASE
+2020-06-09 09:50:52.916 [main] INFO  o.s.data.elasticsearch.support.VersionInfo -
+                Version Elasticsearch Client in build: 7.6.2
+2020-06-09 09:50:52.916 [main] INFO  o.s.data.elasticsearch.support.VersionInfo -
+                Version Elasticsearch Client used: 7.6.2
+2020-06-09 09:50:52.917 [main] INFO  o.s.data.elasticsearch.support.VersionInfo -
+                Version Elasticsearch cluster: 7.7.0
+2020-06-09 09:50:52.917 [main] WARN  o.s.data.elasticsearch.support.VersionInfo -
+                Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.7.0
+2020-06-09 09:50:54.333 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+                Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-09 09:50:54.381 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-06-09 09:50:54.382 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-09 09:50:54.387 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-06-09 09:50:54.388 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-09 09:50:54.525 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-09 09:50:56.395 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-06-09 09:50:57.699 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-06-09 09:50:57.729 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger -
+                You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-06-09 09:50:57.896 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-06-09 09:50:57.950 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-06-09 09:50:57.951 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-06-09 09:50:57.959 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1591667457958 with initial instances count: 0
+2020-06-09 09:50:57.969 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application SERVICE-SHOP with eureka with status UP
+2020-06-09 09:50:57.971 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8510"]
+2020-06-09 09:50:57.999 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8510 (http) with context path ''
+2020-06-09 09:50:58.000 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8510
+2020-06-09 09:50:59.210 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-06-09 09:50:59.213 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+                Context refreshed
+2020-06-09 09:50:59.257 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+                Found 1 custom documentation plugin(s)
+2020-06-09 09:50:59.308 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+                Scanning for api listing references
+2020-06-09 09:50:59.498 [main] INFO  com.shop.ShopApp -
+                Started ShopApp in 14.695 seconds (JVM running for 15.977)
+2020-06-09 09:52:24.497 [http-nio-8510-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-09 09:52:24.497 [http-nio-8510-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2020-06-09 09:52:24.507 [http-nio-8510-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Completed initialization in 10 ms
+2020-06-09 11:18:11.280 [SpringContextShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Unregistering application SERVICE-SHOP with eureka with status DOWN
+2020-06-09 11:18:11.459 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-09 11:18:11.483 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -
+                Shutting down DiscoveryClient ...
+2020-06-09 11:18:11.497 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -
+                Completed shut down of DiscoveryClient

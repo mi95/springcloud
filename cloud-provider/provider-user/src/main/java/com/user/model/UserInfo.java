@@ -7,5 +7,5 @@ import com.user.model.base.BaseUserInfo;
  */
 @SuppressWarnings("serial")
 public class UserInfo extends BaseUserInfo<UserInfo> {
-	public static final UserInfo dao = new UserInfo().dao();
+    public static final UserInfo dao = new UserInfo().dao();
 }

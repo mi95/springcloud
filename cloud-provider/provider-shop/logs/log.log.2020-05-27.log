@@ -1,0 +1,108 @@
+2020-05-27 18:00:33.163 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2101b44a: startup date [Wed May 27 18:00:33 CST 2020]; root of context hierarchy
+2020-05-27 18:00:33.420 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-27 18:00:33.467 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b4dd7d61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-27 18:00:34.930 [main] INFO  com.shop.ShopApp -
+                No active profile set, falling back to default profiles: default
+2020-05-27 18:00:34.943 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@edf4f36: startup date [Wed May 27 18:00:34 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2101b44a
+2020-05-27 18:00:35.480 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.shop]' package. Please check your configuration.
+2020-05-27 18:00:35.538 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-27 18:00:35.732 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory -
+                Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2020-05-27 18:00:35.847 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=0e84095f-34f5-3b16-b983-c96a8f00baec
+2020-05-27 18:00:35.864 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-27 18:00:35.930 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$5f2f3892] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-27 18:00:35.989 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98c37a64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-27 18:00:36.083 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b4dd7d61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-27 18:00:36.536 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8520 (http)
+2020-05-27 18:00:36.559 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8520"]
+2020-05-27 18:00:36.576 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-27 18:00:36.577 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-27 18:00:36.583 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-27 18:00:36.584 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-27 18:00:36.585 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-27 18:00:37.655 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-27 18:00:37.859 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-27 18:00:37.859 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2916 ms
+2020-05-27 18:00:37.954 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-27 18:00:37.960 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-27 18:00:37.961 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-27 18:00:37.961 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-27 18:00:37.962 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-27 18:00:38.390 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration -
+                No spring.application.name found, defaulting to 'application'
+2020-05-27 18:00:38.395 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-27 18:00:38.395 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-27 18:00:38.401 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-27 18:00:38.401 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-27 18:00:38.515 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-27 18:00:38.814 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@edf4f36: startup date [Wed May 27 18:00:34 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2101b44a
+2020-05-27 18:00:38.883 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/test],methods=[GET]}" onto private void com.shop.controller.OrderController.test()
+2020-05-27 18:00:38.887 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-27 18:00:38.887 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-27 18:00:38.925 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-27 18:00:38.926 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-27 18:00:39.064 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceJmxConfiguration$Hikari': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-05-27 18:00:39.086 [main] INFO  org.apache.catalina.core.StandardService -
+                Stopping service [Tomcat]
+2020-05-27 18:00:39.113 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-27 18:00:39.121 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+

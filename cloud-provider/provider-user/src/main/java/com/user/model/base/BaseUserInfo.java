@@ -18,13 +18,13 @@ public abstract class BaseUserInfo<M extends BaseUserInfo<M>> extends Model<M> i
 		return getLong("id");
 	}
 
-	public M setAccount(java.lang.String account) {
-		set("account", account);
+	public M setUserName(java.lang.String userName) {
+		set("user_name", userName);
 		return (M)this;
 	}
 	
-	public java.lang.String getAccount() {
-		return getStr("account");
+	public java.lang.String getUserName() {
+		return getStr("user_name");
 	}
 
 	public M setPwd(java.lang.String pwd) {

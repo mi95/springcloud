@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="provider-user (1)" />
+        <module name="config-server" />
+        <module name="provider-shop" />
+        <module name="provider-user" />
+        <module name="cloud-zuul" />
+        <module name="cloud-eureka" />
+        <module name="provider-common" />
+        <module name="config-client" />
+        <module name="provider-app" />
+        <module name="cloud-hystrix-dashboard" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-config" target="1.8" />
+      <module name="cloud-eureka" target="1.8" />
+      <module name="cloud-hystrix-dashboard" target="1.8" />
+      <module name="cloud-provider" target="1.8" />
+      <module name="cloud-zuul" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="provider-app" target="1.8" />
+      <module name="provider-common" target="1.8" />
+      <module name="provider-netty" target="1.8" />
+      <module name="provider-shop" target="1.8" />
+      <module name="provider-user" target="1.8" />
+      <module name="provider-user (1)" target="1.8" />
+      <module name="springcloud" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-eureka" options="-parameters" />
+      <module name="cloud-hystrix-dashboard" options="-parameters" />
+      <module name="cloud-zuul" options="-parameters" />
+      <module name="config-client" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="provider-app" options="-parameters" />
+      <module name="provider-common" options="-parameters" />
+      <module name="provider-netty" options="-parameters" />
+      <module name="provider-shop" options="-parameters" />
+      <module name="provider-user" options="-parameters" />
+      <module name="provider-user (1)" options="-parameters" />
+    </option>
+  </component>
+</project>

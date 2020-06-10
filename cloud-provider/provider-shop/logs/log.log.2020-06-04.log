@@ -1,0 +1,392 @@
+2020-06-04 17:22:19.708 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@201b6b6f: startup date [Thu Jun 04 17:22:19 CST 2020]; root of context hierarchy
+2020-06-04 17:22:20.174 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-04 17:22:20.254 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$75fbb1a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-04 17:22:21.955 [main] INFO  com.shop.ShopApp -
+                No active profile set, falling back to default profiles: default
+2020-06-04 17:22:21.982 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ddf20fd: startup date [Thu Jun 04 17:22:21 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@201b6b6f
+2020-06-04 17:22:23.177 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-04 17:22:23.461 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrInfosMapper' and 'com.shop.mapper.generate.AttrInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.461 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrValueInfosMapper' and 'com.shop.mapper.generate.AttrValueInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.461 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'brandInfosMapper' and 'com.shop.mapper.generate.BrandInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.461 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderDetailInfosMapper' and 'com.shop.mapper.generate.OrderDetailInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.461 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderInfosMapper' and 'com.shop.mapper.generate.OrderInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.462 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuImgInfosMapper' and 'com.shop.mapper.generate.SkuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.462 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuInfosMapper' and 'com.shop.mapper.generate.SkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.462 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuImgInfosMapper' and 'com.shop.mapper.generate.SpuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.462 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuInfosMapper' and 'com.shop.mapper.generate.SpuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.462 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuSkuInfosMapper' and 'com.shop.mapper.generate.SpuSkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 17:22:23.490 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory -
+                Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2020-06-04 17:22:23.607 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=a15c764e-d906-3d04-9b19-d394d5d83226
+2020-06-04 17:22:23.619 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-04 17:22:23.730 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$204d6cd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-04 17:22:23.798 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$59e1aea7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-04 17:22:23.895 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$75fbb1a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-04 17:22:24.514 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8510 (http)
+2020-06-04 17:22:24.532 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8510"]
+2020-06-04 17:22:24.548 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-06-04 17:22:24.548 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-06-04 17:22:24.554 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-06-04 17:22:24.555 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-04 17:22:24.555 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-04 17:22:25.619 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-06-04 17:22:25.793 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-06-04 17:22:25.793 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 3811 ms
+2020-06-04 17:22:25.893 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-06-04 17:22:25.901 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-04 17:22:25.901 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-04 17:22:25.901 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-04 17:22:25.901 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-04 17:22:27.764 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/document],methods=[POST]}" onto com.common.pojo.RespBean com.shop.controller.EsController.addDocument(com.alibaba.fastjson.JSONObject) throws java.io.IOException
+2020-06-04 17:22:27.765 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/document],methods=[PUT]}" onto com.common.pojo.RespBean com.shop.controller.EsController.updateDocument(com.alibaba.fastjson.JSONObject) throws java.io.IOException
+2020-06-04 17:22:27.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/document],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.getDocument(java.lang.String,java.lang.String) throws java.io.IOException
+2020-06-04 17:22:27.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/document],methods=[DELETE]}" onto com.common.pojo.RespBean com.shop.controller.EsController.deleteDocument(com.alibaba.fastjson.JSONObject) throws java.io.IOException
+2020-06-04 17:22:27.767 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/index],methods=[POST]}" onto com.common.pojo.RespBean com.shop.controller.EsController.createIndex(com.shop.pojo.ParaBean) throws java.io.IOException
+2020-06-04 17:22:27.767 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/query],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.termQuery(java.lang.String,java.lang.String,java.lang.String...) throws java.io.IOException
+2020-06-04 17:22:27.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/index],methods=[DELETE]}" onto com.common.pojo.RespBean com.shop.controller.EsController.deleteIndex(com.shop.pojo.ParaBean) throws java.io.IOException
+2020-06-04 17:22:27.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/matchAll],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.matchAllQuery(java.lang.String,java.lang.Integer,java.lang.Integer) throws java.io.IOException
+2020-06-04 17:22:27.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/match],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.matchQuery(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+2020-06-04 17:22:27.768 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/matchMulti],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.matchMultiQuery(java.lang.String,java.lang.String,java.lang.String...) throws java.io.IOException
+2020-06-04 17:22:27.769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/matchPhrase],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.matchPhraseQuery(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+2020-06-04 17:22:27.771 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/],methods=[PUT]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.updSpu(com.shop.pojo.generate.SpuInfos)
+2020-06-04 17:22:27.772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/],methods=[POST]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.addSpu(com.shop.pojo.generate.SpuInfos)
+2020-06-04 17:22:27.772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/],methods=[PATCH]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.upFrameSpu(com.shop.pojo.ParaBean)
+2020-06-04 17:22:27.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/{id}],methods=[DELETE]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.delSpu(java.lang.Integer)
+2020-06-04 17:22:27.773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.selectAllSpu()
+2020-06-04 17:22:27.776 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-06-04 17:22:27.777 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-06-04 17:22:27.778 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-06-04 17:22:27.779 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-04 17:22:27.780 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-04 17:22:28.402 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+                Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-04 17:22:28.531 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-06-04 17:22:28.531 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-04 17:22:28.539 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-06-04 17:22:28.540 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-04 17:22:28.675 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-04 17:22:28.907 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ddf20fd: startup date [Thu Jun 04 17:22:21 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@201b6b6f
+2020-06-04 17:22:28.977 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-04 17:22:28.977 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-04 17:22:28.997 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-06-04 17:22:31.237 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-06-04 17:22:32.579 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-06-04 17:22:32.785 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-06-04 17:22:32.787 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-06-04 17:22:32.797 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-06-04 17:22:32.798 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-06-04 17:22:32.799 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-06-04 17:22:32.799 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-06-04 17:22:32.802 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-06-04 17:22:32.819 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-06-04 17:22:32.833 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=ddf20fd,type=ConfigurationPropertiesRebinder]
+2020-06-04 17:22:32.839 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-06-04 17:22:32.840 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-06-04 17:22:32.856 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-06-04 17:22:32.864 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-06-04 17:22:32.924 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-06-04 17:22:32.927 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-06-04 17:22:32.935 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1591262552934 with initial instances count: 0
+2020-06-04 17:22:32.946 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-shop with eureka with status UP
+2020-06-04 17:22:32.950 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-06-04 17:22:32.950 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+                Context refreshed
+2020-06-04 17:22:32.973 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+                Found 1 custom documentation plugin(s)
+2020-06-04 17:22:33.026 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+                Scanning for api listing references
+2020-06-04 17:22:33.203 [main] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+                Trying to infer dataType java.lang.String[]
+2020-06-04 17:22:33.207 [main] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+                Trying to infer dataType java.lang.String[]
+2020-06-04 17:22:33.269 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8510"]
+2020-06-04 17:22:33.272 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-06-04 17:22:33.299 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8510 (http) with context path ''
+2020-06-04 17:22:33.300 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8510
+2020-06-04 17:22:33.305 [main] INFO  com.shop.ShopApp -
+                Started ShopApp in 15.73 seconds (JVM running for 17.457)
+2020-06-04 18:12:45.390 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31000e60: startup date [Thu Jun 04 18:12:45 CST 2020]; root of context hierarchy
+2020-06-04 18:12:45.663 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-04 18:12:45.702 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9495ee70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-04 18:12:47.283 [main] INFO  com.shop.ShopApp -
+                No active profile set, falling back to default profiles: default
+2020-06-04 18:12:47.317 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f9e1534: startup date [Thu Jun 04 18:12:47 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@31000e60
+2020-06-04 18:12:48.525 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-04 18:12:48.822 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrInfosMapper' and 'com.shop.mapper.generate.AttrInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.822 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'attrValueInfosMapper' and 'com.shop.mapper.generate.AttrValueInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.823 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'brandInfosMapper' and 'com.shop.mapper.generate.BrandInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.823 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderDetailInfosMapper' and 'com.shop.mapper.generate.OrderDetailInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.823 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'orderInfosMapper' and 'com.shop.mapper.generate.OrderInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.823 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuImgInfosMapper' and 'com.shop.mapper.generate.SkuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.824 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'skuInfosMapper' and 'com.shop.mapper.generate.SkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.824 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuImgInfosMapper' and 'com.shop.mapper.generate.SpuImgInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.824 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuInfosMapper' and 'com.shop.mapper.generate.SpuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.824 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'spuSkuInfosMapper' and 'com.shop.mapper.generate.SpuSkuInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-06-04 18:12:48.856 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory -
+                Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2020-06-04 18:12:48.976 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=a15c764e-d906-3d04-9b19-d394d5d83226
+2020-06-04 18:12:48.988 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-04 18:12:49.102 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$3ee7a9a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-04 18:12:49.176 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$787beb73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-04 18:12:49.279 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9495ee70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-04 18:12:49.865 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8510 (http)
+2020-06-04 18:12:49.993 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8510"]
+2020-06-04 18:12:50.007 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-06-04 18:12:50.007 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-06-04 18:12:50.013 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-06-04 18:12:50.014 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-06-04 18:12:50.014 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-06-04 18:12:51.083 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-06-04 18:12:51.298 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-06-04 18:12:51.299 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 3982 ms
+2020-06-04 18:12:51.400 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-06-04 18:12:51.406 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-06-04 18:12:51.407 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-06-04 18:12:51.407 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-06-04 18:12:51.407 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-06-04 18:12:53.351 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/document],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.getDocument(java.lang.String,java.lang.String) throws java.io.IOException
+2020-06-04 18:12:53.352 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/index],methods=[POST]}" onto com.common.pojo.RespBean com.shop.controller.EsController.createIndex(com.shop.pojo.ParaBean) throws java.io.IOException
+2020-06-04 18:12:53.353 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/matchPhrase],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.matchPhraseQuery(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+2020-06-04 18:12:53.353 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/document],methods=[DELETE]}" onto com.common.pojo.RespBean com.shop.controller.EsController.deleteDocument(com.alibaba.fastjson.JSONObject) throws java.io.IOException
+2020-06-04 18:12:53.354 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/document],methods=[PUT]}" onto com.common.pojo.RespBean com.shop.controller.EsController.updateDocument(com.alibaba.fastjson.JSONObject) throws java.io.IOException
+2020-06-04 18:12:53.354 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/matchMulti],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.matchMultiQuery(java.lang.String,java.lang.String,java.lang.String...) throws java.io.IOException
+2020-06-04 18:12:53.355 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/index],methods=[DELETE]}" onto com.common.pojo.RespBean com.shop.controller.EsController.deleteIndex(com.shop.pojo.ParaBean) throws java.io.IOException
+2020-06-04 18:12:53.355 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/document],methods=[POST]}" onto com.common.pojo.RespBean com.shop.controller.EsController.addDocument(com.alibaba.fastjson.JSONObject) throws java.io.IOException
+2020-06-04 18:12:53.355 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/match],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.matchQuery(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+2020-06-04 18:12:53.355 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/query],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.termQuery(java.lang.String,java.lang.String,java.lang.String...) throws java.io.IOException
+2020-06-04 18:12:53.356 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/es/matchAll],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.EsController.matchAllQuery(java.lang.String,java.lang.Integer,java.lang.Integer) throws java.io.IOException
+2020-06-04 18:12:53.358 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/],methods=[PATCH]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.upFrameSpu(com.shop.pojo.ParaBean)
+2020-06-04 18:12:53.358 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/{id}],methods=[DELETE]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.delSpu(java.lang.Integer)
+2020-06-04 18:12:53.358 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/],methods=[GET]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.selectAllSpu()
+2020-06-04 18:12:53.359 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/],methods=[POST]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.addSpu(com.shop.pojo.generate.SpuInfos)
+2020-06-04 18:12:53.359 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/spu/],methods=[PUT]}" onto com.common.pojo.RespBean com.shop.controller.SpuController.updSpu(com.shop.pojo.generate.SpuInfos)
+2020-06-04 18:12:53.363 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-06-04 18:12:53.364 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-06-04 18:12:53.365 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-06-04 18:12:53.367 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-06-04 18:12:53.368 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-06-04 18:12:53.991 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -
+                Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-06-04 18:12:54.222 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-06-04 18:12:54.224 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-04 18:12:54.239 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-06-04 18:12:54.239 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-04 18:12:54.379 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-04 18:12:54.676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f9e1534: startup date [Thu Jun 04 18:12:47 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@31000e60
+2020-06-04 18:12:54.764 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-04 18:12:54.765 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-06-04 18:12:54.787 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-06-04 18:12:57.020 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-06-04 18:12:58.369 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-06-04 18:12:58.557 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-06-04 18:12:58.559 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-06-04 18:12:58.568 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-06-04 18:12:58.570 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-06-04 18:12:58.571 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-06-04 18:12:58.571 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-06-04 18:12:58.575 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-06-04 18:12:58.593 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-06-04 18:12:58.607 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7f9e1534,type=ConfigurationPropertiesRebinder]
+2020-06-04 18:12:58.616 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-06-04 18:12:58.618 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-06-04 18:12:58.634 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-06-04 18:12:58.643 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-06-04 18:12:58.690 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-06-04 18:12:58.692 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-06-04 18:12:58.700 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1591265578698 with initial instances count: 0
+2020-06-04 18:12:58.710 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-shop with eureka with status UP
+2020-06-04 18:12:58.713 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-06-04 18:12:58.713 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+                Context refreshed
+2020-06-04 18:12:58.739 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -
+                Found 1 custom documentation plugin(s)
+2020-06-04 18:12:58.796 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -
+                Scanning for api listing references
+2020-06-04 18:12:58.964 [main] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+                Trying to infer dataType java.lang.String[]
+2020-06-04 18:12:58.968 [main] WARN  s.d.s.w.readers.parameter.ParameterDataTypeReader -
+                Trying to infer dataType java.lang.String[]
+2020-06-04 18:12:59.048 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8510"]
+2020-06-04 18:12:59.051 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-06-04 18:12:59.076 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8510 (http) with context path ''
+2020-06-04 18:12:59.077 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8510
+2020-06-04 18:12:59.082 [main] INFO  com.shop.ShopApp -
+                Started ShopApp in 15.954 seconds (JVM running for 21.634)

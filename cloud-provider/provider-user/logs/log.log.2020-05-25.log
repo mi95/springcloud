@@ -1,0 +1,1307 @@
+2020-05-25 15:50:42.496 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5dd1c9f2: startup date [Mon May 25 15:50:42 CST 2020]; root of context hierarchy
+2020-05-25 15:50:42.772 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-25 15:50:42.815 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8afc1c22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 15:50:44.348 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-25 15:50:44.367 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6979efad: startup date [Mon May 25 15:50:44 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5dd1c9f2
+2020-05-25 15:50:45.246 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-25 15:50:45.354 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-25 15:50:46.227 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=cd35eab7-ab77-32c9-8007-acfc8c794c3b
+2020-05-25 15:50:46.244 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-25 15:50:46.293 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$354dd753] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 15:50:46.392 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ee21925] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 15:50:46.444 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8afc1c22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 15:50:46.918 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-25 15:50:46.946 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-25 15:50:46.972 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-25 15:50:46.972 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-25 15:50:46.978 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-25 15:50:46.980 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-25 15:50:46.980 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-25 15:50:48.052 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-25 15:50:48.385 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-25 15:50:48.386 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 4019 ms
+2020-05-25 15:50:48.852 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-25 15:50:48.853 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-25 15:50:48.853 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-25 15:50:48.853 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-25 15:50:48.854 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-25 15:50:48.854 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-25 15:50:48.854 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-25 15:50:49.129 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Mon May 25 15:50:49 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6979efad
+2020-05-25 15:50:49.158 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-25 15:50:49.638 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-25 15:50:49.647 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-25 15:50:50.446 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-25 15:50:50.446 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-25 15:50:50.454 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-25 15:50:50.455 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-25 15:50:50.567 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-25 15:50:50.934 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6979efad: startup date [Mon May 25 15:50:44 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5dd1c9f2
+2020-05-25 15:50:51.043 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-25 15:50:51.051 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-25 15:50:51.052 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-25 15:50:51.055 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-25 15:50:51.056 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-25 15:50:51.057 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-25 15:50:51.057 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-25 15:50:51.057 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-25 15:50:51.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-25 15:50:51.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-25 15:50:51.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-25 15:50:51.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-25 15:50:51.116 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-25 15:50:51.116 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-25 15:50:51.146 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+                Detected @ExceptionHandler methods in commonExceptionHandler
+2020-05-25 15:50:52.386 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-25 15:50:52.386 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-25 15:50:52.387 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-25 15:50:52.387 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-25 15:50:52.387 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-25 15:50:52.387 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-25 15:50:52.388 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-25 15:50:52.516 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63bca84d, org.springframework.security.web.context.SecurityContextPersistenceFilter@47f0f414, org.springframework.security.web.header.HeaderWriterFilter@f48a080, org.springframework.security.web.authentication.logout.LogoutFilter@18dac12f, com.user.filter.LoginFilter@47c3aa81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4809c771, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20890a1a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6141647f, org.springframework.security.web.session.SessionManagementFilter@401ec794, org.springframework.security.web.access.ExceptionTranslationFilter@749d7c01, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cf10c92]
+2020-05-25 15:50:53.928 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-25 15:50:55.225 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-25 15:50:55.412 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-25 15:50:55.413 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-25 15:50:55.421 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-25 15:50:55.422 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-25 15:50:55.423 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-25 15:50:55.423 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-25 15:50:55.426 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-25 15:50:55.442 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-25 15:50:55.456 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6979efad,type=ConfigurationPropertiesRebinder]
+2020-05-25 15:50:55.461 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-25 15:50:55.480 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-25 15:50:55.486 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-25 15:50:55.496 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-25 15:50:55.558 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-25 15:50:55.561 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-25 15:50:55.570 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590393055568 with initial instances count: 0
+2020-05-25 15:50:55.578 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-25 15:50:55.581 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-25 15:50:55.590 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-25 15:50:55.609 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-25 15:50:55.648 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-25 15:50:55.649 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-25 15:50:55.652 [main] INFO  com.user.AppUser -
+                Started AppUser in 15.037 seconds (JVM running for 16.455)
+2020-05-25 15:51:18.856 [http-nio-8500-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-25 15:51:18.856 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-25 15:51:18.878 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2020-05-25 15:51:18.906 [http-nio-8500-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.user.config.CustomFilterInvocationSecurityMetadataSource.getAttributes(CustomFilterInvocationSecurityMetadataSource.java:30)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:197)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 15:51:18.919 [http-nio-8500-exec-1] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Mon May 25 15:51:18 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : POST
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-25 18:04:40.913 [Thread-33] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6979efad: startup date [Mon May 25 15:50:44 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5dd1c9f2
+2020-05-25 18:04:40.915 [Thread-33] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Unregistering application service-user with eureka with status DOWN
+2020-05-25 18:04:40.920 [Thread-33] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 2147483647
+2020-05-25 18:04:40.920 [Thread-33] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 0
+2020-05-25 18:04:40.928 [Thread-33] INFO  com.netflix.discovery.DiscoveryClient -
+                Shutting down DiscoveryClient ...
+2020-05-25 18:04:40.928 [Thread-33] INFO  com.netflix.discovery.DiscoveryClient -
+                Completed shut down of DiscoveryClient
+2020-05-25 18:04:40.951 [Thread-33] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2020-05-25 18:04:40.952 [Thread-33] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2020-05-25 18:04:40.958 [Thread-33] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2020-05-25 18:04:40.959 [Thread-33] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Closing FeignContext-service-msg: startup date [Mon May 25 15:50:49 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6979efad
+2020-05-25 18:04:40.961 [Thread-33] WARN  o.s.c.a.AnnotationConfigApplicationContext -
+                Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+2020-05-25 18:07:00.741 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@71454b9d: startup date [Mon May 25 18:07:00 CST 2020]; root of context hierarchy
+2020-05-25 18:07:00.967 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-25 18:07:01.008 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d8993ff1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 18:07:02.480 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-25 18:07:02.499 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@273c947f: startup date [Mon May 25 18:07:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@71454b9d
+2020-05-25 18:07:03.069 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-25 18:07:03.150 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-25 18:07:03.599 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=a4cbb47e-56e2-3758-8100-c862d9f9504e
+2020-05-25 18:07:03.621 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-25 18:07:03.671 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$82eafb22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 18:07:03.749 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc7f3cf4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 18:07:03.794 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d8993ff1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 18:07:04.167 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-25 18:07:04.181 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-25 18:07:04.194 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-25 18:07:04.194 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-25 18:07:04.199 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-25 18:07:04.200 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-25 18:07:04.200 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-25 18:07:05.265 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-25 18:07:05.610 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-25 18:07:05.611 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 3112 ms
+2020-05-25 18:07:06.208 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-25 18:07:06.209 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-25 18:07:06.209 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-25 18:07:06.210 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-25 18:07:06.210 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-25 18:07:06.211 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-25 18:07:06.211 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-25 18:07:06.712 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Mon May 25 18:07:06 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@273c947f
+2020-05-25 18:07:06.756 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-25 18:07:07.399 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-25 18:07:07.411 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-25 18:07:08.115 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-25 18:07:08.115 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-25 18:07:08.122 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-25 18:07:08.123 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-25 18:07:08.282 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-25 18:07:08.616 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@273c947f: startup date [Mon May 25 18:07:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@71454b9d
+2020-05-25 18:07:08.708 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-25 18:07:08.714 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-25 18:07:08.715 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-25 18:07:08.717 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-25 18:07:08.718 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-25 18:07:08.718 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-25 18:07:08.719 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-25 18:07:08.719 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-25 18:07:08.720 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-25 18:07:08.720 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-25 18:07:08.722 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-25 18:07:08.723 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-25 18:07:08.766 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-25 18:07:08.766 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-25 18:07:09.817 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-25 18:07:09.817 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-25 18:07:09.817 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-25 18:07:09.818 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-25 18:07:09.818 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-25 18:07:09.818 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-25 18:07:09.818 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-25 18:07:09.946 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@246de37e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d7b4e04, org.springframework.security.web.header.HeaderWriterFilter@210635fd, org.springframework.security.web.authentication.logout.LogoutFilter@120411ec, com.user.filter.LoginFilter@54a7b6cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24615687, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e7b0bec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19647566, org.springframework.security.web.session.SessionManagementFilter@3cb195dd, org.springframework.security.web.access.ExceptionTranslationFilter@4d825dbe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69499c6f]
+2020-05-25 18:07:11.396 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-25 18:07:12.736 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-25 18:07:12.860 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-25 18:07:12.861 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-25 18:07:12.868 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-25 18:07:12.870 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-25 18:07:12.871 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-25 18:07:12.872 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-25 18:07:12.875 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-25 18:07:12.887 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-25 18:07:12.899 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=273c947f,type=ConfigurationPropertiesRebinder]
+2020-05-25 18:07:12.905 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-25 18:07:12.923 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-25 18:07:12.928 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-25 18:07:12.935 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-25 18:07:12.975 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-25 18:07:12.977 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-25 18:07:12.984 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590401232983 with initial instances count: 0
+2020-05-25 18:07:12.995 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-25 18:07:12.998 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-25 18:07:13.008 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-25 18:07:13.021 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-25 18:07:13.048 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-25 18:07:13.049 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-25 18:07:13.052 [main] INFO  com.user.AppUser -
+                Started AppUser in 14.121 seconds (JVM running for 15.448)
+2020-05-25 18:07:37.439 [http-nio-8500-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-25 18:07:37.439 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-25 18:07:37.463 [http-nio-8500-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2020-05-25 18:07:37.491 [http-nio-8500-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.user.config.CustomFilterInvocationSecurityMetadataSource.getAttributes(CustomFilterInvocationSecurityMetadataSource.java:30)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:197)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 18:07:37.503 [http-nio-8500-exec-1] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Mon May 25 18:07:37 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : GET
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-25 18:08:25.083 [http-nio-8500-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.user.config.CustomFilterInvocationSecurityMetadataSource.getAttributes(CustomFilterInvocationSecurityMetadataSource.java:30)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:197)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 18:08:34.944 [http-nio-8500-exec-2] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Mon May 25 18:08:31 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : GET
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-25 18:08:48.308 [Thread-32] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@273c947f: startup date [Mon May 25 18:07:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@71454b9d
+2020-05-25 18:08:48.309 [Thread-32] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Unregistering application service-user with eureka with status DOWN
+2020-05-25 18:08:48.311 [Thread-32] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 2147483647
+2020-05-25 18:08:48.311 [Thread-32] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 0
+2020-05-25 18:08:48.314 [Thread-32] INFO  com.netflix.discovery.DiscoveryClient -
+                Shutting down DiscoveryClient ...
+2020-05-25 18:08:48.314 [Thread-32] INFO  com.netflix.discovery.DiscoveryClient -
+                Completed shut down of DiscoveryClient
+2020-05-25 18:08:48.328 [Thread-32] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2020-05-25 18:08:48.329 [Thread-32] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2020-05-25 18:08:48.335 [Thread-32] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2020-05-25 18:08:48.336 [Thread-32] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Closing FeignContext-service-msg: startup date [Mon May 25 18:07:06 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@273c947f
+2020-05-25 18:08:48.338 [Thread-32] WARN  o.s.c.a.AnnotationConfigApplicationContext -
+                Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+2020-05-25 18:10:00.827 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@65fe9e33: startup date [Mon May 25 18:10:00 CST 2020]; root of context hierarchy
+2020-05-25 18:10:01.110 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-25 18:10:01.168 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2307fce2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 18:10:02.649 [main] INFO  com.user.AppUser -
+                No active profile set, falling back to default profiles: default
+2020-05-25 18:10:02.664 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f651cd8: startup date [Mon May 25 18:10:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@65fe9e33
+2020-05-25 18:10:03.377 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                No MyBatis mapper was found in '[com.user]' package. Please check your configuration.
+2020-05-25 18:10:03.452 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-05-25 18:10:03.835 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=a4cbb47e-56e2-3758-8100-c862d9f9504e
+2020-05-25 18:10:03.857 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-25 18:10:03.912 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$cd59b813] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 18:10:04.014 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6edf9e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 18:10:04.069 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2307fce2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-25 18:10:04.439 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8500 (http)
+2020-05-25 18:10:04.453 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8500"]
+2020-05-25 18:10:04.465 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-05-25 18:10:04.465 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-05-25 18:10:04.471 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-25 18:10:04.472 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-25 18:10:04.473 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-25 18:10:05.514 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-25 18:10:05.687 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-05-25 18:10:05.687 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 3023 ms
+2020-05-25 18:10:06.094 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-25 18:10:06.095 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-25 18:10:06.095 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-25 18:10:06.095 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-25 18:10:06.096 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean -
+                Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-05-25 18:10:06.097 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+                Mapping filter: 'loginFilter' to: [/*]
+2020-05-25 18:10:06.097 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+                Servlet dispatcherServlet mapped to [/]
+2020-05-25 18:10:06.322 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Refreshing FeignContext-service-msg: startup date [Mon May 25 18:10:06 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f651cd8
+2020-05-25 18:10:06.338 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor -
+                JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-25 18:10:06.618 [main] ERROR com.alibaba.druid.pool.DruidDataSource -
+                testWhileIdle is true, validationQuery not set
+2020-05-25 18:10:06.627 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2020-05-25 18:10:07.208 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-25 18:10:07.208 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-25 18:10:07.214 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-05-25 18:10:07.214 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-05-25 18:10:07.318 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-25 18:10:07.551 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f651cd8: startup date [Mon May 25 18:10:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@65fe9e33
+2020-05-25 18:10:07.610 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/amqp/send],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.AmqpController.send()
+2020-05-25 18:10:07.613 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/getMessage],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.getMessage()
+2020-05-25 18:10:07.614 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.user.controller.UserController.test()
+2020-05-25 18:10:07.616 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addUser(com.user.model.UserInfo)
+2020-05-25 18:10:07.616 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[DELETE]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.delUser(java.lang.Long)
+2020-05-25 18:10:07.617 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUser(com.user.model.UserInfo)
+2020-05-25 18:10:07.617 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/userPage],methods=[GET]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.findUserPageList(java.lang.Integer,java.lang.Integer,com.user.model.UserInfo)
+2020-05-25 18:10:07.617 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/msg],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.addMsg(java.lang.String)
+2020-05-25 18:10:07.617 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.login(com.user.model.UserInfo)
+2020-05-25 18:10:07.618 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/user/user],methods=[PATCH]}" onto public org.springframework.ui.ModelMap com.user.controller.UserController.editUser(com.user.model.UserInfo)
+2020-05-25 18:10:07.619 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-25 18:10:07.620 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-25 18:10:07.653 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-25 18:10:07.653 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-25 18:10:08.551 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/css/**'], []
+2020-05-25 18:10:08.551 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/js/**'], []
+2020-05-25 18:10:08.552 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/index.html'], []
+2020-05-25 18:10:08.552 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/img/**'], []
+2020-05-25 18:10:08.552 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/fonts/**'], []
+2020-05-25 18:10:08.552 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/favicon.ico'], []
+2020-05-25 18:10:08.552 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: Ant [pattern='/verifyCode'], []
+2020-05-25 18:10:08.656 [main] INFO  o.s.security.web.DefaultSecurityFilterChain -
+                Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@93ce24d, org.springframework.security.web.context.SecurityContextPersistenceFilter@22cd8ec2, org.springframework.security.web.header.HeaderWriterFilter@627acb38, org.springframework.security.web.authentication.logout.LogoutFilter@20a9f5fb, com.user.filter.LoginFilter@2cb57caf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35ab4260, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40538370, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d949bc4, org.springframework.security.web.session.SessionManagementFilter@629cbb1, org.springframework.security.web.access.ExceptionTranslationFilter@4b09d1c3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1884e671]
+2020-05-25 18:10:10.025 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-25 18:10:11.385 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-05-25 18:10:11.509 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2020-05-25 18:10:11.509 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2020-05-25 18:10:11.517 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-05-25 18:10:11.519 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-05-25 18:10:11.520 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-05-25 18:10:11.520 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-05-25 18:10:11.523 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-05-25 18:10:11.535 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-05-25 18:10:11.548 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1f651cd8,type=ConfigurationPropertiesRebinder]
+2020-05-25 18:10:11.554 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-05-25 18:10:11.572 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2020-05-25 18:10:11.577 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 0
+2020-05-25 18:10:11.584 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-05-25 18:10:11.621 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-05-25 18:10:11.622 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-05-25 18:10:11.629 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1590401411628 with initial instances count: 0
+2020-05-25 18:10:11.637 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application service-user with eureka with status UP
+2020-05-25 18:10:11.640 [main] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Starting beans in phase 2147483647
+2020-05-25 18:10:11.648 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8500"]
+2020-05-25 18:10:11.658 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2020-05-25 18:10:11.681 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8500 (http) with context path ''
+2020-05-25 18:10:11.682 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8500
+2020-05-25 18:10:11.684 [main] INFO  com.user.AppUser -
+                Started AppUser in 12.696 seconds (JVM running for 14.156)
+2020-05-25 18:10:17.394 [http-nio-8500-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-25 18:10:17.394 [http-nio-8500-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-25 18:10:17.418 [http-nio-8500-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2020-05-25 18:10:17.449 [http-nio-8500-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.user.config.CustomFilterInvocationSecurityMetadataSource.getAttributes(CustomFilterInvocationSecurityMetadataSource.java:30)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:197)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 18:10:22.183 [http-nio-8500-exec-2] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Mon May 25 18:10:22 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : GET
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-25 18:10:30.799 [http-nio-8500-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.user.config.CustomFilterInvocationSecurityMetadataSource.getAttributes(CustomFilterInvocationSecurityMetadataSource.java:30)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:197)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 18:10:30.801 [http-nio-8500-exec-1] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Mon May 25 18:10:30 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : GET
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-25 18:10:46.191 [http-nio-8500-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.user.config.CustomFilterInvocationSecurityMetadataSource.getAttributes(CustomFilterInvocationSecurityMetadataSource.java:30)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:197)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 18:10:46.193 [http-nio-8500-exec-3] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Mon May 25 18:10:46 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : GET
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-25 18:11:27.538 [http-nio-8500-exec-4] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.user.config.CustomFilterInvocationSecurityMetadataSource.getAttributes(CustomFilterInvocationSecurityMetadataSource.java:30)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:197)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 18:11:27.540 [http-nio-8500-exec-4] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Mon May 25 18:11:27 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : GET
+Params          : 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-25 18:11:55.154 [http-nio-8500-exec-5] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: null
+	at com.user.config.CustomFilterInvocationSecurityMetadataSource.getAttributes(CustomFilterInvocationSecurityMetadataSource.java:30)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:197)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-25 18:11:55.157 [http-nio-8500-exec-5] INFO  com.user.interceptor.UserInterceptor -
+                Springboot Web------------------Mon May 25 18:11:55 CST 2020-------------------------------------
+Controller      : org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.(BasicErrorController.java:1)
+Method          : error
+RequestMethod   : GET
+Params          : pageNum:1 pageSize:10 
+URI             : /error
+AllURI          : http://127.0.0.1:8500/error
+request IP      : 127.0.0.1
+
+2020-05-25 18:12:02.591 [Thread-31] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f651cd8: startup date [Mon May 25 18:10:02 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@65fe9e33
+2020-05-25 18:12:02.596 [Thread-31] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Unregistering application service-user with eureka with status DOWN
+2020-05-25 18:12:02.598 [Thread-31] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 2147483647
+2020-05-25 18:12:02.598 [Thread-31] INFO  o.s.context.support.DefaultLifecycleProcessor -
+                Stopping beans in phase 0
+2020-05-25 18:12:02.601 [Thread-31] INFO  com.netflix.discovery.DiscoveryClient -
+                Shutting down DiscoveryClient ...
+2020-05-25 18:12:02.601 [Thread-31] INFO  com.netflix.discovery.DiscoveryClient -
+                Completed shut down of DiscoveryClient
+2020-05-25 18:12:02.615 [Thread-31] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2020-05-25 18:12:02.616 [Thread-31] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2020-05-25 18:12:02.622 [Thread-31] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2020-05-25 18:12:02.623 [Thread-31] INFO  o.s.c.a.AnnotationConfigApplicationContext -
+                Closing FeignContext-service-msg: startup date [Mon May 25 18:10:06 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f651cd8
+2020-05-25 18:12:02.624 [Thread-31] WARN  o.s.c.a.AnnotationConfigApplicationContext -
+                Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1089)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:288)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:258)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:180)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:142)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:406)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1000)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)

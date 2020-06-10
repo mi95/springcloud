@@ -1,44 +1,54 @@
 package com.user.config;
 
-import org.springframework.beans.factory.annotation.Value;
+import com.alibaba.druid.pool.DruidDataSource;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
-import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
-import com.jfinal.plugin.druid.DruidPlugin;
-import com.user.model._MappingKit;
+import javax.sql.DataSource;
 
 @Configuration
 public class ActiveRecordPluginConfig {
-	// 以下三个信息在 src/mian/resources/application.properties配置的数据库连接信息
-	@Value("${user.datasource.druid.username}")
-	private String username;
+    /**
+     * 初始化连接池
+     * @return
+     */
+    @Bean
+    @Primary
+    @ConfigurationProperties(prefix = "user.datasource.druid")
+    public DataSource druidDataSource() {
+        return new DruidDataSource();
+    }
 
-	@Value("${user.datasource.druid.password}")
-	private String password;
+    /**
+     * 设置数据源代理
+     */
+//    @Bean
+//    public TransactionAwareDataSourceProxy transactionAwareDataSourceProxy() {
+//        TransactionAwareDataSourceProxy transactionAwareDataSourceProxy = new TransactionAwareDataSourceProxy();
+//        transactionAwareDataSourceProxy.setTargetDataSource(druidDataSource());
+//        return transactionAwareDataSourceProxy;
+//    }
 
-	@Value("${user.datasource.druid.url}")
-	private String url;
-	
-	@Value("${user.datasource.druid.driverClassName}")
-	private String driverClassName;
+//    @Bean
+//    public ActiveRecordPlugin initActiveRecordPlugin() {
+//        ActiveRecordPlugin arp = new ActiveRecordPlugin(transactionAwareDataSourceProxy());
+//        arp.setDialect(new MysqlDialect());
+//        arp.setShowSql(false);
+//        _MappingKit.mapping(arp);
+//        arp.start();
+//        return arp;
+//    }
 
-	@Bean
-	public ActiveRecordPlugin initActiveRecordPlugin() {
 
-		DruidPlugin druidPlugin = new DruidPlugin(url, username, password,driverClassName);
-
-		ActiveRecordPlugin arp = new ActiveRecordPlugin(druidPlugin);
-
-		arp.setShowSql(false);
-
-		arp.getEngine().setToClassPathSourceFactory();
-
-		_MappingKit.mapping(arp);
-
-		druidPlugin.start();
-		arp.start();
-
-		return arp;
-	}
+    /**
+     * 设置事务管理
+     */
+//    @Bean
+//    public DataSourceTransactionManager dataSourceTransactionManager() {
+//        DataSourceTransactionManager dataSourceTransactionManager = new DataSourceTransactionManager();
+//        dataSourceTransactionManager.setDataSource(transactionAwareDataSourceProxy());
+//        return dataSourceTransactionManager;
+//    }
 }

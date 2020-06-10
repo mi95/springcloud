@@ -1,0 +1,21 @@
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8100/eureka/
+#
+#spring:
+#  application:
+#    name: service-user
+
+mybatis:
+  mapperLocations: classpath:mapperxml/*.xml,classpath:mapperxml/generate/*.xml
+  check-config-location: true
+
+elasticsearch:
+  schema: http
+  address: 127.0.0.1:9200
+  connectTimeout: 5000
+  socketTimeout: 5000
+  connectionRequestTimeout: 5000
+  maxConnectNum: 100
+  maxConnectPerRoute: 100
