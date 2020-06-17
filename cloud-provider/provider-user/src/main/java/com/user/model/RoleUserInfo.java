@@ -7,5 +7,5 @@ import com.user.model.base.BaseRoleUserInfo;
  */
 @SuppressWarnings("serial")
 public class RoleUserInfo extends BaseRoleUserInfo<RoleUserInfo> {
-	public static final RoleUserInfo dao = new RoleUserInfo().dao();
+    public static final RoleUserInfo dao = new RoleUserInfo().dao();
 }

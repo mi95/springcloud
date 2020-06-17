@@ -26,6 +26,7 @@ public class UserDetialUtils extends UserInfo implements UserDetails {
 
     /**
      * 返回验证用户密码,无则返回NULL
+     *
      * @return
      */
     @Override
@@ -35,6 +36,7 @@ public class UserDetialUtils extends UserInfo implements UserDetails {
 
     /**
      * 返回验证用户名,无则返回NULL
+     *
      * @return
      */
     @Override

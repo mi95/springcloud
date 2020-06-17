@@ -9,22 +9,22 @@ import com.jfinal.plugin.activerecord.IBean;
 @SuppressWarnings({"serial", "unchecked"})
 public abstract class BaseOrderInfo<M extends BaseOrderInfo<M>> extends Model<M> implements IBean {
 
-	public M setId(java.lang.Long id) {
-		set("id", id);
-		return (M)this;
-	}
-	
-	public java.lang.Long getId() {
-		return getLong("id");
-	}
+    public M setId(java.lang.Long id) {
+        set("id", id);
+        return (M) this;
+    }
 
-	public M setUserId(java.lang.Long userId) {
-		set("user_id", userId);
-		return (M)this;
-	}
-	
-	public java.lang.Long getUserId() {
-		return getLong("user_id");
-	}
+    public java.lang.Long getId() {
+        return getLong("id");
+    }
+
+    public M setUserId(java.lang.Long userId) {
+        set("user_id", userId);
+        return (M) this;
+    }
+
+    public java.lang.Long getUserId() {
+        return getLong("user_id");
+    }
 
 }

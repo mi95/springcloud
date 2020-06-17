@@ -1,8 +1,10 @@
 package com.shop.service.impl;
 
 import org.springframework.stereotype.Service;
+
 import javax.annotation.Resource;
 import java.util.List;
+
 import com.shop.mapper.generate.SpuInfosMapper;
 import com.shop.pojo.generate.SpuInfosExample;
 import com.shop.pojo.generate.SpuInfos;

@@ -2,7 +2,9 @@ package com.shop.mapper.generate;
 
 import com.shop.pojo.generate.OrderInfos;
 import com.shop.pojo.generate.OrderInfosExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

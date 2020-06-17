@@ -27,17 +27,18 @@ public class SpuController {
             @ApiImplicitParam(name = "status", value = "状态", dataType = "int")
     })
     @PostMapping("/")
-    RespBean addSpu(@RequestBody SpuInfos spuInfos){
+    RespBean addSpu(@RequestBody SpuInfos spuInfos) {
         spuService.addSpu(spuInfos);
         return RespBean.success();
     }
 
     /**
      * 编辑spu
+     *
      * @param spuInfos
      */
     @PutMapping("/")
-    RespBean updSpu(@RequestBody SpuInfos spuInfos){
+    RespBean updSpu(@RequestBody SpuInfos spuInfos) {
         spuService.updSpu(spuInfos);
         return RespBean.success();
     }
@@ -46,10 +47,10 @@ public class SpuController {
      * 上下架
      */
     @PatchMapping("/")
-    RespBean upFrameSpu(@RequestBody ParaBean paramBody){
-        if(paramBody.getType() == UPD_SPU_TYPE_UP){
+    RespBean upFrameSpu(@RequestBody ParaBean paramBody) {
+        if (paramBody.getType() == UPD_SPU_TYPE_UP) {
             spuService.upFrameSpu(paramBody.getId());
-        }else{
+        } else {
             spuService.downFrameSpu(paramBody.getId());
         }
         return RespBean.success();
@@ -57,10 +58,11 @@ public class SpuController {
 
     /**
      * 删除spu
+     *
      * @param id
      */
     @DeleteMapping("/{id}")
-    RespBean delSpu(@PathVariable Integer id){
+    RespBean delSpu(@PathVariable Integer id) {
         spuService.delSpu(id);
         return RespBean.success();
     }
@@ -70,9 +72,13 @@ public class SpuController {
             @ApiImplicitParam(name = "key", value = "关键字", dataType = "string"),
             @ApiImplicitParam(name = "status", value = "状态", dataType = "int")
     })
-
     @GetMapping("/")
-    RespBean selectAllSpu(){
-        return RespBean.success(spuService.selectAllSpu());
+    RespBean selectAllSpu() {
+        return RespBean.success(spuService.findAllSpu());
+    }
+
+    @GetMapping("esSpu")
+    RespBean findSpuFromEs(@RequestBody String name) {
+        return RespBean.success(spuService.findSpuFromEs(name));
     }
 }

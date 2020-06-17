@@ -1,9 +1,11 @@
 package com.shop.service;
 
 import java.util.List;
+
 import com.shop.pojo.generate.OrderInfosExample;
 import com.shop.pojo.generate.OrderInfos;
-public interface OrderInfosService{
+
+public interface OrderInfosService {
 
 
     long countByExample(OrderInfosExample example);
@@ -24,9 +26,9 @@ public interface OrderInfosService{
 
     OrderInfos selectByPrimaryKey(String orderNo);
 
-    int updateByExampleSelective(OrderInfos record,OrderInfosExample example);
+    int updateByExampleSelective(OrderInfos record, OrderInfosExample example);
 
-    int updateByExample(OrderInfos record,OrderInfosExample example);
+    int updateByExample(OrderInfos record, OrderInfosExample example);
 
     int updateByPrimaryKeySelective(OrderInfos record);
 

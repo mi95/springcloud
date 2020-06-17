@@ -1,9 +1,11 @@
 package com.shop.service;
 
 import java.util.List;
+
 import com.shop.pojo.generate.SpuImgInfos;
 import com.shop.pojo.generate.SpuImgInfosExample;
-public interface SpuImgInfosService{
+
+public interface SpuImgInfosService {
 
 
     long countByExample(SpuImgInfosExample example);
@@ -24,9 +26,9 @@ public interface SpuImgInfosService{
 
     SpuImgInfos selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(SpuImgInfos record,SpuImgInfosExample example);
+    int updateByExampleSelective(SpuImgInfos record, SpuImgInfosExample example);
 
-    int updateByExample(SpuImgInfos record,SpuImgInfosExample example);
+    int updateByExample(SpuImgInfos record, SpuImgInfosExample example);
 
     int updateByPrimaryKeySelective(SpuImgInfos record);
 

@@ -1,216 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.shop.mapper.generate.SpuSkuInfosMapper">
-  <resultMap id="BaseResultMap" type="com.shop.pojo.generate.SpuSkuInfos">
-    <!--@mbg.generated-->
-    <!--@Table db_shop.spu_sku_infos-->
-    <id column="spu_id" property="spuId" />
-    <id column="sku_id" property="skuId" />
-  </resultMap>
-  <sql id="Example_Where_Clause">
-    <!--@mbg.generated-->
-    <where>
-      <foreach collection="oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
+    <resultMap id="BaseResultMap" type="com.shop.pojo.generate.SpuSkuInfos">
+        <!--@mbg.generated-->
+        <!--@Table db_shop.spu_sku_infos-->
+        <id column="spu_id" property="spuId"/>
+        <id column="sku_id" property="skuId"/>
+    </resultMap>
+    <sql id="Example_Where_Clause">
+        <!--@mbg.generated-->
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
             </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Update_By_Example_Where_Clause">
-    <!--@mbg.generated-->
-    <where>
-      <foreach collection="example.oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
+        </where>
+    </sql>
+    <sql id="Update_By_Example_Where_Clause">
+        <!--@mbg.generated-->
+        <where>
+            <foreach collection="example.oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
             </foreach>
-          </trim>
+        </where>
+    </sql>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        spu_id, sku_id
+    </sql>
+    <select id="selectByExample" parameterType="com.shop.pojo.generate.SpuSkuInfosExample" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <if test="distinct">
+            distinct
         </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Base_Column_List">
-    <!--@mbg.generated-->
-    spu_id, sku_id
-  </sql>
-  <select id="selectByExample" parameterType="com.shop.pojo.generate.SpuSkuInfosExample" resultMap="BaseResultMap">
-    <!--@mbg.generated-->
-    select
-    <if test="distinct">
-      distinct
-    </if>
-    <include refid="Base_Column_List" />
-    from db_shop.spu_sku_infos
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null">
-      order by ${orderByClause}
-    </if>
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="map">
-    <!--@mbg.generated-->
-    delete from db_shop.spu_sku_infos
-    where spu_id = #{spuId}
-      and sku_id = #{skuId}
-  </delete>
-  <delete id="deleteByExample" parameterType="com.shop.pojo.generate.SpuSkuInfosExample">
-    <!--@mbg.generated-->
-    delete from db_shop.spu_sku_infos
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-  </delete>
-  <insert id="insert" parameterType="com.shop.pojo.generate.SpuSkuInfos">
-    <!--@mbg.generated-->
-    insert into db_shop.spu_sku_infos (spu_id, sku_id)
-    values (#{spuId}, #{skuId})
-  </insert>
-  <insert id="insertSelective" parameterType="com.shop.pojo.generate.SpuSkuInfos">
-    <!--@mbg.generated-->
-    insert into db_shop.spu_sku_infos
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="spuId != null">
-        spu_id,
-      </if>
-      <if test="skuId != null">
-        sku_id,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="spuId != null">
-        #{spuId},
-      </if>
-      <if test="skuId != null">
-        #{skuId},
-      </if>
-    </trim>
-  </insert>
-  <select id="countByExample" parameterType="com.shop.pojo.generate.SpuSkuInfosExample" resultType="java.lang.Long">
-    <!--@mbg.generated-->
-    select count(*) from db_shop.spu_sku_infos
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-  </select>
-  <update id="updateByExampleSelective" parameterType="map">
-    <!--@mbg.generated-->
-    update db_shop.spu_sku_infos
-    <set>
-      <if test="record.spuId != null">
-        spu_id = #{record.spuId},
-      </if>
-      <if test="record.skuId != null">
-        sku_id = #{record.skuId},
-      </if>
-    </set>
-    <if test="_parameter != null">
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByExample" parameterType="map">
-    <!--@mbg.generated-->
-    update db_shop.spu_sku_infos
-    set spu_id = #{record.spuId},
-      sku_id = #{record.skuId}
-    <if test="_parameter != null">
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateBatch" parameterType="java.util.List">
-    <!--@mbg.generated-->
-    update db_shop.spu_sku_infos
-    <trim prefix="set" suffixOverrides="," />
-    where spu_id in
-    <foreach close=")" collection="list" item="item" open="(" separator=", ">
-      #{item.spuId}
-    </foreach>
-  </update>
-  <insert id="batchInsert" parameterType="map">
-    <!--@mbg.generated-->
-    insert into db_shop.spu_sku_infos
-    (spu_id, sku_id)
-    values
-    <foreach collection="list" item="item" separator=",">
-      (#{item.spuId}, #{item.skuId})
-    </foreach>
-  </insert>
-  <insert id="insertOrUpdate" parameterType="com.shop.pojo.generate.SpuSkuInfos">
-    <!--@mbg.generated-->
-    insert into db_shop.spu_sku_infos
-    (spu_id, sku_id)
-    values
-    (#{spuId}, #{skuId})
-    on duplicate key update 
-    spu_id = #{spuId}, 
-    sku_id = #{skuId}
-  </insert>
-  <insert id="insertOrUpdateSelective" parameterType="com.shop.pojo.generate.SpuSkuInfos">
-    <!--@mbg.generated-->
-    insert into db_shop.spu_sku_infos
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="spuId != null">
-        spu_id,
-      </if>
-      <if test="skuId != null">
-        sku_id,
-      </if>
-    </trim>
-    values
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="spuId != null">
-        #{spuId},
-      </if>
-      <if test="skuId != null">
-        #{skuId},
-      </if>
-    </trim>
-    on duplicate key update 
-    <trim suffixOverrides=",">
-      <if test="spuId != null">
+        <include refid="Base_Column_List"/>
+        from db_shop.spu_sku_infos
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="map">
+        <!--@mbg.generated-->
+        delete from db_shop.spu_sku_infos
+        where spu_id = #{spuId}
+        and sku_id = #{skuId}
+    </delete>
+    <delete id="deleteByExample" parameterType="com.shop.pojo.generate.SpuSkuInfosExample">
+        <!--@mbg.generated-->
+        delete from db_shop.spu_sku_infos
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </delete>
+    <insert id="insert" parameterType="com.shop.pojo.generate.SpuSkuInfos">
+        <!--@mbg.generated-->
+        insert into db_shop.spu_sku_infos (spu_id, sku_id)
+        values (#{spuId}, #{skuId})
+    </insert>
+    <insert id="insertSelective" parameterType="com.shop.pojo.generate.SpuSkuInfos">
+        <!--@mbg.generated-->
+        insert into db_shop.spu_sku_infos
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="spuId != null">
+                spu_id,
+            </if>
+            <if test="skuId != null">
+                sku_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="spuId != null">
+                #{spuId},
+            </if>
+            <if test="skuId != null">
+                #{skuId},
+            </if>
+        </trim>
+    </insert>
+    <select id="countByExample" parameterType="com.shop.pojo.generate.SpuSkuInfosExample" resultType="java.lang.Long">
+        <!--@mbg.generated-->
+        select count(*) from db_shop.spu_sku_infos
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </select>
+    <update id="updateByExampleSelective" parameterType="map">
+        <!--@mbg.generated-->
+        update db_shop.spu_sku_infos
+        <set>
+            <if test="record.spuId != null">
+                spu_id = #{record.spuId},
+            </if>
+            <if test="record.skuId != null">
+                sku_id = #{record.skuId},
+            </if>
+        </set>
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateByExample" parameterType="map">
+        <!--@mbg.generated-->
+        update db_shop.spu_sku_infos
+        set spu_id = #{record.spuId},
+        sku_id = #{record.skuId}
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update db_shop.spu_sku_infos
+        <trim prefix="set" suffixOverrides=","/>
+        where spu_id in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.spuId}
+        </foreach>
+    </update>
+    <insert id="batchInsert" parameterType="map">
+        <!--@mbg.generated-->
+        insert into db_shop.spu_sku_infos
+        (spu_id, sku_id)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.spuId}, #{item.skuId})
+        </foreach>
+    </insert>
+    <insert id="insertOrUpdate" parameterType="com.shop.pojo.generate.SpuSkuInfos">
+        <!--@mbg.generated-->
+        insert into db_shop.spu_sku_infos
+        (spu_id, sku_id)
+        values
+        (#{spuId}, #{skuId})
+        on duplicate key update
         spu_id = #{spuId},
-      </if>
-      <if test="skuId != null">
-        sku_id = #{skuId},
-      </if>
-    </trim>
-  </insert>
+        sku_id = #{skuId}
+    </insert>
+    <insert id="insertOrUpdateSelective" parameterType="com.shop.pojo.generate.SpuSkuInfos">
+        <!--@mbg.generated-->
+        insert into db_shop.spu_sku_infos
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="spuId != null">
+                spu_id,
+            </if>
+            <if test="skuId != null">
+                sku_id,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="spuId != null">
+                #{spuId},
+            </if>
+            <if test="skuId != null">
+                #{skuId},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="spuId != null">
+                spu_id = #{spuId},
+            </if>
+            <if test="skuId != null">
+                sku_id = #{skuId},
+            </if>
+        </trim>
+    </insert>
 </mapper>

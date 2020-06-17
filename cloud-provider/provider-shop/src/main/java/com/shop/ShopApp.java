@@ -9,7 +9,7 @@ import org.springframework.context.annotation.PropertySource;
 @EnableSwagger2Doc
 @SpringBootApplication
 @PropertySource(value = {"file:config/config.properties"})
-@MapperScan({"com.shop.mapper","com.shop.mapper.generate"})
+@MapperScan({"com.shop.mapper", "com.shop.mapper.generate"})
 public class ShopApp {
 
     public static void main(String[] args) {

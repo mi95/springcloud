@@ -1,14 +1,17 @@
 package com.shop.service.impl;
 
 import org.springframework.stereotype.Service;
+
 import javax.annotation.Resource;
 import java.util.List;
+
 import com.shop.mapper.generate.OrderInfosMapper;
 import com.shop.pojo.generate.OrderInfosExample;
 import com.shop.pojo.generate.OrderInfos;
 import com.shop.service.OrderInfosService;
+
 @Service
-public class OrderInfosServiceImpl implements OrderInfosService{
+public class OrderInfosServiceImpl implements OrderInfosService {
 
     @Resource
     private OrderInfosMapper orderInfosMapper;
@@ -59,13 +62,13 @@ public class OrderInfosServiceImpl implements OrderInfosService{
     }
 
     @Override
-    public int updateByExampleSelective(OrderInfos record,OrderInfosExample example) {
-        return orderInfosMapper.updateByExampleSelective(record,example);
+    public int updateByExampleSelective(OrderInfos record, OrderInfosExample example) {
+        return orderInfosMapper.updateByExampleSelective(record, example);
     }
 
     @Override
-    public int updateByExample(OrderInfos record,OrderInfosExample example) {
-        return orderInfosMapper.updateByExample(record,example);
+    public int updateByExample(OrderInfos record, OrderInfosExample example) {
+        return orderInfosMapper.updateByExample(record, example);
     }
 
     @Override

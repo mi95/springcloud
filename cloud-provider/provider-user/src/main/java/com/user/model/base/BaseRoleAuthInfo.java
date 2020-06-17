@@ -9,22 +9,22 @@ import com.jfinal.plugin.activerecord.IBean;
 @SuppressWarnings({"serial", "unchecked"})
 public abstract class BaseRoleAuthInfo<M extends BaseRoleAuthInfo<M>> extends Model<M> implements IBean {
 
-	public M setRoleId(java.lang.Long roleId) {
-		set("role_id", roleId);
-		return (M)this;
-	}
-	
-	public java.lang.Long getRoleId() {
-		return getLong("role_id");
-	}
+    public M setRoleId(java.lang.Long roleId) {
+        set("role_id", roleId);
+        return (M) this;
+    }
 
-	public M setAuthId(java.lang.Long authId) {
-		set("auth_id", authId);
-		return (M)this;
-	}
-	
-	public java.lang.Long getAuthId() {
-		return getLong("auth_id");
-	}
+    public java.lang.Long getRoleId() {
+        return getLong("role_id");
+    }
+
+    public M setAuthId(java.lang.Long authId) {
+        set("auth_id", authId);
+        return (M) this;
+    }
+
+    public java.lang.Long getAuthId() {
+        return getLong("auth_id");
+    }
 
 }

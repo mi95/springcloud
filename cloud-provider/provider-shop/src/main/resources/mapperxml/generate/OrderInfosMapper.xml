@@ -1,335 +1,337 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.shop.mapper.generate.OrderInfosMapper">
-  <resultMap id="BaseResultMap" type="com.shop.pojo.generate.OrderInfos">
-    <!--@mbg.generated-->
-    <!--@Table db_shop.order_infos-->
-    <id column="order_no" property="orderNo" />
-    <result column="create_time" property="createTime" />
-    <result column="create_id" property="createId" />
-    <result column="update_time" property="updateTime" />
-    <result column="update_id" property="updateId" />
-  </resultMap>
-  <sql id="Example_Where_Clause">
-    <!--@mbg.generated-->
-    <where>
-      <foreach collection="oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
+    <resultMap id="BaseResultMap" type="com.shop.pojo.generate.OrderInfos">
+        <!--@mbg.generated-->
+        <!--@Table db_shop.order_infos-->
+        <id column="order_no" property="orderNo"/>
+        <result column="create_time" property="createTime"/>
+        <result column="create_id" property="createId"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="update_id" property="updateId"/>
+    </resultMap>
+    <sql id="Example_Where_Clause">
+        <!--@mbg.generated-->
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
             </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Update_By_Example_Where_Clause">
-    <!--@mbg.generated-->
-    <where>
-      <foreach collection="example.oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
+        </where>
+    </sql>
+    <sql id="Update_By_Example_Where_Clause">
+        <!--@mbg.generated-->
+        <where>
+            <foreach collection="example.oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
             </foreach>
-          </trim>
+        </where>
+    </sql>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        order_no, create_time, create_id, update_time, update_id
+    </sql>
+    <select id="selectByExample" parameterType="com.shop.pojo.generate.OrderInfosExample" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <if test="distinct">
+            distinct
         </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Base_Column_List">
-    <!--@mbg.generated-->
-    order_no, create_time, create_id, update_time, update_id
-  </sql>
-  <select id="selectByExample" parameterType="com.shop.pojo.generate.OrderInfosExample" resultMap="BaseResultMap">
-    <!--@mbg.generated-->
-    select
-    <if test="distinct">
-      distinct
-    </if>
-    <include refid="Base_Column_List" />
-    from db_shop.order_infos
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null">
-      order by ${orderByClause}
-    </if>
-  </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
-    <!--@mbg.generated-->
-    select 
-    <include refid="Base_Column_List" />
-    from db_shop.order_infos
-    where order_no = #{orderNo}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-    <!--@mbg.generated-->
-    delete from db_shop.order_infos
-    where order_no = #{orderNo}
-  </delete>
-  <delete id="deleteByExample" parameterType="com.shop.pojo.generate.OrderInfosExample">
-    <!--@mbg.generated-->
-    delete from db_shop.order_infos
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-  </delete>
-  <insert id="insert" parameterType="com.shop.pojo.generate.OrderInfos">
-    <!--@mbg.generated-->
-    insert into db_shop.order_infos (order_no, create_time, create_id, update_time, update_id)
-    values (#{orderNo}, #{createTime}, #{createId}, #{updateTime}, #{updateId})
-  </insert>
-  <insert id="insertSelective" parameterType="com.shop.pojo.generate.OrderInfos">
-    <!--@mbg.generated-->
-    insert into db_shop.order_infos
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="orderNo != null">
-        order_no,
-      </if>
-      <if test="createTime != null">
-        create_time,
-      </if>
-      <if test="createId != null">
-        create_id,
-      </if>
-      <if test="updateTime != null">
-        update_time,
-      </if>
-      <if test="updateId != null">
-        update_id,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="orderNo != null">
-        #{orderNo},
-      </if>
-      <if test="createTime != null">
-        #{createTime},
-      </if>
-      <if test="createId != null">
-        #{createId},
-      </if>
-      <if test="updateTime != null">
-        #{updateTime},
-      </if>
-      <if test="updateId != null">
-        #{updateId},
-      </if>
-    </trim>
-  </insert>
-  <select id="countByExample" parameterType="com.shop.pojo.generate.OrderInfosExample" resultType="java.lang.Long">
-    <!--@mbg.generated-->
-    select count(*) from db_shop.order_infos
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-  </select>
-  <update id="updateByExampleSelective" parameterType="map">
-    <!--@mbg.generated-->
-    update db_shop.order_infos
-    <set>
-      <if test="record.orderNo != null">
-        order_no = #{record.orderNo},
-      </if>
-      <if test="record.createTime != null">
+        <include refid="Base_Column_List"/>
+        from db_shop.order_infos
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+    </select>
+    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+        <!--@mbg.generated-->
+        select
+        <include refid="Base_Column_List"/>
+        from db_shop.order_infos
+        where order_no = #{orderNo}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+        <!--@mbg.generated-->
+        delete from db_shop.order_infos
+        where order_no = #{orderNo}
+    </delete>
+    <delete id="deleteByExample" parameterType="com.shop.pojo.generate.OrderInfosExample">
+        <!--@mbg.generated-->
+        delete from db_shop.order_infos
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </delete>
+    <insert id="insert" parameterType="com.shop.pojo.generate.OrderInfos">
+        <!--@mbg.generated-->
+        insert into db_shop.order_infos (order_no, create_time, create_id, update_time, update_id)
+        values (#{orderNo}, #{createTime}, #{createId}, #{updateTime}, #{updateId})
+    </insert>
+    <insert id="insertSelective" parameterType="com.shop.pojo.generate.OrderInfos">
+        <!--@mbg.generated-->
+        insert into db_shop.order_infos
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="orderNo != null">
+                order_no,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="createId != null">
+                create_id,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+            <if test="updateId != null">
+                update_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="orderNo != null">
+                #{orderNo},
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+            <if test="createId != null">
+                #{createId},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime},
+            </if>
+            <if test="updateId != null">
+                #{updateId},
+            </if>
+        </trim>
+    </insert>
+    <select id="countByExample" parameterType="com.shop.pojo.generate.OrderInfosExample" resultType="java.lang.Long">
+        <!--@mbg.generated-->
+        select count(*) from db_shop.order_infos
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </select>
+    <update id="updateByExampleSelective" parameterType="map">
+        <!--@mbg.generated-->
+        update db_shop.order_infos
+        <set>
+            <if test="record.orderNo != null">
+                order_no = #{record.orderNo},
+            </if>
+            <if test="record.createTime != null">
+                create_time = #{record.createTime},
+            </if>
+            <if test="record.createId != null">
+                create_id = #{record.createId},
+            </if>
+            <if test="record.updateTime != null">
+                update_time = #{record.updateTime},
+            </if>
+            <if test="record.updateId != null">
+                update_id = #{record.updateId},
+            </if>
+        </set>
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateByExample" parameterType="map">
+        <!--@mbg.generated-->
+        update db_shop.order_infos
+        set order_no = #{record.orderNo},
         create_time = #{record.createTime},
-      </if>
-      <if test="record.createId != null">
         create_id = #{record.createId},
-      </if>
-      <if test="record.updateTime != null">
         update_time = #{record.updateTime},
-      </if>
-      <if test="record.updateId != null">
-        update_id = #{record.updateId},
-      </if>
-    </set>
-    <if test="_parameter != null">
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByExample" parameterType="map">
-    <!--@mbg.generated-->
-    update db_shop.order_infos
-    set order_no = #{record.orderNo},
-      create_time = #{record.createTime},
-      create_id = #{record.createId},
-      update_time = #{record.updateTime},
-      update_id = #{record.updateId}
-    <if test="_parameter != null">
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.shop.pojo.generate.OrderInfos">
-    <!--@mbg.generated-->
-    update db_shop.order_infos
-    <set>
-      <if test="createTime != null">
-        create_time = #{createTime},
-      </if>
-      <if test="createId != null">
+        update_id = #{record.updateId}
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateByPrimaryKeySelective" parameterType="com.shop.pojo.generate.OrderInfos">
+        <!--@mbg.generated-->
+        update db_shop.order_infos
+        <set>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="createId != null">
+                create_id = #{createId},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            <if test="updateId != null">
+                update_id = #{updateId},
+            </if>
+        </set>
+        where order_no = #{orderNo}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.shop.pojo.generate.OrderInfos">
+        <!--@mbg.generated-->
+        update db_shop.order_infos
+        set create_time = #{createTime},
         create_id = #{createId},
-      </if>
-      <if test="updateTime != null">
         update_time = #{updateTime},
-      </if>
-      <if test="updateId != null">
-        update_id = #{updateId},
-      </if>
-    </set>
-    where order_no = #{orderNo}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.shop.pojo.generate.OrderInfos">
-    <!--@mbg.generated-->
-    update db_shop.order_infos
-    set create_time = #{createTime},
-      create_id = #{createId},
-      update_time = #{updateTime},
-      update_id = #{updateId}
-    where order_no = #{orderNo}
-  </update>
-  <update id="updateBatch" parameterType="java.util.List">
-    <!--@mbg.generated-->
-    update db_shop.order_infos
-    <trim prefix="set" suffixOverrides=",">
-      <trim prefix="create_time = case" suffix="end,">
-        <foreach collection="list" index="index" item="item">
-          when order_no = #{item.orderNo} then #{item.createTime}
+        update_id = #{updateId}
+        where order_no = #{orderNo}
+    </update>
+    <update id="updateBatch" parameterType="java.util.List">
+        <!--@mbg.generated-->
+        update db_shop.order_infos
+        <trim prefix="set" suffixOverrides=",">
+            <trim prefix="create_time = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when order_no = #{item.orderNo} then #{item.createTime}
+                </foreach>
+            </trim>
+            <trim prefix="create_id = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when order_no = #{item.orderNo} then #{item.createId}
+                </foreach>
+            </trim>
+            <trim prefix="update_time = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when order_no = #{item.orderNo} then #{item.updateTime}
+                </foreach>
+            </trim>
+            <trim prefix="update_id = case" suffix="end,">
+                <foreach collection="list" index="index" item="item">
+                    when order_no = #{item.orderNo} then #{item.updateId}
+                </foreach>
+            </trim>
+        </trim>
+        where order_no in
+        <foreach close=")" collection="list" item="item" open="(" separator=", ">
+            #{item.orderNo}
         </foreach>
-      </trim>
-      <trim prefix="create_id = case" suffix="end,">
-        <foreach collection="list" index="index" item="item">
-          when order_no = #{item.orderNo} then #{item.createId}
+    </update>
+    <insert id="batchInsert" parameterType="map">
+        <!--@mbg.generated-->
+        insert into db_shop.order_infos
+        (order_no, create_time, create_id, update_time, update_id)
+        values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.orderNo}, #{item.createTime}, #{item.createId}, #{item.updateTime}, #{item.updateId}
+            )
         </foreach>
-      </trim>
-      <trim prefix="update_time = case" suffix="end,">
-        <foreach collection="list" index="index" item="item">
-          when order_no = #{item.orderNo} then #{item.updateTime}
-        </foreach>
-      </trim>
-      <trim prefix="update_id = case" suffix="end,">
-        <foreach collection="list" index="index" item="item">
-          when order_no = #{item.orderNo} then #{item.updateId}
-        </foreach>
-      </trim>
-    </trim>
-    where order_no in
-    <foreach close=")" collection="list" item="item" open="(" separator=", ">
-      #{item.orderNo}
-    </foreach>
-  </update>
-  <insert id="batchInsert" parameterType="map">
-    <!--@mbg.generated-->
-    insert into db_shop.order_infos
-    (order_no, create_time, create_id, update_time, update_id)
-    values
-    <foreach collection="list" item="item" separator=",">
-      (#{item.orderNo}, #{item.createTime}, #{item.createId}, #{item.updateTime}, #{item.updateId}
-        )
-    </foreach>
-  </insert>
-  <insert id="insertOrUpdate" parameterType="com.shop.pojo.generate.OrderInfos">
-    <!--@mbg.generated-->
-    insert into db_shop.order_infos
-    (order_no, create_time, create_id, update_time, update_id)
-    values
-    (#{orderNo}, #{createTime}, #{createId}, #{updateTime}, #{updateId})
-    on duplicate key update 
-    order_no = #{orderNo}, 
-    create_time = #{createTime}, 
-    create_id = #{createId}, 
-    update_time = #{updateTime}, 
-    update_id = #{updateId}
-  </insert>
-  <insert id="insertOrUpdateSelective" parameterType="com.shop.pojo.generate.OrderInfos">
-    <!--@mbg.generated-->
-    insert into db_shop.order_infos
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="orderNo != null">
-        order_no,
-      </if>
-      <if test="createTime != null">
-        create_time,
-      </if>
-      <if test="createId != null">
-        create_id,
-      </if>
-      <if test="updateTime != null">
-        update_time,
-      </if>
-      <if test="updateId != null">
-        update_id,
-      </if>
-    </trim>
-    values
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="orderNo != null">
-        #{orderNo},
-      </if>
-      <if test="createTime != null">
-        #{createTime},
-      </if>
-      <if test="createId != null">
-        #{createId},
-      </if>
-      <if test="updateTime != null">
-        #{updateTime},
-      </if>
-      <if test="updateId != null">
-        #{updateId},
-      </if>
-    </trim>
-    on duplicate key update 
-    <trim suffixOverrides=",">
-      <if test="orderNo != null">
+    </insert>
+    <insert id="insertOrUpdate" parameterType="com.shop.pojo.generate.OrderInfos">
+        <!--@mbg.generated-->
+        insert into db_shop.order_infos
+        (order_no, create_time, create_id, update_time, update_id)
+        values
+        (#{orderNo}, #{createTime}, #{createId}, #{updateTime}, #{updateId})
+        on duplicate key update
         order_no = #{orderNo},
-      </if>
-      <if test="createTime != null">
         create_time = #{createTime},
-      </if>
-      <if test="createId != null">
         create_id = #{createId},
-      </if>
-      <if test="updateTime != null">
         update_time = #{updateTime},
-      </if>
-      <if test="updateId != null">
-        update_id = #{updateId},
-      </if>
-    </trim>
-  </insert>
+        update_id = #{updateId}
+    </insert>
+    <insert id="insertOrUpdateSelective" parameterType="com.shop.pojo.generate.OrderInfos">
+        <!--@mbg.generated-->
+        insert into db_shop.order_infos
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="orderNo != null">
+                order_no,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="createId != null">
+                create_id,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+            <if test="updateId != null">
+                update_id,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="orderNo != null">
+                #{orderNo},
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+            <if test="createId != null">
+                #{createId},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime},
+            </if>
+            <if test="updateId != null">
+                #{updateId},
+            </if>
+        </trim>
+        on duplicate key update
+        <trim suffixOverrides=",">
+            <if test="orderNo != null">
+                order_no = #{orderNo},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="createId != null">
+                create_id = #{createId},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            <if test="updateId != null">
+                update_id = #{updateId},
+            </if>
+        </trim>
+    </insert>
 </mapper>

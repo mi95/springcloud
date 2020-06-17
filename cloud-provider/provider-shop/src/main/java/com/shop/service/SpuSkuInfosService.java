@@ -2,15 +2,17 @@ package com.shop.service;
 
 import com.shop.pojo.generate.SpuSkuInfos;
 import com.shop.pojo.generate.SpuSkuInfosExample;
+
 import java.util.List;
-public interface SpuSkuInfosService{
+
+public interface SpuSkuInfosService {
 
 
     long countByExample(SpuSkuInfosExample example);
 
     int deleteByExample(SpuSkuInfosExample example);
 
-    int deleteByPrimaryKey(Integer spuId,Integer skuId);
+    int deleteByPrimaryKey(Integer spuId, Integer skuId);
 
     int insert(SpuSkuInfos record);
 
@@ -22,9 +24,9 @@ public interface SpuSkuInfosService{
 
     List<SpuSkuInfos> selectByExample(SpuSkuInfosExample example);
 
-    int updateByExampleSelective(SpuSkuInfos record,SpuSkuInfosExample example);
+    int updateByExampleSelective(SpuSkuInfos record, SpuSkuInfosExample example);
 
-    int updateByExample(SpuSkuInfos record,SpuSkuInfosExample example);
+    int updateByExample(SpuSkuInfos record, SpuSkuInfosExample example);
 
     int updateBatch(List<SpuSkuInfos> list);
 

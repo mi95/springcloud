@@ -2,7 +2,9 @@ package com.shop.mapper.generate;
 
 import com.shop.pojo.generate.SpuImgInfos;
 import com.shop.pojo.generate.SpuImgInfosExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

@@ -4,7 +4,8 @@ import com.common.utils.CommonException;
 
 public class ShopException extends CommonException {
     private static final long serialVersionUID = 5124466783350227901L;
-    public ShopException(){
+
+    public ShopException() {
         super();
     }
 

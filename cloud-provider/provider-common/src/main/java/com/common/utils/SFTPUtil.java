@@ -13,19 +13,30 @@ public class SFTPUtil {
     private ChannelSftp sftp;
 
     private Session session;
-    /** FTP 登录用户名*/
+    /**
+     * FTP 登录用户名
+     */
     private String username;
-    /** FTP 登录密码*/
+    /**
+     * FTP 登录密码
+     */
     private String password;
-    /** 私钥 */
+    /**
+     * 私钥
+     */
     private String privateKey;
-    /** FTP 服务器地址IP地址*/
+    /**
+     * FTP 服务器地址IP地址
+     */
     private String host;
-    /** FTP 端口*/
+    /**
+     * FTP 端口
+     */
     private int port;
 
     /**
      * 构造基于密码认证的sftp对象
+     *
      * @param username
      * @param password
      * @param host
@@ -40,6 +51,7 @@ public class SFTPUtil {
 
     /**
      * 构造基于秘钥认证的sftp对象
+     *
      * @param username
      * @param host
      * @param port
@@ -52,20 +64,22 @@ public class SFTPUtil {
         this.privateKey = privateKey;
     }
 
-    public SFTPUtil(){}
+    public SFTPUtil() {
+    }
 
     /**
      * 连接sftp服务器
+     *
      * @throws Exception
      */
-    public void login(){
+    public void login() {
         try {
             JSch jsch = new JSch();
             if (privateKey != null) {
                 jsch.addIdentity(privateKey);// 设置私钥
-                log.info("sftp connect,path of private key file：{}" , privateKey);
+                log.info("sftp connect,path of private key file：{}", privateKey);
             }
-            log.info("sftp connect by host:{} username:{}",host,username);
+            log.info("sftp connect by host:{} username:{}", host, username);
 
             session = jsch.getSession(username, host, port);
             log.info("Session is build");
@@ -93,7 +107,7 @@ public class SFTPUtil {
     /**
      * 关闭连接 server
      */
-    public void logout(){
+    public void logout() {
         if (sftp != null) {
             if (sftp.isConnected()) {
                 sftp.disconnect();
@@ -110,13 +124,14 @@ public class SFTPUtil {
 
     /**
      * 将输入流的数据上传到sftp作为文件
-     * @param directory 上传到该目录
+     *
+     * @param directory    上传到该目录
      * @param sftpFileName sftp端文件名
-     * @param input 输入流
+     * @param input        输入流
      * @throws SftpException
      * @throws Exception
      */
-    public void upload(String directory, String sftpFileName, InputStream input) throws SftpException{
+    public void upload(String directory, String sftpFileName, InputStream input) throws SftpException {
         try {
             sftp.cd(directory);
         } catch (SftpException e) {
@@ -125,53 +140,57 @@ public class SFTPUtil {
             sftp.cd(directory);
         }
         sftp.put(input, sftpFileName);
-        log.info("file:{} is upload successful" , sftpFileName);
+        log.info("file:{} is upload successful", sftpFileName);
     }
 
     /**
      * 上传单个文件
-     * @param directory 上传到sftp目录
+     *
+     * @param directory  上传到sftp目录
      * @param uploadFile 要上传的文件,包括路径
      * @throws FileNotFoundException
      * @throws SftpException
      * @throws Exception
      */
-    public void upload(String directory, String uploadFile) throws FileNotFoundException, SftpException{
+    public void upload(String directory, String uploadFile) throws FileNotFoundException, SftpException {
         File file = new File(uploadFile);
         upload(directory, file.getName(), new FileInputStream(file));
     }
 
     /**
      * 将byte[]上传到sftp，作为文件。注意:从String生成byte[]是，要指定字符集。
-     * @param directory 上传到sftp目录
+     *
+     * @param directory    上传到sftp目录
      * @param sftpFileName 文件在sftp端的命名
-     * @param byteArr 要上传的字节数组
+     * @param byteArr      要上传的字节数组
      * @throws SftpException
      * @throws Exception
      */
-    public void upload(String directory, String sftpFileName, byte[] byteArr) throws SftpException{
+    public void upload(String directory, String sftpFileName, byte[] byteArr) throws SftpException {
         upload(directory, sftpFileName, new ByteArrayInputStream(byteArr));
     }
 
     /**
      * 将字符串按照指定的字符编码上传到sftp
-     * @param directory 上传到sftp目录
+     *
+     * @param directory    上传到sftp目录
      * @param sftpFileName 文件在sftp端的命名
-     * @param dataStr 待上传的数据
-     * @param charsetName sftp上的文件，按该字符编码保存
+     * @param dataStr      待上传的数据
+     * @param charsetName  sftp上的文件，按该字符编码保存
      * @throws UnsupportedEncodingException
      * @throws SftpException
      * @throws Exception
      */
-    public void upload(String directory, String sftpFileName, String dataStr, String charsetName) throws UnsupportedEncodingException, SftpException{
+    public void upload(String directory, String sftpFileName, String dataStr, String charsetName) throws UnsupportedEncodingException, SftpException {
         upload(directory, sftpFileName, new ByteArrayInputStream(dataStr.getBytes(charsetName)));
     }
 
     /**
      * 下载文件
-     * @param directory 下载目录
+     *
+     * @param directory    下载目录
      * @param downloadFile 下载的文件
-     * @param saveFile 存在本地的路径
+     * @param saveFile     存在本地的路径
      * @throws SftpException
      * @throws FileNotFoundException
      * @throws Exception
@@ -182,7 +201,7 @@ public class SFTPUtil {
         }
         File file = new File(saveFile);
         sftp.get(downloadFile, new FileOutputStream(file));
-        log.info("file:{} is download successful" , downloadFile);
+        log.info("file:{} is download successful", downloadFile);
     }
 
 //    /**
@@ -206,18 +225,20 @@ public class SFTPUtil {
 
     /**
      * 删除文件
-     * @param directory 要删除文件所在目录
+     *
+     * @param directory  要删除文件所在目录
      * @param deleteFile 要删除的文件
      * @throws SftpException
      * @throws Exception
      */
-    public void delete(String directory, String deleteFile) throws SftpException{
+    public void delete(String directory, String deleteFile) throws SftpException {
         sftp.cd(directory);
         sftp.rm(deleteFile);
     }
 
     /**
      * 列出目录下的文件
+     *
      * @param directory 要列出的目录
      * @return
      * @throws SftpException

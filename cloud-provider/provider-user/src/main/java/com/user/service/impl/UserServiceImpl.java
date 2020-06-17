@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void editUser(UserInfo userInfo) {
-        ParamVerifyUtil.verifyT(userInfo,userInfo.getId());
+        ParamVerifyUtil.verifyT(userInfo, userInfo.getId());
         CommonException.operResultBoolean(userInfo.update());
     }
 
@@ -76,15 +76,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         UserDetialUtils userDetialUtils;
-        UserInfo userInfo = UserInfo.dao.findFirst("select * from user_info where user_name = ?",s);
-        if(userInfo != null){
+        UserInfo userInfo = UserInfo.dao.findFirst("select * from user_info where user_name = ?", s);
+        if (userInfo != null) {
             userDetialUtils = (UserDetialUtils) userInfo;
             List<RoleInfo> roleInfos = RoleInfo.dao.find("select * from role_info a " +
                     "LEFT JOIN role_user_info b on a.id = b.role_id " +
                     "where b.user_id = ?");
             userDetialUtils.setRoleInfos(roleInfos);
             return userDetialUtils;
-        }else{
+        } else {
             CommonException.throwNewCommonExceptionForCustom("用户不存在！");
         }
         return null;

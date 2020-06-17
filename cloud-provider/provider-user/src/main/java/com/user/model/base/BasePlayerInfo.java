@@ -9,67 +9,67 @@ import com.jfinal.plugin.activerecord.IBean;
 @SuppressWarnings({"serial", "unchecked"})
 public abstract class BasePlayerInfo<M extends BasePlayerInfo<M>> extends Model<M> implements IBean {
 
-	public M setId(java.lang.Long id) {
-		set("id", id);
-		return (M)this;
-	}
-	
-	public java.lang.Long getId() {
-		return getLong("id");
-	}
+    public M setId(java.lang.Long id) {
+        set("id", id);
+        return (M) this;
+    }
 
-	public M setAccount(java.lang.String account) {
-		set("account", account);
-		return (M)this;
-	}
-	
-	public java.lang.String getAccount() {
-		return getStr("account");
-	}
+    public java.lang.Long getId() {
+        return getLong("id");
+    }
 
-	public M setServerId(java.lang.String serverId) {
-		set("server_id", serverId);
-		return (M)this;
-	}
-	
-	public java.lang.String getServerId() {
-		return getStr("server_id");
-	}
+    public M setAccount(java.lang.String account) {
+        set("account", account);
+        return (M) this;
+    }
 
-	public M setIsRecharge(java.lang.Integer isRecharge) {
-		set("is_recharge", isRecharge);
-		return (M)this;
-	}
-	
-	public java.lang.Integer getIsRecharge() {
-		return getInt("is_recharge");
-	}
+    public java.lang.String getAccount() {
+        return getStr("account");
+    }
 
-	public M setIsRechargeToday(java.lang.Integer isRechargeToday) {
-		set("is_recharge_today", isRechargeToday);
-		return (M)this;
-	}
-	
-	public java.lang.Integer getIsRechargeToday() {
-		return getInt("is_recharge_today");
-	}
+    public M setServerId(java.lang.String serverId) {
+        set("server_id", serverId);
+        return (M) this;
+    }
 
-	public M setLastLoginDate(java.util.Date lastLoginDate) {
-		set("last_login_date", lastLoginDate);
-		return (M)this;
-	}
-	
-	public java.util.Date getLastLoginDate() {
-		return get("last_login_date");
-	}
+    public java.lang.String getServerId() {
+        return getStr("server_id");
+    }
 
-	public M setCreateDate(java.util.Date createDate) {
-		set("create_date", createDate);
-		return (M)this;
-	}
-	
-	public java.util.Date getCreateDate() {
-		return get("create_date");
-	}
+    public M setIsRecharge(java.lang.Integer isRecharge) {
+        set("is_recharge", isRecharge);
+        return (M) this;
+    }
+
+    public java.lang.Integer getIsRecharge() {
+        return getInt("is_recharge");
+    }
+
+    public M setIsRechargeToday(java.lang.Integer isRechargeToday) {
+        set("is_recharge_today", isRechargeToday);
+        return (M) this;
+    }
+
+    public java.lang.Integer getIsRechargeToday() {
+        return getInt("is_recharge_today");
+    }
+
+    public M setLastLoginDate(java.util.Date lastLoginDate) {
+        set("last_login_date", lastLoginDate);
+        return (M) this;
+    }
+
+    public java.util.Date getLastLoginDate() {
+        return get("last_login_date");
+    }
+
+    public M setCreateDate(java.util.Date createDate) {
+        set("create_date", createDate);
+        return (M) this;
+    }
+
+    public java.util.Date getCreateDate() {
+        return get("create_date");
+    }
 
 }

@@ -1,14 +1,19 @@
 package com.shop.service.impl;
 
 import org.springframework.stereotype.Service;
+
 import javax.annotation.Resource;
+
 import com.shop.pojo.generate.SpuSkuInfos;
 import com.shop.pojo.generate.SpuSkuInfosExample;
+
 import java.util.List;
+
 import com.shop.mapper.generate.SpuSkuInfosMapper;
 import com.shop.service.SpuSkuInfosService;
+
 @Service
-public class SpuSkuInfosServiceImpl implements SpuSkuInfosService{
+public class SpuSkuInfosServiceImpl implements SpuSkuInfosService {
 
     @Resource
     private SpuSkuInfosMapper spuSkuInfosMapper;
@@ -24,8 +29,8 @@ public class SpuSkuInfosServiceImpl implements SpuSkuInfosService{
     }
 
     @Override
-    public int deleteByPrimaryKey(Integer spuId,Integer skuId) {
-        return spuSkuInfosMapper.deleteByPrimaryKey(spuId,skuId);
+    public int deleteByPrimaryKey(Integer spuId, Integer skuId) {
+        return spuSkuInfosMapper.deleteByPrimaryKey(spuId, skuId);
     }
 
     @Override
@@ -54,13 +59,13 @@ public class SpuSkuInfosServiceImpl implements SpuSkuInfosService{
     }
 
     @Override
-    public int updateByExampleSelective(SpuSkuInfos record,SpuSkuInfosExample example) {
-        return spuSkuInfosMapper.updateByExampleSelective(record,example);
+    public int updateByExampleSelective(SpuSkuInfos record, SpuSkuInfosExample example) {
+        return spuSkuInfosMapper.updateByExampleSelective(record, example);
     }
 
     @Override
-    public int updateByExample(SpuSkuInfos record,SpuSkuInfosExample example) {
-        return spuSkuInfosMapper.updateByExample(record,example);
+    public int updateByExample(SpuSkuInfos record, SpuSkuInfosExample example) {
+        return spuSkuInfosMapper.updateByExample(record, example);
     }
 
     @Override

@@ -43,9 +43,11 @@ public class CommonException extends RuntimeException {
     public static final int ERROR_TELL = 2001;
     private static final long serialVersionUID = 5124466783350227901L;
     private int errorCode;
+
     public CommonException(String message) {
         super(message);
     }
+
     public CommonException(int code) {
         this.errorCode = code;
     }

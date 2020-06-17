@@ -1,9 +1,12 @@
 package com.shop.service;
 
 import com.shop.pojo.generate.SkuImgInfos;
+
 import java.util.List;
+
 import com.shop.pojo.generate.SkuImgInfosExample;
-public interface SkuImgInfosService{
+
+public interface SkuImgInfosService {
 
 
     long countByExample(SkuImgInfosExample example);
@@ -24,9 +27,9 @@ public interface SkuImgInfosService{
 
     SkuImgInfos selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(SkuImgInfos record,SkuImgInfosExample example);
+    int updateByExampleSelective(SkuImgInfos record, SkuImgInfosExample example);
 
-    int updateByExample(SkuImgInfos record,SkuImgInfosExample example);
+    int updateByExample(SkuImgInfos record, SkuImgInfosExample example);
 
     int updateByPrimaryKeySelective(SkuImgInfos record);
 

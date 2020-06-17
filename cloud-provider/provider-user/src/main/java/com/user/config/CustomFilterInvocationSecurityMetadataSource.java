@@ -21,17 +21,18 @@ import java.util.List;
 public class CustomFilterInvocationSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
     @Autowired
     AuthService authService;
+
     @Override
     public Collection<ConfigAttribute> getAttributes(Object object) throws IllegalArgumentException {
         String requestUrl = ((FilterInvocation) object).getRequestUrl();
         List<RoleInfo> roleInfos = authService.findRoleByPath(requestUrl);
-        if(ParamVerifyUtil.verifyList(roleInfos)){
+        if (ParamVerifyUtil.verifyList(roleInfos)) {
             CommonException.throwNewCommonExceptionForCustom("权限不足！");
         }
         String[] str = new String[roleInfos.size()];
         int index = 0;
         for (RoleInfo roleInfo : roleInfos) {
-            str[index] =  roleInfo.getName();
+            str[index] = roleInfo.getName();
             index += 1;
         }
         return SecurityConfig.createList(str);

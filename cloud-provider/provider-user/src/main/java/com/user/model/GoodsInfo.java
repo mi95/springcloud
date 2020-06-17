@@ -7,5 +7,5 @@ import com.user.model.base.BaseGoodsInfo;
  */
 @SuppressWarnings("serial")
 public class GoodsInfo extends BaseGoodsInfo<GoodsInfo> {
-	public static final GoodsInfo dao = new GoodsInfo().dao();
+    public static final GoodsInfo dao = new GoodsInfo().dao();
 }

@@ -1,6 +1,7 @@
 package com.shop.service;
 
 import java.util.List;
+
 import com.shop.pojo.generate.SpuInfosExample;
 import com.shop.pojo.generate.SpuInfos;
 

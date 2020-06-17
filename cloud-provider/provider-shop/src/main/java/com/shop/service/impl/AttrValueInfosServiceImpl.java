@@ -1,14 +1,19 @@
 package com.shop.service.impl;
 
 import org.springframework.stereotype.Service;
+
 import javax.annotation.Resource;
+
 import com.shop.mapper.generate.AttrValueInfosMapper;
+
 import java.util.List;
+
 import com.shop.pojo.generate.AttrValueInfos;
 import com.shop.pojo.generate.AttrValueInfosExample;
 import com.shop.service.AttrValueInfosService;
+
 @Service
-public class AttrValueInfosServiceImpl implements AttrValueInfosService{
+public class AttrValueInfosServiceImpl implements AttrValueInfosService {
 
     @Resource
     private AttrValueInfosMapper attrValueInfosMapper;
@@ -59,13 +64,13 @@ public class AttrValueInfosServiceImpl implements AttrValueInfosService{
     }
 
     @Override
-    public int updateByExampleSelective(AttrValueInfos record,AttrValueInfosExample example) {
-        return attrValueInfosMapper.updateByExampleSelective(record,example);
+    public int updateByExampleSelective(AttrValueInfos record, AttrValueInfosExample example) {
+        return attrValueInfosMapper.updateByExampleSelective(record, example);
     }
 
     @Override
-    public int updateByExample(AttrValueInfos record,AttrValueInfosExample example) {
-        return attrValueInfosMapper.updateByExample(record,example);
+    public int updateByExample(AttrValueInfos record, AttrValueInfosExample example) {
+        return attrValueInfosMapper.updateByExample(record, example);
     }
 
     @Override

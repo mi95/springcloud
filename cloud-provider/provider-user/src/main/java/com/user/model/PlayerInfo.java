@@ -7,5 +7,5 @@ import com.user.model.base.BasePlayerInfo;
  */
 @SuppressWarnings("serial")
 public class PlayerInfo extends BasePlayerInfo<PlayerInfo> {
-	public static final PlayerInfo dao = new PlayerInfo().dao();
+    public static final PlayerInfo dao = new PlayerInfo().dao();
 }

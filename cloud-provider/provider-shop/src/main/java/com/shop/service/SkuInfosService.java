@@ -1,9 +1,12 @@
 package com.shop.service;
 
 import com.shop.pojo.generate.SkuInfosExample;
+
 import java.util.List;
+
 import com.shop.pojo.generate.SkuInfos;
-public interface SkuInfosService{
+
+public interface SkuInfosService {
 
 
     long countByExample(SkuInfosExample example);
@@ -24,9 +27,9 @@ public interface SkuInfosService{
 
     SkuInfos selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(SkuInfos record,SkuInfosExample example);
+    int updateByExampleSelective(SkuInfos record, SkuInfosExample example);
 
-    int updateByExample(SkuInfos record,SkuInfosExample example);
+    int updateByExample(SkuInfos record, SkuInfosExample example);
 
     int updateByPrimaryKeySelective(SkuInfos record);
 

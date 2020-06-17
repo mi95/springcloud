@@ -12,39 +12,39 @@ public class SqlParaUtil extends SqlPara {
     private StringBuffer sql;
     private List<Object> paraList;
 
-    void ininSql(){
+    void ininSql() {
         this.sql = new StringBuffer();
     }
 
-    void initParaList(){
+    void initParaList() {
         paraList = new ArrayList<>();
     }
 
 
-    public SqlParaUtil(){
+    public SqlParaUtil() {
         ininSql();
 //        initParaList();
     }
 
-    public SqlParaUtil(String sql){
+    public SqlParaUtil(String sql) {
         ininSql();
 //        initParaList();
         addSql(sql);
     }
 
-    public SqlParaUtil(String sql,Object... params){
+    public SqlParaUtil(String sql, Object... params) {
         ininSql();
-        if(ParamVerifyUtil.verifyTBoolean(params)){
+        if (ParamVerifyUtil.verifyTBoolean(params)) {
             initParaList();
         }
         addSql(sql);
-        for(Object obj : params){
-           paraList.add(obj);
+        for (Object obj : params) {
+            paraList.add(obj);
         }
     }
 
-    public SqlParaUtil addSqlAndParam(String sql,Object... params){
-        for(Object obj : params){
+    public SqlParaUtil addSqlAndParam(String sql, Object... params) {
+        for (Object obj : params) {
             paraList.add(obj);
         }
         return this;
@@ -58,7 +58,7 @@ public class SqlParaUtil extends SqlPara {
     }
 
     public SqlParaUtil addPara(Object... params) {
-        for(Object param : params){
+        for (Object param : params) {
             paraList.add(param);
         }
         return this;
@@ -70,38 +70,39 @@ public class SqlParaUtil extends SqlPara {
 
     /**
      * 获取模糊查询sql
-     * @param key 查询关键字
+     *
+     * @param key   查询关键字
      * @param names 模糊匹配的列
      * @return
      */
-    public SqlParaUtil andColsLikeTo(String key,String... names){
-        if(ParamVerifyUtil.verifyTBoolean(key,names)){
+    public SqlParaUtil andColsLikeTo(String key, String... names) {
+        if (ParamVerifyUtil.verifyTBoolean(key, names)) {
             this.sql.append(" and (");
-            key = ("%"+key+"%");
-            for(String name : names){
-                if(!ParamVerifyUtil.verifyTBoolean(name)){
+            key = ("%" + key + "%");
+            for (String name : names) {
+                if (!ParamVerifyUtil.verifyTBoolean(name)) {
                     continue;
                 }
                 this.sql.append(name).append(" like ?").append(" or");
                 this.paraList.add(key);
             }
-            this.sql.deleteCharAt( this.sql.length()-2);
+            this.sql.deleteCharAt(this.sql.length() - 2);
             this.sql.append(")");
         }
         return this;
     }
 
-    public SqlParaUtil andColEqualsTo(Object param,String name){
-        if(ParamVerifyUtil.verifyTBoolean(param,name)){
+    public SqlParaUtil andColEqualsTo(Object param, String name) {
+        if (ParamVerifyUtil.verifyTBoolean(param, name)) {
             this.sql.append(" and ").append(name).append(" = ?");
             this.paraList.add(param);
         }
         return this;
     }
 
-    public void deleteCharAt(Integer index){
+    public void deleteCharAt(Integer index) {
         ParamVerifyUtil.verifyInteger(index);
-        this.sql.deleteCharAt(this.sql.length()-index);
+        this.sql.deleteCharAt(this.sql.length() - index);
     }
 
 }

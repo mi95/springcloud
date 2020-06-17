@@ -3,11 +3,17 @@ package com.shop.service.impl;
 import com.common.utils.CommonException;
 import com.common.utils.ParamVerifyUtil;
 import com.shop.mapper.generate.SpuInfosMapper;
+import com.shop.pojo.SpuInfosBo;
 import com.shop.pojo.generate.SpuInfos;
 import com.shop.pojo.generate.SpuInfosExample;
+import com.shop.service.EsRepository;
 import com.shop.service.SpuService;
 import com.shop.utils.GlobalShop;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,7 +21,15 @@ import java.util.List;
 @Service
 public class SpuServiceImpl implements SpuService {
     @Autowired
-    private SpuInfosMapper spuInfosMapper;
+    SpuInfosMapper spuInfosMapper;
+
+    @Autowired
+    EsRepository esRepository;
+
+    @Autowired
+    private ElasticsearchRestTemplate esTemplate;
+
+    private Pageable pageable = PageRequest.of(0, 10);
 
     /**
      * 添加spu
@@ -24,7 +38,7 @@ public class SpuServiceImpl implements SpuService {
      */
     @Override
     public void addSpu(SpuInfos spuInfos) {
-        ParamVerifyUtil.verifyT(spuInfos,spuInfos.getName());
+        ParamVerifyUtil.verifyT(spuInfos, spuInfos.getName());
         CommonException.operResultInteger(spuInfosMapper.insertSelective(spuInfos));
     }
 
@@ -35,12 +49,12 @@ public class SpuServiceImpl implements SpuService {
      */
     @Override
     public void updSpu(SpuInfos spuInfos) {
-        ParamVerifyUtil.verifyT(spuInfos,spuInfos.getId());
+        ParamVerifyUtil.verifyT(spuInfos, spuInfos.getId());
         CommonException.operResultInteger(spuInfosMapper.updateByPrimaryKeySelective(spuInfos));
     }
 
     /**
-     * 下架
+     * 上架
      *
      * @param id
      */
@@ -51,6 +65,12 @@ public class SpuServiceImpl implements SpuService {
         spuInfos.setId(id);
         spuInfos.setStatus(GlobalShop.SPU_STATUS_UP);
         CommonException.operResultInteger(spuInfosMapper.updateByPrimaryKeySelective(spuInfos));
+
+        SpuInfosBo spuInfosBo = new SpuInfosBo();
+        spuInfosBo.setId(1);
+        spuInfosBo.setStatus(1);
+        spuInfosBo.setName("abc123.,*_");
+        esSave(spuInfosBo);
     }
 
     /**
@@ -84,9 +104,27 @@ public class SpuServiceImpl implements SpuService {
      * @return
      */
     @Override
-    public List<SpuInfos> selectAllSpu() {
+    public List<SpuInfos> findAllSpu() {
         SpuInfosExample example = new SpuInfosExample();
         return spuInfosMapper.selectByExample(example);
+    }
+
+    @Override
+    public SpuInfos findSpuById(Integer id) {
+        ParamVerifyUtil.verifyT(id);
+        return spuInfosMapper.selectByPrimaryKey(id);
+    }
+
+    private void esSave(SpuInfosBo infos) {
+        if (infos != null) {
+//            esTemplate.createIndex("idx_spu_infos");
+            esRepository.save(infos);
+        }
+    }
+
+    @Override
+    public Page<SpuInfosBo> findSpuFromEs(String key) {
+        return esRepository.findByName(key, pageable);
     }
 }
 

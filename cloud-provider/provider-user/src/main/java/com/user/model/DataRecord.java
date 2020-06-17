@@ -7,5 +7,5 @@ import com.user.model.base.BaseDataRecord;
  */
 @SuppressWarnings("serial")
 public class DataRecord extends BaseDataRecord<DataRecord> {
-	public static final DataRecord dao = new DataRecord().dao();
+    public static final DataRecord dao = new DataRecord().dao();
 }

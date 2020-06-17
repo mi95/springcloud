@@ -12,6 +12,7 @@ import javax.sql.DataSource;
 public class ActiveRecordPluginConfig {
     /**
      * 初始化连接池
+     *
      * @return
      */
     @Bean

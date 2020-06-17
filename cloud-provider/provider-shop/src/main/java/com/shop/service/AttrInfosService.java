@@ -1,9 +1,11 @@
 package com.shop.service;
 
 import java.util.List;
+
 import com.shop.pojo.generate.AttrInfosExample;
 import com.shop.pojo.generate.AttrInfos;
-public interface AttrInfosService{
+
+public interface AttrInfosService {
 
 
     long countByExample(AttrInfosExample example);
@@ -24,9 +26,9 @@ public interface AttrInfosService{
 
     AttrInfos selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(AttrInfos record,AttrInfosExample example);
+    int updateByExampleSelective(AttrInfos record, AttrInfosExample example);
 
-    int updateByExample(AttrInfos record,AttrInfosExample example);
+    int updateByExample(AttrInfos record, AttrInfosExample example);
 
     int updateByPrimaryKeySelective(AttrInfos record);
 

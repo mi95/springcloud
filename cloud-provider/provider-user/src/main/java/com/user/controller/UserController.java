@@ -27,7 +27,7 @@ public class UserController extends BaseController {
     MsgService msgService;
 
     @PostMapping("/user")
-    public RespBean addUser(@RequestBody  UserInfo userInfo) {
+    public RespBean addUser(@RequestBody UserInfo userInfo) {
         userService.addUser(userInfo);
         return RespBean.success();
     }

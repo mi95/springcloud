@@ -1,14 +1,19 @@
 package com.shop.service.impl;
 
 import org.springframework.stereotype.Service;
+
 import javax.annotation.Resource;
+
 import com.shop.pojo.generate.SkuImgInfos;
+
 import java.util.List;
+
 import com.shop.pojo.generate.SkuImgInfosExample;
 import com.shop.mapper.generate.SkuImgInfosMapper;
 import com.shop.service.SkuImgInfosService;
+
 @Service
-public class SkuImgInfosServiceImpl implements SkuImgInfosService{
+public class SkuImgInfosServiceImpl implements SkuImgInfosService {
 
     @Resource
     private SkuImgInfosMapper skuImgInfosMapper;
@@ -59,13 +64,13 @@ public class SkuImgInfosServiceImpl implements SkuImgInfosService{
     }
 
     @Override
-    public int updateByExampleSelective(SkuImgInfos record,SkuImgInfosExample example) {
-        return skuImgInfosMapper.updateByExampleSelective(record,example);
+    public int updateByExampleSelective(SkuImgInfos record, SkuImgInfosExample example) {
+        return skuImgInfosMapper.updateByExampleSelective(record, example);
     }
 
     @Override
-    public int updateByExample(SkuImgInfos record,SkuImgInfosExample example) {
-        return skuImgInfosMapper.updateByExample(record,example);
+    public int updateByExample(SkuImgInfos record, SkuImgInfosExample example) {
+        return skuImgInfosMapper.updateByExample(record, example);
     }
 
     @Override

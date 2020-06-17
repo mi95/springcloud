@@ -7,5 +7,5 @@ import com.user.model.base.BaseOrderInfo;
  */
 @SuppressWarnings("serial")
 public class OrderInfo extends BaseOrderInfo<OrderInfo> {
-	public static final OrderInfo dao = new OrderInfo().dao();
+    public static final OrderInfo dao = new OrderInfo().dao();
 }

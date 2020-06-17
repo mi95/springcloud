@@ -9,9 +9,10 @@ public class CommonException extends RuntimeException {
 
     private String msg;
 
-    public CommonException(){}
+    public CommonException() {
+    }
 
-    public CommonException(Integer code,String msg) {
+    public CommonException(Integer code, String msg) {
         this.errorCode = code;
         this.msg = msg;
     }
@@ -38,10 +39,11 @@ public class CommonException extends RuntimeException {
 
     /**
      * 抛出自定义异常
+     *
      * @param errorCode
      */
-    public static void throwNewCommonException(Integer errorCode){
-        if(ParamVerifyUtil.verifyInteger(errorCode)){
+    public static void throwNewCommonException(Integer errorCode) {
+        if (ParamVerifyUtil.verifyInteger(errorCode)) {
             errorCode = SYS_PARAM_INVALID;
         }
         throw new CommonException(errorCode);
@@ -49,37 +51,41 @@ public class CommonException extends RuntimeException {
 
     /**
      * 抛出自定义异常
+     *
      * @param msg 错误消息
      */
-    public static void throwNewCommonExceptionForCustom(String msg){
-        if(ParamVerifyUtil.verifyTBoolean(msg)){
+    public static void throwNewCommonExceptionForCustom(String msg) {
+        if (ParamVerifyUtil.verifyTBoolean(msg)) {
             Integer errorCode = SYS_PARAM_INVALID;
             throw new CommonException(errorCode);
         }
-        throw new CommonException(SYS_CUSTOM,msg);
+        throw new CommonException(SYS_CUSTOM, msg);
     }
 
     /**
      * 操作失败，抛出异常
+     *
      * @param value true-成功
      */
-    public static void operResultBoolean(boolean value){
+    public static void operResultBoolean(boolean value) {
         ParamVerifyUtil.verifyT(value);
-        if(!value){
+        if (!value) {
             throw new CommonException(ERROR_OPER_FAIL);
         }
     }
 
     /**
      * 操作失败，抛出异常
+     *
      * @param value 1-成功
      */
-    public static void operResultInteger(Integer value){
+    public static void operResultInteger(Integer value) {
         ParamVerifyUtil.verifyT(value);
-        if(value < 1){
+        if (value < 1) {
             throw new CommonException(ERROR_OPER_FAIL);
         }
     }
+
     @Errors(code = 500)
     public static final int SYS_CUSTOM = 500;
     /*-------------------------------------------通用异常 1000-1999-------------------------------------------------*/

@@ -9,40 +9,40 @@ import com.jfinal.plugin.activerecord.IBean;
 @SuppressWarnings({"serial", "unchecked"})
 public abstract class BaseOrderDetailInfo<M extends BaseOrderDetailInfo<M>> extends Model<M> implements IBean {
 
-	public M setId(java.lang.Long id) {
-		set("id", id);
-		return (M)this;
-	}
-	
-	public java.lang.Long getId() {
-		return getLong("id");
-	}
+    public M setId(java.lang.Long id) {
+        set("id", id);
+        return (M) this;
+    }
 
-	public M setOrderId(java.lang.Long orderId) {
-		set("order_id", orderId);
-		return (M)this;
-	}
-	
-	public java.lang.Long getOrderId() {
-		return getLong("order_id");
-	}
+    public java.lang.Long getId() {
+        return getLong("id");
+    }
 
-	public M setGoodsId(java.lang.Long goodsId) {
-		set("goods_id", goodsId);
-		return (M)this;
-	}
-	
-	public java.lang.Long getGoodsId() {
-		return getLong("goods_id");
-	}
+    public M setOrderId(java.lang.Long orderId) {
+        set("order_id", orderId);
+        return (M) this;
+    }
 
-	public M setNum(java.lang.String num) {
-		set("num", num);
-		return (M)this;
-	}
-	
-	public java.lang.String getNum() {
-		return getStr("num");
-	}
+    public java.lang.Long getOrderId() {
+        return getLong("order_id");
+    }
+
+    public M setGoodsId(java.lang.Long goodsId) {
+        set("goods_id", goodsId);
+        return (M) this;
+    }
+
+    public java.lang.Long getGoodsId() {
+        return getLong("goods_id");
+    }
+
+    public M setNum(java.lang.String num) {
+        set("num", num);
+        return (M) this;
+    }
+
+    public java.lang.String getNum() {
+        return getStr("num");
+    }
 
 }

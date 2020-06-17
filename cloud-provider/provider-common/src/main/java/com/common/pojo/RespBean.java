@@ -5,7 +5,8 @@ public class RespBean {
     Object data;
     String msg;
 
-    public RespBean(){}
+    public RespBean() {
+    }
 
     public RespBean(Integer code) {
         this.code = code;
@@ -21,17 +22,17 @@ public class RespBean {
         this.data = data;
     }
 
-    public static RespBean success(){
+    public static RespBean success() {
         return new RespBean(200);
     }
 
-    public static RespBean fail(String msg){
-        return new RespBean(500,msg);
+    public static RespBean fail(String msg) {
+        return new RespBean(500, msg);
     }
 
-    public static <T> RespBean success(T data){
+    public static <T> RespBean success(T data) {
 
-        return new RespBean(200,data);
+        return new RespBean(200, data);
     }
 
     public Integer getCode() {
