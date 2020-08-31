@@ -2,20 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="provider-user (1)" />
-        <module name="config-server" />
-        <module name="provider-shop" />
-        <module name="provider-user" />
         <module name="cloud-zuul" />
-        <module name="cloud-eureka" />
-        <module name="provider-common" />
-        <module name="config-client" />
         <module name="provider-app" />
+        <module name="provider-user" />
         <module name="cloud-hystrix-dashboard" />
+        <module name="cloud-eureka" />
+        <module name="config-server" />
+        <module name="config-client" />
+        <module name="provider-shop" />
+        <module name="provider-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

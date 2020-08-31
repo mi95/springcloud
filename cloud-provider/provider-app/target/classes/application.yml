@@ -1,9 +1,0 @@
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://localhost:8100/eureka/
-#
-#spring:
-#  application:
-#    name: service-user
-# 配置静态资源访问前缀
