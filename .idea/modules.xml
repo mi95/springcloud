@@ -5,15 +5,16 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-config/cloud-config.iml" filepath="$PROJECT_DIR$/cloud-config/cloud-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" filepath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-hystrix-dashboard/cloud-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/cloud-hystrix-dashboard/cloud-hystrix-dashboard.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-provider/cloud-provider.iml" filepath="$PROJECT_DIR$/cloud-provider/cloud-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-zuul/cloud-zuul.iml" filepath="$PROJECT_DIR$/cloud-zuul/cloud-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-config/config-client/config-client.iml" filepath="$PROJECT_DIR$/cloud-config/config-client/config-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-config/config-server/config-server.iml" filepath="$PROJECT_DIR$/cloud-config/config-server/config-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-provider/provider-app/provider-app.iml" filepath="$PROJECT_DIR$/cloud-provider/provider-app/provider-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-provider/provider-common/provider-common.iml" filepath="$PROJECT_DIR$/cloud-provider/provider-common/provider-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-provider/provider-shop/provider-shop.iml" filepath="$PROJECT_DIR$/cloud-provider/provider-shop/provider-shop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-provider/provider-user/provider-user.iml" filepath="$PROJECT_DIR$/cloud-provider/provider-user/provider-user.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud-provider/provider-app/provider-user (1).iml" filepath="$PROJECT_DIR$/cloud-provider/provider-app/provider-user (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-app/provider-app.iml" filepath="$PROJECT_DIR$/provider-app/provider-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-common/provider-common.iml" filepath="$PROJECT_DIR$/provider-common/provider-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-info/provider-info.iml" filepath="$PROJECT_DIR$/provider-info/provider-info.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-search/provider-search.iml" filepath="$PROJECT_DIR$/provider-search/provider-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-shop/provider-shop.iml" filepath="$PROJECT_DIR$/provider-shop/provider-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-user/provider-user.iml" filepath="$PROJECT_DIR$/provider-user/provider-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider-app/provider-user (1).iml" filepath="$PROJECT_DIR$/provider-app/provider-user (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud.iml" filepath="$PROJECT_DIR$/springcloud.iml" />
     </modules>
   </component>

@@ -1,0 +1,180 @@
+2020-11-18 17:12:42.289 [main] INFO  com.info.InfoApp -
+                No active profile set, falling back to default profiles: default
+2020-11-18 17:12:43.488 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'areaInfoMapper' and 'com.info.mapper.generate.AreaInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.488 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'authInfoMapper' and 'com.info.mapper.generate.AuthInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.488 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'cityInfoMapper' and 'com.info.mapper.generate.CityInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.489 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'photoInfoMapper' and 'com.info.mapper.generate.PhotoInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.489 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'provinceInfoMapper' and 'com.info.mapper.generate.ProvinceInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.489 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'regionMapper' and 'com.info.mapper.generate.RegionMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.489 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'roleAuthInfoMapper' and 'com.info.mapper.generate.RoleAuthInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.489 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'roleInfoMapper' and 'com.info.mapper.generate.RoleInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.489 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'roleUserInfoMapper' and 'com.info.mapper.generate.RoleUserInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.489 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'streetInfoMapper' and 'com.info.mapper.generate.StreetInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.490 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'TUserMapper' and 'com.info.mapper.generate.TUserMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.490 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'userInfosMapper' and 'com.info.mapper.generate.UserInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:12:43.566 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=fcb6e9cc-0047-369f-ace8-ceeb31fa149c
+2020-11-18 17:12:44.070 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8510 (http)
+2020-11-18 17:12:44.084 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8510"]
+2020-11-18 17:12:44.085 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-11-18 17:12:44.086 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-18 17:12:44.088 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-11-18 17:12:44.088 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-11-18 17:12:44.088 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-11-18 17:12:44.089 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-11-18 17:12:45.149 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-11-18 17:12:45.303 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-11-18 17:12:45.304 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2990 ms
+2020-11-18 17:12:45.675 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-11-18 17:12:45.675 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 17:12:45.684 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-11-18 17:12:45.684 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 17:12:45.841 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-18 17:12:47.717 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-11-18 17:12:49.018 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-11-18 17:12:49.073 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger -
+                You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-18 17:12:49.262 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-11-18 17:12:49.307 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-11-18 17:12:49.308 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-11-18 17:12:49.318 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1605690769316 with initial instances count: 0
+2020-11-18 17:12:49.323 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application SERVICE-SHOP with eureka with status UP
+2020-11-18 17:12:49.326 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8510"]
+2020-11-18 17:12:49.350 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8510 (http) with context path ''
+2020-11-18 17:12:49.351 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8510
+2020-11-18 17:12:50.544 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-11-18 17:12:50.553 [main] INFO  com.info.InfoApp -
+                Started InfoApp in 11.661 seconds (JVM running for 12.894)
+2020-11-18 17:15:33.654 [SpringContextShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Unregistering application SERVICE-SHOP with eureka with status DOWN
+2020-11-18 17:15:33.823 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-18 17:15:33.826 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -
+                Shutting down DiscoveryClient ...
+2020-11-18 17:15:33.842 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient -
+                Completed shut down of DiscoveryClient
+2020-11-18 17:15:41.574 [main] INFO  com.info.InfoApp -
+                No active profile set, falling back to default profiles: default
+2020-11-18 17:15:42.503 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'areaInfoMapper' and 'com.info.mapper.generate.AreaInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.503 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'authInfoMapper' and 'com.info.mapper.generate.AuthInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.503 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'cityInfoMapper' and 'com.info.mapper.generate.CityInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.503 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'photoInfoMapper' and 'com.info.mapper.generate.PhotoInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.503 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'provinceInfoMapper' and 'com.info.mapper.generate.ProvinceInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.504 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'regionMapper' and 'com.info.mapper.generate.RegionMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.504 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'roleAuthInfoMapper' and 'com.info.mapper.generate.RoleAuthInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.504 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'roleInfoMapper' and 'com.info.mapper.generate.RoleInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.504 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'roleUserInfoMapper' and 'com.info.mapper.generate.RoleUserInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.504 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'streetInfoMapper' and 'com.info.mapper.generate.StreetInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.504 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'TUserMapper' and 'com.info.mapper.generate.TUserMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.504 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'userInfosMapper' and 'com.info.mapper.generate.UserInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:15:42.591 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=90944921-fabb-308c-b77a-f9465b437b38
+2020-11-18 17:15:43.006 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8510 (http)
+2020-11-18 17:15:43.015 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8510"]
+2020-11-18 17:15:43.016 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-11-18 17:15:43.016 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-18 17:15:43.018 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-11-18 17:15:43.018 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-11-18 17:15:43.018 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-11-18 17:15:43.018 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-11-18 17:15:44.069 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-11-18 17:15:44.290 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-11-18 17:15:44.290 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2696 ms
+2020-11-18 17:15:44.580 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-11-18 17:15:44.580 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 17:15:44.585 [main] WARN  com.netflix.config.sources.URLConfigurationSource -
+                No URLs will be polled as dynamic configuration sources.
+2020-11-18 17:15:44.586 [main] INFO  com.netflix.config.sources.URLConfigurationSource -
+                To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 17:15:44.736 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-18 17:15:46.621 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-11-18 17:15:47.894 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-11-18 17:15:47.923 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger -
+                You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-18 17:15:48.088 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory -
+                Setting initial instance status as: STARTING
+2020-11-18 17:15:48.117 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Initializing Eureka in region us-east-1
+2020-11-18 17:15:48.118 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Client configured to neither register nor query for data.
+2020-11-18 17:15:48.125 [main] INFO  com.netflix.discovery.DiscoveryClient -
+                Discovery Client initialized at timestamp 1605690948123 with initial instances count: 0
+2020-11-18 17:15:48.129 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry -
+                Registering application SERVICE-SHOP with eureka with status UP
+2020-11-18 17:15:48.131 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8510"]
+2020-11-18 17:15:48.156 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8510 (http) with context path ''
+2020-11-18 17:15:48.157 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration -
+                Updating port to 8510
+2020-11-18 17:15:49.395 [main] INFO  org.springframework.cloud.commons.util.InetUtils -
+                Cannot determine local hostname
+2020-11-18 17:15:49.412 [main] INFO  com.info.InfoApp -
+                Started InfoApp in 11.153 seconds (JVM running for 12.257)

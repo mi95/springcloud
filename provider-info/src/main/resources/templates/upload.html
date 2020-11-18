@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Spring Boot file upload example</h1>
+<form method="POST" action="/photo/uploadImg" enctype="multipart/form-data" id="form">
+    <input type="file" name="file"/><br/><br/>
+	<input type="button" th:onclick="onAdd()" value="添加一行" id="btn" /><br/><br/>
+	<input type="submit" value="提交" />
+	<a th:href="@{'photo/delete'}">重置</a>
+</form>
+</body>
+<script>
+    function onAdd() {
+        var myInput=document.createElement("input");
+        myInput.type="file";
+        myInput.name="file";
+        var btn = document.getElementById("btn")
+		var br = document.createElement("br");
+		var br1 = document.createElement("br");
+        document.getElementById("form").insertBefore(myInput,btn)
+		document.getElementById("form").insertBefore(br,btn);
+		document.getElementById("form").insertBefore(br1,btn);
+    }
+
+	function onDel() {
+		var myInput=document.createElement("input");
+		myInput.type="file";
+		myInput.name="file";
+		var btn = document.getElementById("btn")
+		var br = document.createElement("br");
+		var br1 = document.createElement("br");
+		document.getElementById("form").insertBefore(myInput,btn)
+		document.getElementById("form").insertBefore(br,btn);
+		document.getElementById("form").insertBefore(br1,btn);
+	}
+</script>
+</html>

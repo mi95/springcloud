@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.info.mapper.generate.AuthInfoMapper">
+  <resultMap id="BaseResultMap" type="com.info.pojo.generate.AuthInfo">
+    <!--@mbg.generated-->
+    <!--@Table db_user.auth_info-->
+    <id column="id" property="id" />
+    <result column="name" property="name" />
+    <result column="father_id" property="fatherId" />
+    <result column="path" property="path" />
+    <result column="request_method" property="requestMethod" />
+    <result column="type" property="type" />
+    <result column="state" property="state" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, father_id, `path`, request_method, `type`, `state`
+  </sql>
+  <select id="selectByExample" parameterType="com.info.pojo.generate.AuthInfoExample" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from db_user.auth_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from db_user.auth_info
+    where id = #{id}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from db_user.auth_info
+    where id = #{id}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.info.pojo.generate.AuthInfoExample">
+    <!--@mbg.generated-->
+    delete from db_user.auth_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.info.pojo.generate.AuthInfo">
+    <!--@mbg.generated-->
+    insert into db_user.auth_info (id, `name`, father_id, `path`, request_method, `type`, `state`
+      )
+    values (#{id}, #{name}, #{fatherId}, #{path}, #{requestMethod}, #{type}, #{state}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.info.pojo.generate.AuthInfo">
+    <!--@mbg.generated-->
+    insert into db_user.auth_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="fatherId != null">
+        father_id,
+      </if>
+      <if test="path != null">
+        `path`,
+      </if>
+      <if test="requestMethod != null">
+        request_method,
+      </if>
+      <if test="type != null">
+        `type`,
+      </if>
+      <if test="state != null">
+        `state`,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id},
+      </if>
+      <if test="name != null">
+        #{name},
+      </if>
+      <if test="fatherId != null">
+        #{fatherId},
+      </if>
+      <if test="path != null">
+        #{path},
+      </if>
+      <if test="requestMethod != null">
+        #{requestMethod},
+      </if>
+      <if test="type != null">
+        #{type},
+      </if>
+      <if test="state != null">
+        #{state},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.info.pojo.generate.AuthInfoExample" resultType="java.lang.Long">
+    <!--@mbg.generated-->
+    select count(*) from db_user.auth_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    <!--@mbg.generated-->
+    update db_user.auth_info
+    <set>
+      <if test="record.id != null">
+        id = #{record.id},
+      </if>
+      <if test="record.name != null">
+        `name` = #{record.name},
+      </if>
+      <if test="record.fatherId != null">
+        father_id = #{record.fatherId},
+      </if>
+      <if test="record.path != null">
+        `path` = #{record.path},
+      </if>
+      <if test="record.requestMethod != null">
+        request_method = #{record.requestMethod},
+      </if>
+      <if test="record.type != null">
+        `type` = #{record.type},
+      </if>
+      <if test="record.state != null">
+        `state` = #{record.state},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    <!--@mbg.generated-->
+    update db_user.auth_info
+    set id = #{record.id},
+      `name` = #{record.name},
+      father_id = #{record.fatherId},
+      `path` = #{record.path},
+      request_method = #{record.requestMethod},
+      `type` = #{record.type},
+      `state` = #{record.state}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.info.pojo.generate.AuthInfo">
+    <!--@mbg.generated-->
+    update db_user.auth_info
+    <set>
+      <if test="name != null">
+        `name` = #{name},
+      </if>
+      <if test="fatherId != null">
+        father_id = #{fatherId},
+      </if>
+      <if test="path != null">
+        `path` = #{path},
+      </if>
+      <if test="requestMethod != null">
+        request_method = #{requestMethod},
+      </if>
+      <if test="type != null">
+        `type` = #{type},
+      </if>
+      <if test="state != null">
+        `state` = #{state},
+      </if>
+    </set>
+    where id = #{id}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.info.pojo.generate.AuthInfo">
+    <!--@mbg.generated-->
+    update db_user.auth_info
+    set `name` = #{name},
+      father_id = #{fatherId},
+      `path` = #{path},
+      request_method = #{requestMethod},
+      `type` = #{type},
+      `state` = #{state}
+    where id = #{id}
+  </update>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update db_user.auth_info
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="`name` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.name}
+        </foreach>
+      </trim>
+      <trim prefix="father_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.fatherId}
+        </foreach>
+      </trim>
+      <trim prefix="`path` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.path}
+        </foreach>
+      </trim>
+      <trim prefix="request_method = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.requestMethod}
+        </foreach>
+      </trim>
+      <trim prefix="`type` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.type}
+        </foreach>
+      </trim>
+      <trim prefix="`state` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.state}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id}
+    </foreach>
+  </update>
+  <insert id="batchInsert" parameterType="map">
+    <!--@mbg.generated-->
+    insert into db_user.auth_info
+    (id, `name`, father_id, `path`, request_method, `type`, `state`)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.id}, #{item.name}, #{item.fatherId}, #{item.path}, #{item.requestMethod}, 
+        #{item.type}, #{item.state})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" parameterType="com.info.pojo.generate.AuthInfo">
+    <!--@mbg.generated-->
+    insert into db_user.auth_info
+    (id, `name`, father_id, `path`, request_method, `type`, `state`)
+    values
+    (#{id}, #{name}, #{fatherId}, #{path}, #{requestMethod}, #{type}, #{state})
+    on duplicate key update 
+    id = #{id}, 
+    `name` = #{name}, 
+    father_id = #{fatherId}, 
+    `path` = #{path}, 
+    request_method = #{requestMethod}, 
+    `type` = #{type}, 
+    `state` = #{state}
+  </insert>
+  <insert id="insertOrUpdateSelective" parameterType="com.info.pojo.generate.AuthInfo">
+    <!--@mbg.generated-->
+    insert into db_user.auth_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="fatherId != null">
+        father_id,
+      </if>
+      <if test="path != null">
+        `path`,
+      </if>
+      <if test="requestMethod != null">
+        request_method,
+      </if>
+      <if test="type != null">
+        `type`,
+      </if>
+      <if test="state != null">
+        `state`,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id},
+      </if>
+      <if test="name != null">
+        #{name},
+      </if>
+      <if test="fatherId != null">
+        #{fatherId},
+      </if>
+      <if test="path != null">
+        #{path},
+      </if>
+      <if test="requestMethod != null">
+        #{requestMethod},
+      </if>
+      <if test="type != null">
+        #{type},
+      </if>
+      <if test="state != null">
+        #{state},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="id != null">
+        id = #{id},
+      </if>
+      <if test="name != null">
+        `name` = #{name},
+      </if>
+      <if test="fatherId != null">
+        father_id = #{fatherId},
+      </if>
+      <if test="path != null">
+        `path` = #{path},
+      </if>
+      <if test="requestMethod != null">
+        request_method = #{requestMethod},
+      </if>
+      <if test="type != null">
+        `type` = #{type},
+      </if>
+      <if test="state != null">
+        `state` = #{state},
+      </if>
+    </trim>
+  </insert>
+</mapper>

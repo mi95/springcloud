@@ -7,15 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-zuul" />
-        <module name="provider-app" />
-        <module name="provider-user" />
-        <module name="cloud-hystrix-dashboard" />
-        <module name="cloud-eureka" />
+        <module name="provider-search" />
         <module name="config-server" />
-        <module name="config-client" />
+        <module name="provider-info" />
+        <module name="cloud-zuul" />
+        <module name="provider-user" />
+        <module name="cloud-eureka" />
         <module name="provider-shop" />
+        <module name="provider-media" />
         <module name="provider-common" />
+        <module name="config-client" />
+        <module name="provider-app" />
+        <module name="cloud-hystrix-dashboard" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,7 +31,10 @@
       <module name="config-server" target="1.8" />
       <module name="provider-app" target="1.8" />
       <module name="provider-common" target="1.8" />
+      <module name="provider-info" target="1.8" />
+      <module name="provider-media" target="1.8" />
       <module name="provider-netty" target="1.8" />
+      <module name="provider-search" target="1.8" />
       <module name="provider-shop" target="1.8" />
       <module name="provider-user" target="1.8" />
       <module name="provider-user (1)" target="1.8" />
@@ -44,7 +50,10 @@
       <module name="config-server" options="-parameters" />
       <module name="provider-app" options="-parameters" />
       <module name="provider-common" options="-parameters" />
+      <module name="provider-info" options="-parameters" />
+      <module name="provider-media" options="-parameters" />
       <module name="provider-netty" options="-parameters" />
+      <module name="provider-search" options="-parameters" />
       <module name="provider-shop" options="-parameters" />
       <module name="provider-user" options="-parameters" />
       <module name="provider-user (1)" options="-parameters" />

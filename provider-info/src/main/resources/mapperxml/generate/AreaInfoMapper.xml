@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.info.mapper.generate.AreaInfoMapper">
+  <resultMap id="BaseResultMap" type="com.info.pojo.generate.AreaInfo">
+    <!--@mbg.generated-->
+    <!--@Table db_user.area_info-->
+    <id column="area_id" property="areaId" />
+    <result column="area_code" property="areaCode" />
+    <result column="city_code" property="cityCode" />
+    <result column="area_name" property="areaName" />
+    <result column="short_name" property="shortName" />
+    <result column="lng" property="lng" />
+    <result column="lat" property="lat" />
+    <result column="sort" property="sort" />
+    <result column="gmt_create" property="gmtCreate" />
+    <result column="gmt_modified" property="gmtModified" />
+    <result column="memo" property="memo" />
+    <result column="data_state" property="dataState" />
+    <result column="tenant_code" property="tenantCode" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    area_id, area_code, city_code, area_name, short_name, lng, lat, sort, gmt_create, 
+    gmt_modified, memo, data_state, tenant_code
+  </sql>
+  <select id="selectByExample" parameterType="com.info.pojo.generate.AreaInfoExample" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from db_user.area_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from db_user.area_info
+    where area_id = #{areaId}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from db_user.area_info
+    where area_id = #{areaId}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.info.pojo.generate.AreaInfoExample">
+    <!--@mbg.generated-->
+    delete from db_user.area_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" keyColumn="area_id" keyProperty="areaId" parameterType="com.info.pojo.generate.AreaInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.area_info (area_code, city_code, area_name, short_name, lng, lat, sort, 
+      gmt_create, gmt_modified, memo, data_state, tenant_code)
+    values (#{areaCode}, #{cityCode}, #{areaName}, #{shortName}, #{lng}, #{lat}, #{sort}, 
+      #{gmtCreate}, #{gmtModified}, #{memo}, #{dataState}, #{tenantCode})
+  </insert>
+  <insert id="insertSelective" keyColumn="area_id" keyProperty="areaId" parameterType="com.info.pojo.generate.AreaInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.area_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="areaCode != null">
+        area_code,
+      </if>
+      <if test="cityCode != null">
+        city_code,
+      </if>
+      <if test="areaName != null">
+        area_name,
+      </if>
+      <if test="shortName != null">
+        short_name,
+      </if>
+      <if test="lng != null">
+        lng,
+      </if>
+      <if test="lat != null">
+        lat,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create,
+      </if>
+      <if test="gmtModified != null">
+        gmt_modified,
+      </if>
+      <if test="memo != null">
+        memo,
+      </if>
+      <if test="dataState != null">
+        data_state,
+      </if>
+      <if test="tenantCode != null">
+        tenant_code,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="areaCode != null">
+        #{areaCode},
+      </if>
+      <if test="cityCode != null">
+        #{cityCode},
+      </if>
+      <if test="areaName != null">
+        #{areaName},
+      </if>
+      <if test="shortName != null">
+        #{shortName},
+      </if>
+      <if test="lng != null">
+        #{lng},
+      </if>
+      <if test="lat != null">
+        #{lat},
+      </if>
+      <if test="sort != null">
+        #{sort},
+      </if>
+      <if test="gmtCreate != null">
+        #{gmtCreate},
+      </if>
+      <if test="gmtModified != null">
+        #{gmtModified},
+      </if>
+      <if test="memo != null">
+        #{memo},
+      </if>
+      <if test="dataState != null">
+        #{dataState},
+      </if>
+      <if test="tenantCode != null">
+        #{tenantCode},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.info.pojo.generate.AreaInfoExample" resultType="java.lang.Long">
+    <!--@mbg.generated-->
+    select count(*) from db_user.area_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    <!--@mbg.generated-->
+    update db_user.area_info
+    <set>
+      <if test="record.areaId != null">
+        area_id = #{record.areaId},
+      </if>
+      <if test="record.areaCode != null">
+        area_code = #{record.areaCode},
+      </if>
+      <if test="record.cityCode != null">
+        city_code = #{record.cityCode},
+      </if>
+      <if test="record.areaName != null">
+        area_name = #{record.areaName},
+      </if>
+      <if test="record.shortName != null">
+        short_name = #{record.shortName},
+      </if>
+      <if test="record.lng != null">
+        lng = #{record.lng},
+      </if>
+      <if test="record.lat != null">
+        lat = #{record.lat},
+      </if>
+      <if test="record.sort != null">
+        sort = #{record.sort},
+      </if>
+      <if test="record.gmtCreate != null">
+        gmt_create = #{record.gmtCreate},
+      </if>
+      <if test="record.gmtModified != null">
+        gmt_modified = #{record.gmtModified},
+      </if>
+      <if test="record.memo != null">
+        memo = #{record.memo},
+      </if>
+      <if test="record.dataState != null">
+        data_state = #{record.dataState},
+      </if>
+      <if test="record.tenantCode != null">
+        tenant_code = #{record.tenantCode},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    <!--@mbg.generated-->
+    update db_user.area_info
+    set area_id = #{record.areaId},
+      area_code = #{record.areaCode},
+      city_code = #{record.cityCode},
+      area_name = #{record.areaName},
+      short_name = #{record.shortName},
+      lng = #{record.lng},
+      lat = #{record.lat},
+      sort = #{record.sort},
+      gmt_create = #{record.gmtCreate},
+      gmt_modified = #{record.gmtModified},
+      memo = #{record.memo},
+      data_state = #{record.dataState},
+      tenant_code = #{record.tenantCode}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.info.pojo.generate.AreaInfo">
+    <!--@mbg.generated-->
+    update db_user.area_info
+    <set>
+      <if test="areaCode != null">
+        area_code = #{areaCode},
+      </if>
+      <if test="cityCode != null">
+        city_code = #{cityCode},
+      </if>
+      <if test="areaName != null">
+        area_name = #{areaName},
+      </if>
+      <if test="shortName != null">
+        short_name = #{shortName},
+      </if>
+      <if test="lng != null">
+        lng = #{lng},
+      </if>
+      <if test="lat != null">
+        lat = #{lat},
+      </if>
+      <if test="sort != null">
+        sort = #{sort},
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create = #{gmtCreate},
+      </if>
+      <if test="gmtModified != null">
+        gmt_modified = #{gmtModified},
+      </if>
+      <if test="memo != null">
+        memo = #{memo},
+      </if>
+      <if test="dataState != null">
+        data_state = #{dataState},
+      </if>
+      <if test="tenantCode != null">
+        tenant_code = #{tenantCode},
+      </if>
+    </set>
+    where area_id = #{areaId}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.info.pojo.generate.AreaInfo">
+    <!--@mbg.generated-->
+    update db_user.area_info
+    set area_code = #{areaCode},
+      city_code = #{cityCode},
+      area_name = #{areaName},
+      short_name = #{shortName},
+      lng = #{lng},
+      lat = #{lat},
+      sort = #{sort},
+      gmt_create = #{gmtCreate},
+      gmt_modified = #{gmtModified},
+      memo = #{memo},
+      data_state = #{dataState},
+      tenant_code = #{tenantCode}
+    where area_id = #{areaId}
+  </update>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update db_user.area_info
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="area_code = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.areaCode}
+        </foreach>
+      </trim>
+      <trim prefix="city_code = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.cityCode}
+        </foreach>
+      </trim>
+      <trim prefix="area_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.areaName}
+        </foreach>
+      </trim>
+      <trim prefix="short_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.shortName}
+        </foreach>
+      </trim>
+      <trim prefix="lng = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.lng}
+        </foreach>
+      </trim>
+      <trim prefix="lat = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.lat}
+        </foreach>
+      </trim>
+      <trim prefix="sort = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.sort}
+        </foreach>
+      </trim>
+      <trim prefix="gmt_create = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.gmtCreate}
+        </foreach>
+      </trim>
+      <trim prefix="gmt_modified = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.gmtModified}
+        </foreach>
+      </trim>
+      <trim prefix="memo = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.memo}
+        </foreach>
+      </trim>
+      <trim prefix="data_state = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.dataState}
+        </foreach>
+      </trim>
+      <trim prefix="tenant_code = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when area_id = #{item.areaId} then #{item.tenantCode}
+        </foreach>
+      </trim>
+    </trim>
+    where area_id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.areaId}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="area_id" keyProperty="areaId" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.area_info
+    (area_code, city_code, area_name, short_name, lng, lat, sort, gmt_create, gmt_modified, 
+      memo, data_state, tenant_code)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.areaCode}, #{item.cityCode}, #{item.areaName}, #{item.shortName}, #{item.lng}, 
+        #{item.lat}, #{item.sort}, #{item.gmtCreate}, #{item.gmtModified}, #{item.memo}, 
+        #{item.dataState}, #{item.tenantCode})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" keyColumn="area_id" keyProperty="areaId" parameterType="com.info.pojo.generate.AreaInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.area_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="areaId != null">
+        area_id,
+      </if>
+      area_code,
+      city_code,
+      area_name,
+      short_name,
+      lng,
+      lat,
+      sort,
+      gmt_create,
+      gmt_modified,
+      memo,
+      data_state,
+      tenant_code,
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="areaId != null">
+        #{areaId},
+      </if>
+      #{areaCode},
+      #{cityCode},
+      #{areaName},
+      #{shortName},
+      #{lng},
+      #{lat},
+      #{sort},
+      #{gmtCreate},
+      #{gmtModified},
+      #{memo},
+      #{dataState},
+      #{tenantCode},
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="areaId != null">
+        area_id = #{areaId},
+      </if>
+      area_code = #{areaCode},
+      city_code = #{cityCode},
+      area_name = #{areaName},
+      short_name = #{shortName},
+      lng = #{lng},
+      lat = #{lat},
+      sort = #{sort},
+      gmt_create = #{gmtCreate},
+      gmt_modified = #{gmtModified},
+      memo = #{memo},
+      data_state = #{dataState},
+      tenant_code = #{tenantCode},
+    </trim>
+  </insert>
+  <insert id="insertOrUpdateSelective" keyColumn="area_id" keyProperty="areaId" parameterType="com.info.pojo.generate.AreaInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.area_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="areaId != null">
+        area_id,
+      </if>
+      <if test="areaCode != null">
+        area_code,
+      </if>
+      <if test="cityCode != null">
+        city_code,
+      </if>
+      <if test="areaName != null">
+        area_name,
+      </if>
+      <if test="shortName != null">
+        short_name,
+      </if>
+      <if test="lng != null">
+        lng,
+      </if>
+      <if test="lat != null">
+        lat,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create,
+      </if>
+      <if test="gmtModified != null">
+        gmt_modified,
+      </if>
+      <if test="memo != null">
+        memo,
+      </if>
+      <if test="dataState != null">
+        data_state,
+      </if>
+      <if test="tenantCode != null">
+        tenant_code,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="areaId != null">
+        #{areaId},
+      </if>
+      <if test="areaCode != null">
+        #{areaCode},
+      </if>
+      <if test="cityCode != null">
+        #{cityCode},
+      </if>
+      <if test="areaName != null">
+        #{areaName},
+      </if>
+      <if test="shortName != null">
+        #{shortName},
+      </if>
+      <if test="lng != null">
+        #{lng},
+      </if>
+      <if test="lat != null">
+        #{lat},
+      </if>
+      <if test="sort != null">
+        #{sort},
+      </if>
+      <if test="gmtCreate != null">
+        #{gmtCreate},
+      </if>
+      <if test="gmtModified != null">
+        #{gmtModified},
+      </if>
+      <if test="memo != null">
+        #{memo},
+      </if>
+      <if test="dataState != null">
+        #{dataState},
+      </if>
+      <if test="tenantCode != null">
+        #{tenantCode},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="areaId != null">
+        area_id = #{areaId},
+      </if>
+      <if test="areaCode != null">
+        area_code = #{areaCode},
+      </if>
+      <if test="cityCode != null">
+        city_code = #{cityCode},
+      </if>
+      <if test="areaName != null">
+        area_name = #{areaName},
+      </if>
+      <if test="shortName != null">
+        short_name = #{shortName},
+      </if>
+      <if test="lng != null">
+        lng = #{lng},
+      </if>
+      <if test="lat != null">
+        lat = #{lat},
+      </if>
+      <if test="sort != null">
+        sort = #{sort},
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create = #{gmtCreate},
+      </if>
+      <if test="gmtModified != null">
+        gmt_modified = #{gmtModified},
+      </if>
+      <if test="memo != null">
+        memo = #{memo},
+      </if>
+      <if test="dataState != null">
+        data_state = #{dataState},
+      </if>
+      <if test="tenantCode != null">
+        tenant_code = #{tenantCode},
+      </if>
+    </trim>
+  </insert>
+</mapper>

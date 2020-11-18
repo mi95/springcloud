@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.info.mapper.generate.CityInfoMapper">
+  <resultMap id="BaseResultMap" type="com.info.pojo.generate.CityInfo">
+    <!--@mbg.generated-->
+    <!--@Table db_user.city_info-->
+    <id column="city_id" property="cityId" />
+    <result column="city_code" property="cityCode" />
+    <result column="city_name" property="cityName" />
+    <result column="short_name" property="shortName" />
+    <result column="province_code" property="provinceCode" />
+    <result column="lng" property="lng" />
+    <result column="lat" property="lat" />
+    <result column="sort" property="sort" />
+    <result column="gmt_create" property="gmtCreate" />
+    <result column="gmt_modified" property="gmtModified" />
+    <result column="memo" property="memo" />
+    <result column="data_state" property="dataState" />
+    <result column="tenant_code" property="tenantCode" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    city_id, city_code, city_name, short_name, province_code, lng, lat, sort, gmt_create, 
+    gmt_modified, memo, data_state, tenant_code
+  </sql>
+  <select id="selectByExample" parameterType="com.info.pojo.generate.CityInfoExample" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from db_user.city_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from db_user.city_info
+    where city_id = #{cityId}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from db_user.city_info
+    where city_id = #{cityId}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.info.pojo.generate.CityInfoExample">
+    <!--@mbg.generated-->
+    delete from db_user.city_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" keyColumn="city_id" keyProperty="cityId" parameterType="com.info.pojo.generate.CityInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.city_info (city_code, city_name, short_name, province_code, lng, lat, 
+      sort, gmt_create, gmt_modified, memo, data_state, tenant_code)
+    values (#{cityCode}, #{cityName}, #{shortName}, #{provinceCode}, #{lng}, #{lat}, 
+      #{sort}, #{gmtCreate}, #{gmtModified}, #{memo}, #{dataState}, #{tenantCode})
+  </insert>
+  <insert id="insertSelective" keyColumn="city_id" keyProperty="cityId" parameterType="com.info.pojo.generate.CityInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.city_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cityCode != null">
+        city_code,
+      </if>
+      <if test="cityName != null">
+        city_name,
+      </if>
+      <if test="shortName != null">
+        short_name,
+      </if>
+      <if test="provinceCode != null">
+        province_code,
+      </if>
+      <if test="lng != null">
+        lng,
+      </if>
+      <if test="lat != null">
+        lat,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create,
+      </if>
+      <if test="gmtModified != null">
+        gmt_modified,
+      </if>
+      <if test="memo != null">
+        memo,
+      </if>
+      <if test="dataState != null">
+        data_state,
+      </if>
+      <if test="tenantCode != null">
+        tenant_code,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cityCode != null">
+        #{cityCode},
+      </if>
+      <if test="cityName != null">
+        #{cityName},
+      </if>
+      <if test="shortName != null">
+        #{shortName},
+      </if>
+      <if test="provinceCode != null">
+        #{provinceCode},
+      </if>
+      <if test="lng != null">
+        #{lng},
+      </if>
+      <if test="lat != null">
+        #{lat},
+      </if>
+      <if test="sort != null">
+        #{sort},
+      </if>
+      <if test="gmtCreate != null">
+        #{gmtCreate},
+      </if>
+      <if test="gmtModified != null">
+        #{gmtModified},
+      </if>
+      <if test="memo != null">
+        #{memo},
+      </if>
+      <if test="dataState != null">
+        #{dataState},
+      </if>
+      <if test="tenantCode != null">
+        #{tenantCode},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.info.pojo.generate.CityInfoExample" resultType="java.lang.Long">
+    <!--@mbg.generated-->
+    select count(*) from db_user.city_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    <!--@mbg.generated-->
+    update db_user.city_info
+    <set>
+      <if test="record.cityId != null">
+        city_id = #{record.cityId},
+      </if>
+      <if test="record.cityCode != null">
+        city_code = #{record.cityCode},
+      </if>
+      <if test="record.cityName != null">
+        city_name = #{record.cityName},
+      </if>
+      <if test="record.shortName != null">
+        short_name = #{record.shortName},
+      </if>
+      <if test="record.provinceCode != null">
+        province_code = #{record.provinceCode},
+      </if>
+      <if test="record.lng != null">
+        lng = #{record.lng},
+      </if>
+      <if test="record.lat != null">
+        lat = #{record.lat},
+      </if>
+      <if test="record.sort != null">
+        sort = #{record.sort},
+      </if>
+      <if test="record.gmtCreate != null">
+        gmt_create = #{record.gmtCreate},
+      </if>
+      <if test="record.gmtModified != null">
+        gmt_modified = #{record.gmtModified},
+      </if>
+      <if test="record.memo != null">
+        memo = #{record.memo},
+      </if>
+      <if test="record.dataState != null">
+        data_state = #{record.dataState},
+      </if>
+      <if test="record.tenantCode != null">
+        tenant_code = #{record.tenantCode},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    <!--@mbg.generated-->
+    update db_user.city_info
+    set city_id = #{record.cityId},
+      city_code = #{record.cityCode},
+      city_name = #{record.cityName},
+      short_name = #{record.shortName},
+      province_code = #{record.provinceCode},
+      lng = #{record.lng},
+      lat = #{record.lat},
+      sort = #{record.sort},
+      gmt_create = #{record.gmtCreate},
+      gmt_modified = #{record.gmtModified},
+      memo = #{record.memo},
+      data_state = #{record.dataState},
+      tenant_code = #{record.tenantCode}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.info.pojo.generate.CityInfo">
+    <!--@mbg.generated-->
+    update db_user.city_info
+    <set>
+      <if test="cityCode != null">
+        city_code = #{cityCode},
+      </if>
+      <if test="cityName != null">
+        city_name = #{cityName},
+      </if>
+      <if test="shortName != null">
+        short_name = #{shortName},
+      </if>
+      <if test="provinceCode != null">
+        province_code = #{provinceCode},
+      </if>
+      <if test="lng != null">
+        lng = #{lng},
+      </if>
+      <if test="lat != null">
+        lat = #{lat},
+      </if>
+      <if test="sort != null">
+        sort = #{sort},
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create = #{gmtCreate},
+      </if>
+      <if test="gmtModified != null">
+        gmt_modified = #{gmtModified},
+      </if>
+      <if test="memo != null">
+        memo = #{memo},
+      </if>
+      <if test="dataState != null">
+        data_state = #{dataState},
+      </if>
+      <if test="tenantCode != null">
+        tenant_code = #{tenantCode},
+      </if>
+    </set>
+    where city_id = #{cityId}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.info.pojo.generate.CityInfo">
+    <!--@mbg.generated-->
+    update db_user.city_info
+    set city_code = #{cityCode},
+      city_name = #{cityName},
+      short_name = #{shortName},
+      province_code = #{provinceCode},
+      lng = #{lng},
+      lat = #{lat},
+      sort = #{sort},
+      gmt_create = #{gmtCreate},
+      gmt_modified = #{gmtModified},
+      memo = #{memo},
+      data_state = #{dataState},
+      tenant_code = #{tenantCode}
+    where city_id = #{cityId}
+  </update>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update db_user.city_info
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="city_code = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.cityCode}
+        </foreach>
+      </trim>
+      <trim prefix="city_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.cityName}
+        </foreach>
+      </trim>
+      <trim prefix="short_name = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.shortName}
+        </foreach>
+      </trim>
+      <trim prefix="province_code = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.provinceCode}
+        </foreach>
+      </trim>
+      <trim prefix="lng = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.lng}
+        </foreach>
+      </trim>
+      <trim prefix="lat = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.lat}
+        </foreach>
+      </trim>
+      <trim prefix="sort = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.sort}
+        </foreach>
+      </trim>
+      <trim prefix="gmt_create = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.gmtCreate}
+        </foreach>
+      </trim>
+      <trim prefix="gmt_modified = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.gmtModified}
+        </foreach>
+      </trim>
+      <trim prefix="memo = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.memo}
+        </foreach>
+      </trim>
+      <trim prefix="data_state = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.dataState}
+        </foreach>
+      </trim>
+      <trim prefix="tenant_code = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when city_id = #{item.cityId} then #{item.tenantCode}
+        </foreach>
+      </trim>
+    </trim>
+    where city_id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.cityId}
+    </foreach>
+  </update>
+  <insert id="batchInsert" keyColumn="city_id" keyProperty="cityId" parameterType="map" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.city_info
+    (city_code, city_name, short_name, province_code, lng, lat, sort, gmt_create, gmt_modified, 
+      memo, data_state, tenant_code)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.cityCode}, #{item.cityName}, #{item.shortName}, #{item.provinceCode}, #{item.lng}, 
+        #{item.lat}, #{item.sort}, #{item.gmtCreate}, #{item.gmtModified}, #{item.memo}, 
+        #{item.dataState}, #{item.tenantCode})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" keyColumn="city_id" keyProperty="cityId" parameterType="com.info.pojo.generate.CityInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.city_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cityId != null">
+        city_id,
+      </if>
+      city_code,
+      city_name,
+      short_name,
+      province_code,
+      lng,
+      lat,
+      sort,
+      gmt_create,
+      gmt_modified,
+      memo,
+      data_state,
+      tenant_code,
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cityId != null">
+        #{cityId},
+      </if>
+      #{cityCode},
+      #{cityName},
+      #{shortName},
+      #{provinceCode},
+      #{lng},
+      #{lat},
+      #{sort},
+      #{gmtCreate},
+      #{gmtModified},
+      #{memo},
+      #{dataState},
+      #{tenantCode},
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="cityId != null">
+        city_id = #{cityId},
+      </if>
+      city_code = #{cityCode},
+      city_name = #{cityName},
+      short_name = #{shortName},
+      province_code = #{provinceCode},
+      lng = #{lng},
+      lat = #{lat},
+      sort = #{sort},
+      gmt_create = #{gmtCreate},
+      gmt_modified = #{gmtModified},
+      memo = #{memo},
+      data_state = #{dataState},
+      tenant_code = #{tenantCode},
+    </trim>
+  </insert>
+  <insert id="insertOrUpdateSelective" keyColumn="city_id" keyProperty="cityId" parameterType="com.info.pojo.generate.CityInfo" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into db_user.city_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cityId != null">
+        city_id,
+      </if>
+      <if test="cityCode != null">
+        city_code,
+      </if>
+      <if test="cityName != null">
+        city_name,
+      </if>
+      <if test="shortName != null">
+        short_name,
+      </if>
+      <if test="provinceCode != null">
+        province_code,
+      </if>
+      <if test="lng != null">
+        lng,
+      </if>
+      <if test="lat != null">
+        lat,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create,
+      </if>
+      <if test="gmtModified != null">
+        gmt_modified,
+      </if>
+      <if test="memo != null">
+        memo,
+      </if>
+      <if test="dataState != null">
+        data_state,
+      </if>
+      <if test="tenantCode != null">
+        tenant_code,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cityId != null">
+        #{cityId},
+      </if>
+      <if test="cityCode != null">
+        #{cityCode},
+      </if>
+      <if test="cityName != null">
+        #{cityName},
+      </if>
+      <if test="shortName != null">
+        #{shortName},
+      </if>
+      <if test="provinceCode != null">
+        #{provinceCode},
+      </if>
+      <if test="lng != null">
+        #{lng},
+      </if>
+      <if test="lat != null">
+        #{lat},
+      </if>
+      <if test="sort != null">
+        #{sort},
+      </if>
+      <if test="gmtCreate != null">
+        #{gmtCreate},
+      </if>
+      <if test="gmtModified != null">
+        #{gmtModified},
+      </if>
+      <if test="memo != null">
+        #{memo},
+      </if>
+      <if test="dataState != null">
+        #{dataState},
+      </if>
+      <if test="tenantCode != null">
+        #{tenantCode},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="cityId != null">
+        city_id = #{cityId},
+      </if>
+      <if test="cityCode != null">
+        city_code = #{cityCode},
+      </if>
+      <if test="cityName != null">
+        city_name = #{cityName},
+      </if>
+      <if test="shortName != null">
+        short_name = #{shortName},
+      </if>
+      <if test="provinceCode != null">
+        province_code = #{provinceCode},
+      </if>
+      <if test="lng != null">
+        lng = #{lng},
+      </if>
+      <if test="lat != null">
+        lat = #{lat},
+      </if>
+      <if test="sort != null">
+        sort = #{sort},
+      </if>
+      <if test="gmtCreate != null">
+        gmt_create = #{gmtCreate},
+      </if>
+      <if test="gmtModified != null">
+        gmt_modified = #{gmtModified},
+      </if>
+      <if test="memo != null">
+        memo = #{memo},
+      </if>
+      <if test="dataState != null">
+        data_state = #{dataState},
+      </if>
+      <if test="tenantCode != null">
+        tenant_code = #{tenantCode},
+      </if>
+    </trim>
+  </insert>
+</mapper>

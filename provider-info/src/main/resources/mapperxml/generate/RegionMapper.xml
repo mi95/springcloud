@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.info.mapper.generate.RegionMapper">
+  <resultMap id="BaseResultMap" type="com.info.pojo.generate.Region">
+    <!--@mbg.generated-->
+    <!--@Table db_user.region-->
+    <id column="id" property="id" />
+    <result column="name" property="name" />
+    <result column="pid" property="pid" />
+    <result column="sname" property="sname" />
+    <result column="level" property="level" />
+    <result column="citycode" property="citycode" />
+    <result column="yzcode" property="yzcode" />
+    <result column="mername" property="mername" />
+    <result column="Lng" property="lng" />
+    <result column="Lat" property="lat" />
+    <result column="pinyin" property="pinyin" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, pid, sname, `level`, citycode, yzcode, mername, Lng, Lat, pinyin
+  </sql>
+  <select id="selectByExample" parameterType="com.info.pojo.generate.RegionExample" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from db_user.region
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from db_user.region
+    where id = #{id}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--@mbg.generated-->
+    delete from db_user.region
+    where id = #{id}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.info.pojo.generate.RegionExample">
+    <!--@mbg.generated-->
+    delete from db_user.region
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.info.pojo.generate.Region">
+    <!--@mbg.generated-->
+    insert into db_user.region (id, `name`, pid, sname, `level`, citycode, yzcode, mername, 
+      Lng, Lat, pinyin)
+    values (#{id}, #{name}, #{pid}, #{sname}, #{level}, #{citycode}, #{yzcode}, #{mername}, 
+      #{lng}, #{lat}, #{pinyin})
+  </insert>
+  <insert id="insertSelective" parameterType="com.info.pojo.generate.Region">
+    <!--@mbg.generated-->
+    insert into db_user.region
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="pid != null">
+        pid,
+      </if>
+      <if test="sname != null">
+        sname,
+      </if>
+      <if test="level != null">
+        `level`,
+      </if>
+      <if test="citycode != null">
+        citycode,
+      </if>
+      <if test="yzcode != null">
+        yzcode,
+      </if>
+      <if test="mername != null">
+        mername,
+      </if>
+      <if test="lng != null">
+        Lng,
+      </if>
+      <if test="lat != null">
+        Lat,
+      </if>
+      <if test="pinyin != null">
+        pinyin,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id},
+      </if>
+      <if test="name != null">
+        #{name},
+      </if>
+      <if test="pid != null">
+        #{pid},
+      </if>
+      <if test="sname != null">
+        #{sname},
+      </if>
+      <if test="level != null">
+        #{level},
+      </if>
+      <if test="citycode != null">
+        #{citycode},
+      </if>
+      <if test="yzcode != null">
+        #{yzcode},
+      </if>
+      <if test="mername != null">
+        #{mername},
+      </if>
+      <if test="lng != null">
+        #{lng},
+      </if>
+      <if test="lat != null">
+        #{lat},
+      </if>
+      <if test="pinyin != null">
+        #{pinyin},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.info.pojo.generate.RegionExample" resultType="java.lang.Long">
+    <!--@mbg.generated-->
+    select count(*) from db_user.region
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    <!--@mbg.generated-->
+    update db_user.region
+    <set>
+      <if test="record.id != null">
+        id = #{record.id},
+      </if>
+      <if test="record.name != null">
+        `name` = #{record.name},
+      </if>
+      <if test="record.pid != null">
+        pid = #{record.pid},
+      </if>
+      <if test="record.sname != null">
+        sname = #{record.sname},
+      </if>
+      <if test="record.level != null">
+        `level` = #{record.level},
+      </if>
+      <if test="record.citycode != null">
+        citycode = #{record.citycode},
+      </if>
+      <if test="record.yzcode != null">
+        yzcode = #{record.yzcode},
+      </if>
+      <if test="record.mername != null">
+        mername = #{record.mername},
+      </if>
+      <if test="record.lng != null">
+        Lng = #{record.lng},
+      </if>
+      <if test="record.lat != null">
+        Lat = #{record.lat},
+      </if>
+      <if test="record.pinyin != null">
+        pinyin = #{record.pinyin},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    <!--@mbg.generated-->
+    update db_user.region
+    set id = #{record.id},
+      `name` = #{record.name},
+      pid = #{record.pid},
+      sname = #{record.sname},
+      `level` = #{record.level},
+      citycode = #{record.citycode},
+      yzcode = #{record.yzcode},
+      mername = #{record.mername},
+      Lng = #{record.lng},
+      Lat = #{record.lat},
+      pinyin = #{record.pinyin}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.info.pojo.generate.Region">
+    <!--@mbg.generated-->
+    update db_user.region
+    <set>
+      <if test="name != null">
+        `name` = #{name},
+      </if>
+      <if test="pid != null">
+        pid = #{pid},
+      </if>
+      <if test="sname != null">
+        sname = #{sname},
+      </if>
+      <if test="level != null">
+        `level` = #{level},
+      </if>
+      <if test="citycode != null">
+        citycode = #{citycode},
+      </if>
+      <if test="yzcode != null">
+        yzcode = #{yzcode},
+      </if>
+      <if test="mername != null">
+        mername = #{mername},
+      </if>
+      <if test="lng != null">
+        Lng = #{lng},
+      </if>
+      <if test="lat != null">
+        Lat = #{lat},
+      </if>
+      <if test="pinyin != null">
+        pinyin = #{pinyin},
+      </if>
+    </set>
+    where id = #{id}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.info.pojo.generate.Region">
+    <!--@mbg.generated-->
+    update db_user.region
+    set `name` = #{name},
+      pid = #{pid},
+      sname = #{sname},
+      `level` = #{level},
+      citycode = #{citycode},
+      yzcode = #{yzcode},
+      mername = #{mername},
+      Lng = #{lng},
+      Lat = #{lat},
+      pinyin = #{pinyin}
+    where id = #{id}
+  </update>
+  <update id="updateBatch" parameterType="java.util.List">
+    <!--@mbg.generated-->
+    update db_user.region
+    <trim prefix="set" suffixOverrides=",">
+      <trim prefix="`name` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.name}
+        </foreach>
+      </trim>
+      <trim prefix="pid = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.pid}
+        </foreach>
+      </trim>
+      <trim prefix="sname = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.sname}
+        </foreach>
+      </trim>
+      <trim prefix="`level` = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.level}
+        </foreach>
+      </trim>
+      <trim prefix="citycode = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.citycode}
+        </foreach>
+      </trim>
+      <trim prefix="yzcode = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.yzcode}
+        </foreach>
+      </trim>
+      <trim prefix="mername = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.mername}
+        </foreach>
+      </trim>
+      <trim prefix="Lng = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.lng}
+        </foreach>
+      </trim>
+      <trim prefix="Lat = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.lat}
+        </foreach>
+      </trim>
+      <trim prefix="pinyin = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.pinyin}
+        </foreach>
+      </trim>
+    </trim>
+    where id in
+    <foreach close=")" collection="list" item="item" open="(" separator=", ">
+      #{item.id}
+    </foreach>
+  </update>
+  <insert id="batchInsert" parameterType="map">
+    <!--@mbg.generated-->
+    insert into db_user.region
+    (id, `name`, pid, sname, `level`, citycode, yzcode, mername, Lng, Lat, pinyin)
+    values
+    <foreach collection="list" item="item" separator=",">
+      (#{item.id}, #{item.name}, #{item.pid}, #{item.sname}, #{item.level}, #{item.citycode}, 
+        #{item.yzcode}, #{item.mername}, #{item.lng}, #{item.lat}, #{item.pinyin})
+    </foreach>
+  </insert>
+  <insert id="insertOrUpdate" parameterType="com.info.pojo.generate.Region">
+    <!--@mbg.generated-->
+    insert into db_user.region
+    (id, `name`, pid, sname, `level`, citycode, yzcode, mername, Lng, Lat, pinyin)
+    values
+    (#{id}, #{name}, #{pid}, #{sname}, #{level}, #{citycode}, #{yzcode}, #{mername}, 
+      #{lng}, #{lat}, #{pinyin})
+    on duplicate key update 
+    id = #{id}, 
+    `name` = #{name}, 
+    pid = #{pid}, 
+    sname = #{sname}, 
+    `level` = #{level}, 
+    citycode = #{citycode}, 
+    yzcode = #{yzcode}, 
+    mername = #{mername}, 
+    Lng = #{lng}, 
+    Lat = #{lat}, 
+    pinyin = #{pinyin}
+  </insert>
+  <insert id="insertOrUpdateSelective" parameterType="com.info.pojo.generate.Region">
+    <!--@mbg.generated-->
+    insert into db_user.region
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="pid != null">
+        pid,
+      </if>
+      <if test="sname != null">
+        sname,
+      </if>
+      <if test="level != null">
+        `level`,
+      </if>
+      <if test="citycode != null">
+        citycode,
+      </if>
+      <if test="yzcode != null">
+        yzcode,
+      </if>
+      <if test="mername != null">
+        mername,
+      </if>
+      <if test="lng != null">
+        Lng,
+      </if>
+      <if test="lat != null">
+        Lat,
+      </if>
+      <if test="pinyin != null">
+        pinyin,
+      </if>
+    </trim>
+    values
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id},
+      </if>
+      <if test="name != null">
+        #{name},
+      </if>
+      <if test="pid != null">
+        #{pid},
+      </if>
+      <if test="sname != null">
+        #{sname},
+      </if>
+      <if test="level != null">
+        #{level},
+      </if>
+      <if test="citycode != null">
+        #{citycode},
+      </if>
+      <if test="yzcode != null">
+        #{yzcode},
+      </if>
+      <if test="mername != null">
+        #{mername},
+      </if>
+      <if test="lng != null">
+        #{lng},
+      </if>
+      <if test="lat != null">
+        #{lat},
+      </if>
+      <if test="pinyin != null">
+        #{pinyin},
+      </if>
+    </trim>
+    on duplicate key update 
+    <trim suffixOverrides=",">
+      <if test="id != null">
+        id = #{id},
+      </if>
+      <if test="name != null">
+        `name` = #{name},
+      </if>
+      <if test="pid != null">
+        pid = #{pid},
+      </if>
+      <if test="sname != null">
+        sname = #{sname},
+      </if>
+      <if test="level != null">
+        `level` = #{level},
+      </if>
+      <if test="citycode != null">
+        citycode = #{citycode},
+      </if>
+      <if test="yzcode != null">
+        yzcode = #{yzcode},
+      </if>
+      <if test="mername != null">
+        mername = #{mername},
+      </if>
+      <if test="lng != null">
+        Lng = #{lng},
+      </if>
+      <if test="lat != null">
+        Lat = #{lat},
+      </if>
+      <if test="pinyin != null">
+        pinyin = #{pinyin},
+      </if>
+    </trim>
+  </insert>
+</mapper>

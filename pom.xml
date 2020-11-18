@@ -53,7 +53,11 @@
         <module>cloud-eureka</module>
         <module>cloud-zuul</module>
         <module>cloud-config</module>
-        <module>cloud-provider</module>
         <module>cloud-hystrix-dashboard</module>
+        <module>provider-app</module>
+        <module>provider-info</module>
+        <module>provider-shop</module>
+        <module>provider-user</module>
+        <module>provider-common</module>
     </modules>
 </project>

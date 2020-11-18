@@ -6,10 +6,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider/provider-app/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider/provider-common/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider/provider-info/pom.xml" />
+        <option value="$PROJECT_DIR$/provider-search/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/cloud-provider/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider/provider-netty/pom.xml" />
       </set>
     </option>

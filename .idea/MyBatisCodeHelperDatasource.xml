@@ -8,7 +8,6 @@
         <option name="baseClassSearchXml" value="true" />
         <option name="batchInsert" value="true" />
         <option name="checkBlobColumn" value="true" />
-        <option name="generateService" value="true" />
         <option name="generateServiceInterface" value="true" />
         <option name="generatedClassPathList">
           <list>
@@ -18,10 +17,10 @@
           </list>
         </option>
         <option name="insertOnDuplicateKey" value="true" />
-        <option name="javaMapperPackage" value="com.shop.mapper.generate" />
-        <option name="javaMapperPath" value="C:\kyProject\springcloud\cloud-provider\provider-shop\src\main\java" />
-        <option name="javaModelPackage" value="com.shop.pojo.generate" />
-        <option name="javaModelPath" value="C:\kyProject\springcloud\cloud-provider\provider-shop\src\main\java" />
+        <option name="javaMapperPackage" value="com.info.mapper.generate" />
+        <option name="javaMapperPath" value="C:\kyProject\springcloud\provider-info\src\main\java" />
+        <option name="javaModelPackage" value="com.info.pojo.generate" />
+        <option name="javaModelPath" value="C:\kyProject\springcloud\provider-info\src\main\java" />
         <option name="lastDatabaseCrudChooseModuleName" value="provider-shop" />
         <option name="lombokAllArgConstructor" value="true" />
         <option name="lombokDataAnnotation" value="true" />
@@ -34,16 +33,15 @@
             <entry key="provider-shop">
               <value>
                 <UserPackageAndPathInfoByModule>
-                  <option name="javaMapperPackage" value="com.shop.mapper.generate" />
-                  <option name="javaMapperPath" value="C:\kyProject\springcloud\cloud-provider\provider-shop\src\main\java" />
-                  <option name="javaModelPacakge" value="com.shop.pojo.generate" />
-                  <option name="javaModelPath" value="C:\kyProject\springcloud\cloud-provider\provider-shop\src\main\java" />
+                  <option name="javaMapperPackage" value="com.info.mapper.generate" />
+                  <option name="javaMapperPath" value="C:\kyProject\springcloud\provider-info\src\main\java" />
+                  <option name="javaModelPacakge" value="com.info.pojo.generate" />
+                  <option name="javaModelPath" value="C:\kyProject\springcloud\provider-info\src\main\java" />
                   <option name="javaServiceInterfacePackage" value="com.shop.service" />
                   <option name="javaServiceInterfacePath" value="C:\kyProject\springcloud\cloud-provider\provider-shop\src\main\java" />
-                  <option name="javaServicePackage" value="com.shop.service.impl" />
-                  <option name="javaServicePath" value="C:\kyProject\springcloud\cloud-provider\provider-shop\src\main\java" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/provider-shop/src/main/java" />
                   <option name="xmlPackage" value="mapperxml.generate" />
-                  <option name="xmlPath" value="C:\kyProject\springcloud\cloud-provider\provider-shop\src\main\resources" />
+                  <option name="xmlPath" value="C:\kyProject\springcloud\provider-info\src\main\resources" />
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
@@ -181,12 +179,163 @@
                 </TableGenerateConfig>
               </value>
             </entry>
+            <entry key="db_user:area_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="area_id" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="AreaInfo" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:auth_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="AuthInfo" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:city_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="city_id" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="CityInfo" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:photo_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="PhotoInfo" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:province_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="province_id" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="ProvinceInfo" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:region">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="Region" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:role_auth_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="RoleAuthInfo" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:role_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="RoleInfo" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:role_user_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="RoleUserInfo" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:street_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="street_id" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="StreetInfo" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:t_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="TUser" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_user:user_infos">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="UserInfos" />
+                  <option name="moduleName" value="provider-shop" />
+                  <option name="updateBatch" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
           </map>
         </option>
         <option name="updateBatch" value="true" />
         <option name="useExample" value="true" />
         <option name="xmlMapperPackage" value="mapperxml.generate" />
-        <option name="xmlMapperPath" value="C:\kyProject\springcloud\cloud-provider\provider-shop\src\main\resources" />
+        <option name="xmlMapperPath" value="C:\kyProject\springcloud\provider-info\src\main\resources" />
       </ProjectProfile>
     </option>
   </component>
