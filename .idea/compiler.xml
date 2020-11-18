@@ -7,17 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="provider-search" />
+        <module name="provider-media" />
         <module name="config-server" />
         <module name="provider-info" />
-        <module name="cloud-zuul" />
         <module name="provider-user" />
+        <module name="cloud-zuul" />
         <module name="cloud-eureka" />
-        <module name="provider-shop" />
-        <module name="provider-media" />
+        <module name="provider-search" />
+        <module name="provider-app" />
         <module name="provider-common" />
         <module name="config-client" />
-        <module name="provider-app" />
+        <module name="provider-shop" />
         <module name="cloud-hystrix-dashboard" />
       </profile>
     </annotationProcessing>

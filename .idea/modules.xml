@@ -14,7 +14,6 @@
       <module fileurl="file://$PROJECT_DIR$/provider-search/provider-search.iml" filepath="$PROJECT_DIR$/provider-search/provider-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider-shop/provider-shop.iml" filepath="$PROJECT_DIR$/provider-shop/provider-shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider-user/provider-user.iml" filepath="$PROJECT_DIR$/provider-user/provider-user.iml" />
-      <module fileurl="file://$PROJECT_DIR$/provider-app/provider-user (1).iml" filepath="$PROJECT_DIR$/provider-app/provider-user (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud.iml" filepath="$PROJECT_DIR$/springcloud.iml" />
     </modules>
   </component>
