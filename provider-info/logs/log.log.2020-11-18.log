@@ -178,3 +178,154 @@
                 Cannot determine local hostname
 2020-11-18 17:15:49.412 [main] INFO  com.info.InfoApp -
                 Started InfoApp in 11.153 seconds (JVM running for 12.257)
+2020-11-18 17:40:10.518 [main] INFO  com.info.InfoApp -
+                No active profile set, falling back to default profiles: default
+2020-11-18 17:40:11.598 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'areaInfoMapper' and 'com.info.mapper.generate.AreaInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.599 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'authInfoMapper' and 'com.info.mapper.generate.AuthInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.599 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'cityInfoMapper' and 'com.info.mapper.generate.CityInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.599 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'photoInfoMapper' and 'com.info.mapper.generate.PhotoInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.599 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'provinceInfoMapper' and 'com.info.mapper.generate.ProvinceInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.600 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'regionMapper' and 'com.info.mapper.generate.RegionMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.600 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'roleAuthInfoMapper' and 'com.info.mapper.generate.RoleAuthInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.600 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'roleInfoMapper' and 'com.info.mapper.generate.RoleInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.600 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'roleUserInfoMapper' and 'com.info.mapper.generate.RoleUserInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.602 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'streetInfoMapper' and 'com.info.mapper.generate.StreetInfoMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.602 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'TUserMapper' and 'com.info.mapper.generate.TUserMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.603 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -
+                Skipping MapperFactoryBean with name 'userInfosMapper' and 'com.info.mapper.generate.UserInfosMapper' mapperInterface. Bean already defined with the same name!
+2020-11-18 17:40:11.702 [main] INFO  o.springframework.cloud.context.scope.GenericScope -
+                BeanFactory id=90944921-fabb-308c-b77a-f9465b437b38
+2020-11-18 17:40:12.416 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8510 (http)
+2020-11-18 17:40:12.432 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8510"]
+2020-11-18 17:40:12.433 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2020-11-18 17:40:12.434 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-11-18 17:40:12.436 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-11-18 17:40:12.437 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-11-18 17:40:12.437 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-11-18 17:40:12.437 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-11-18 17:40:13.489 [main] INFO  org.apache.catalina.core.AprLifecycleListener -
+                OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-11-18 17:40:13.677 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2020-11-18 17:40:13.678 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 3126 ms
+2020-11-18 17:40:14.079 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'photoController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'httpUrl' in value "${httpUrl}"
+2020-11-18 17:40:14.081 [main] INFO  org.apache.catalina.core.StandardService -
+                Stopping service [Tomcat]
+2020-11-18 17:40:14.091 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-18 17:40:14.110 [main] ERROR org.springframework.boot.SpringApplication -
+                Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'photoController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'httpUrl' in value "${httpUrl}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.info.InfoApp.main(InfoApp.java:14)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'httpUrl' in value "${httpUrl}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+2020-11-18 17:40:14.111 [main] WARN  org.springframework.boot.SpringApplication -
+                Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.info.InfoApp.main(InfoApp.java:14)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:276)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 40 common frames omitted

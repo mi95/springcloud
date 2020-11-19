@@ -7,12 +7,13 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author  xiaomi
- * @create  2020/11/17
+ * @create  2020/11/19
  * 
  **/
+
 /**
-    * 相册
-    */
+ * 相册
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,18 +21,18 @@ public class PhotoInfo implements Serializable {
     private Integer id;
 
     /**
-    * 顺序
-    */
+     * 顺序
+     */
     private Integer sort;
 
     /**
-    * 图片路径
-    */
+     * 图片路径
+     */
     private String url;
 
     /**
-    * 1-正常 2-删除
-    */
+     * 1-正常 2-删除
+     */
     private Integer status;
 
     private static final long serialVersionUID = 1L;

@@ -2,14 +2,14 @@ package com.info.mapper.generate;
 
 import com.info.pojo.generate.PhotoInfo;
 import com.info.pojo.generate.PhotoInfoExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 /**
- * @author  xiaomi
- * @create  2020/11/17
- * 
+ * @author xiaomi
+ * @create 2020/11/19
  **/
 @Mapper
 public interface PhotoInfoMapper {
@@ -19,6 +19,7 @@ public interface PhotoInfoMapper {
 
     /**
      * delete by primary key
+     *
      * @param id primaryKey
      * @return deleteCount
      */
@@ -26,6 +27,7 @@ public interface PhotoInfoMapper {
 
     /**
      * insert record to table
+     *
      * @param record the record
      * @return insert count
      */
@@ -37,6 +39,7 @@ public interface PhotoInfoMapper {
 
     /**
      * insert record to table selective
+     *
      * @param record the record
      * @return insert count
      */
@@ -46,6 +49,7 @@ public interface PhotoInfoMapper {
 
     /**
      * select by primary key
+     *
      * @param id primary key
      * @return object by primary key
      */
@@ -57,6 +61,7 @@ public interface PhotoInfoMapper {
 
     /**
      * update record selective
+     *
      * @param record the updated record
      * @return update count
      */
@@ -64,6 +69,7 @@ public interface PhotoInfoMapper {
 
     /**
      * update record
+     *
      * @param record the updated record
      * @return update count
      */
